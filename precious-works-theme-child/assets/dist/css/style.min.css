@@ -27,6 +27,10 @@
   margin: 24px 0 8px !important;
 }
 
+.media-modal .media-frame .media-search-input-label {
+  color: black;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -6979,8 +6983,27 @@ progress {
     display: none !important;
   }
 }
-.wysiwyg p:last-child() {
+.wysiwyg p:last-child {
   margin-bottom: 0;
+}
+
+.nav-list-style {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-list-style.column-list {
+  flex-direction: column;
+}
+.nav-list-style li {
+  line-height: 1;
+  margin-bottom: 0;
+}
+.nav-list-style li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .rounded-corners {
@@ -6992,26 +7015,26 @@ progress {
 }
 
 .background-primary {
-  color: black;
-  background-color: red;
+  color: #ffffff;
+  background-color: #0247ac;
 }
 
 .background-secondary {
-  color: black;
-  background-color: red;
+  color: #ffffff;
+  background-color: #d71d22;
 }
 
 .heading-font {
-  font-family: "Inter", sans-serif;
+  font-family: "Georgia", serif;
 }
 
 .body-text-font {
-  font-family: "Georgia", serif;
+  font-family: "Inter", sans-serif;
 }
 
 .u-focus-style:focus, .u-focus-style:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.4);
   border-radius: inherit;
 }
 
@@ -7037,32 +7060,34 @@ progress {
 
 .pw-solid-button {
   display: inline-block;
-  background-color: #333333;
-  border: solid 1px #333333;
+  font-size: 24px;
+  background-color: #d71d22;
+  border: solid 1px #ffffff;
   color: #ffffff;
   line-height: 1;
-  border-radius: 30px;
+  text-transform: uppercase;
+  border-radius: 0px;
   font-weight: 400;
-  min-width: 200px;
+  min-width: auto;
   transition: all 0.2s ease-in-out;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-decoration: none;
 }
 .pw-solid-button:hover, .pw-solid-button:focus, .pw-solid-button:focus-visible {
   font-weight: 600;
-  border-radius: 30px;
-  background-color: #ffffff;
-  color: #333333;
-  border: solid 1px #333333;
+  border-radius: 0px;
+  background-color: #d71d22;
+  color: #ffffff;
+  border: solid 1px #d71d22;
   text-decoration: none;
 }
 .pw-solid-button:focus, .pw-solid-button:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
-  border-radius: 30px;
+  border-radius: 0px;
 }
 
 .container {
@@ -7095,7 +7120,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container {
-    max-width: 1320px;
+    max-width: 1140px;
   }
 }
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
@@ -7107,7 +7132,7 @@ progress {
 }
 
 body {
-  background-color: white;
+  background-color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -7130,42 +7155,42 @@ html :where(.wp-block) {
 }
 
 h1, .h1 {
-  font-family: "Inter", sans-serif;
+  font-family: "Georgia", serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h2, .h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Georgia", serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h3, .h3 {
-  font-family: "Inter", sans-serif;
+  font-family: "Georgia", serif;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h4, .h4 {
-  font-family: "Inter", sans-serif;
+  font-family: "Georgia", serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h5, .h5 {
-  font-family: "Inter", sans-serif;
+  font-family: "Georgia", serif;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h6, .h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Georgia", serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
@@ -7378,7 +7403,7 @@ small, .small {
   align-items: center;
 }
 .site-header .site-header-container .site-header-row .site-header-logo-col .site-brand-logo-wrapper {
-  width: 65px;
+  width: 150px;
   height: auto;
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col nav,
@@ -7593,7 +7618,7 @@ small, .small {
 }
 
 .accordions-container .accordions-row .accordions-col .single-accordion {
-  border: 2px solid #666666;
+  border: 2px solid #d71d22;
   margin-bottom: 20px;
   color: inherit;
   overflow: hidden;
@@ -7613,7 +7638,7 @@ small, .small {
   transition: background-color 0.25s ease;
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion:hover {
-  background-color: rgb(216.75, 216.75, 216.75);
+  background-color: rgb(250.6618852459, 222.8381147541, 223.5860655738);
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion svg {
   transition: transform 0.25s ease;
@@ -7677,8 +7702,8 @@ small, .small {
 }
 
 .interior-hero-section {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media (max-width: 575.98px) {
   .interior-hero-section {

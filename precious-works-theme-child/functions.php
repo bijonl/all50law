@@ -38,6 +38,22 @@ add_action('wp_enqueue_scripts', 'pw_enqueue_glightbox_assets');
 add_action( 'wp_enqueue_scripts', 'pw_enqueue_scripts', 20 );
 add_action( 'enqueue_block_editor_assets', 'pw_enqueue_scripts' );
 
+/**
+ * Enqueue Google Fonts (Inter + Georgia fallback stack)
+ */
+function theme_enqueue_fonts() {
+
+    // Inter from Google Fonts
+    wp_enqueue_style(
+        'theme-fonts',
+        'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap',
+        array(),
+        null
+    );
+
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_fonts');
+
 
 
 

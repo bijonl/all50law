@@ -18,8 +18,10 @@
             },
             "choices": {
                 "none": "None",
-                "primary": "Primary",
-                "secondary": "Secondary"
+                "primary": "Primary Blue",
+                "secondary": "Primary Red",
+                "dark-gray": "Dark Gray",
+                "light-grey": "Light Grey"
             },
             "default_value": false,
             "return_format": "value",
@@ -49,11 +51,6 @@
                 "param": "block",
                 "operator": "!=",
                 "value": "acf\/homepage-hero"
-            },
-            {
-                "param": "block",
-                "operator": "!=",
-                "value": "acf\/interior-hero"
             }
         ]
     ],
@@ -66,5 +63,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755702930
+    "modified": 1779728253
 }

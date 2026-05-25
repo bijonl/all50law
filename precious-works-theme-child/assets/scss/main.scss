@@ -1,16 +1,16 @@
 // Import parent SCSS
-@import '../../../precious-works-parent/assets/scss/variables';
-@import '../../../precious-works-parent/assets/scss/block-variables';
-@import '../../../precious-works-parent/assets/scss/admin-overrides';
+@import '../../../precious-works-theme-child/assets/scss/variables';
+@import '../../../precious-works-theme-child/assets/scss/block-variables';
+@import '../../../precious-works-theme-child/assets/scss/admin-overrides';
 @import '../../../precious-works-parent/assets/scss/bootstrap';
-@import '../../../precious-works-parent/assets/scss/util';
+@import '../../../precious-works-theme-child/assets/scss/util';
 
 
-@import '../../../precious-works-parent/assets/scss/base-styles/buttons';
-@import '../../../precious-works-parent/assets/scss/base-styles/container-styling';
-@import '../../../precious-works-parent/assets/scss/base-styles/global-styling';
-@import '../../../precious-works-parent/assets/scss/base-styles/heading-font';
-@import '../../../precious-works-parent/assets/scss/base-styles/typography';
+@import '../../../precious-works-theme-child/assets/scss/base-styles/buttons';
+@import '../../../precious-works-theme-child/assets/scss/base-styles/container-styling';
+@import '../../../precious-works-theme-child/assets/scss/base-styles/global-styling';
+@import '../../../precious-works-theme-child/assets/scss/base-styles/heading-font';
+@import '../../../precious-works-theme-child/assets/scss/base-styles/typography';
 
 
 @import '../../../precious-works-parent/assets/scss/templates/blog-archive';
@@ -26,7 +26,7 @@
 @import '../../../precious-works-parent/assets/scss/blocks/homepage-hero';
 @import '../../../precious-works-parent/assets/scss/blocks/photo-divider';
 @import '../../../precious-works-parent/assets/scss/blocks/image-gallery';
-@import '../../../precious-works-parent/assets/scss/blocks/interior-hero';
+@import '../../../precious-works-theme-child/assets/scss/blocks/interior-hero';
 @import '../../../precious-works-parent/assets/scss/blocks/wildcards';
 
 
