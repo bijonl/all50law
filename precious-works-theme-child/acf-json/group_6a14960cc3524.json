@@ -1,10 +1,10 @@
 {
-    "key": "group_687bfe36b2cd3",
-    "title": "Block Section Button",
+    "key": "group_6a14960cc3524",
+    "title": "Block - CTA (Form)",
     "fields": [
         {
-            "key": "field_687bfe37b2042",
-            "label": "Block Section Button",
+            "key": "field_6a14960d96773",
+            "label": "CTA Content",
             "name": "",
             "aria-label": "",
             "type": "accordion",
@@ -21,58 +21,12 @@
             "endpoint": 0
         },
         {
-            "key": "field_6a149ec8b33ad",
-            "label": "Button Type",
-            "name": "button_type",
-            "aria-label": "",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "pw-solid-button": "Primary Button",
-                "pw-text-button": "Text Button"
-            },
-            "default_value": false,
-            "return_format": "value",
-            "multiple": 0,
-            "allow_null": 0,
-            "allow_in_bindings": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": "",
-            "create_options": 0,
-            "save_options": 0
-        },
-        {
-            "key": "field_687bff2db2043",
-            "label": "Section Button",
-            "name": "section_button",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "allow_in_bindings": 0
-        },
-        {
-            "key": "field_687bff62b2045",
-            "label": "Section Button Aria Label",
-            "name": "section_button_aria_label",
+            "key": "field_6a14962896775",
+            "label": "Bottom Title",
+            "name": "bottom_title",
             "aria-label": "",
             "type": "text",
-            "instructions": "This label helps screen readers (tools used by people with difficulty seeing) understand the button. Please write a short, clear description of what the button does. This won’t change how the button looks on the page. It’s a simple and kind way to make your site easier for everyone to use!",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -88,11 +42,11 @@
             "append": ""
         },
         {
-            "key": "field_687bff4db2044",
-            "label": "Block Section Button (End)",
-            "name": "",
+            "key": "field_6a14963096776",
+            "label": "Form ID",
+            "name": "form_id",
             "aria-label": "",
-            "type": "accordion",
+            "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -101,9 +55,56 @@
                 "class": "",
                 "id": ""
             },
-            "open": 0,
-            "multi_expand": 0,
-            "endpoint": 1
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6a14963796777",
+            "label": "Form Title",
+            "name": "form_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6a14964296778",
+            "label": "Form Subtitle",
+            "name": "form_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -111,21 +112,11 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "all"
-            },
-            {
-                "param": "block",
-                "operator": "!=",
-                "value": "acf\/photo-divider"
-            },
-            {
-                "param": "block",
-                "operator": "!=",
-                "value": "acf\/form-block"
+                "value": "acf\/form-cta"
             }
         ]
     ],
-    "menu_order": 2,
+    "menu_order": 0,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -134,5 +125,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779736366
+    "modified": 1779734976
 }

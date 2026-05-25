@@ -41,6 +41,17 @@
     background-color: $secondary-background-color; 
 }
 
+.background-dark-gray {
+    background-color: $color-darkgray;
+    color: $color-white; 
+}
+
+.background-light-grey {
+    background-color: $color-lightgray;
+    color: $color-darkgray; 
+
+}
+
 .heading-font {
     font-family: $heading-font;
 }

@@ -32,3 +32,31 @@
         border-radius: $solid-button-border-radius;
     }
 }
+
+.pw-text-button {
+    font-weight: bold; 
+    color: inherit; 
+    display: flex;
+    line-height: 1;
+    font-size: 18px; 
+    align-items: center;
+    
+    i {
+        border-radius: 5px;
+        padding: 3px;
+        margin-left: 8px; 
+        transform: rotate(-45deg);
+        background-color: $color-primary; 
+        color: $color-white; 
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+        i {
+            margin-left: 10px;
+            transform: none;
+            background-color: $color-secondary;
+            transition: all 0.3s ease-in-out;
+        }
+ 
+    }
+}

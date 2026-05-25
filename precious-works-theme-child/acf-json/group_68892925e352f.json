@@ -21,7 +21,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_68efd90f0efd0",
+            "key": "field_6a14a7f7b1e3c",
             "label": "Cards Per Row",
             "name": "cards_per_row",
             "aria-label": "",
@@ -41,6 +41,75 @@
             "step": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_6a14a43159e8c",
+            "label": "Wildcard Format",
+            "name": "wildcard_format",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "regular": "Image Wildcard",
+                "minimal": "Minimal Card"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
+            "key": "field_6a14a9435700a",
+            "label": "Card Background Color",
+            "name": "card_background_color",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a14a43159e8c",
+                        "operator": "==",
+                        "value": "minimal"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "primary": "Primary Blue",
+                "secondary": "Primary Red",
+                "dark-gray": "Dark Gray",
+                "light-grey": "Light Grey"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
         },
         {
             "key": "field_6889294d11e9b",
@@ -220,7 +289,15 @@
                     "type": "link",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6a14a43159e8c",
+                                "operator": "!=",
+                                "value": "minimal"
+                            }
+                        ]
+                    ],
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -251,6 +328,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "display_title": "",
-    "modified": 1760549284
+    "modified": 1779739009
 }

@@ -21,11 +21,11 @@ $base-font-size: 16px;
 $line-height-base: 1.6;
 
 // Text Colors
-$base-text-color: #222; 
-$heading-font-color: #222; 
-$link-color: #0066cc; 
+$base-text-color: $color-darkgray; 
+$heading-font-color: $color-darkgray; 
+$link-color: $color-primary; 
 $color-muted: #666;
-$link-hover-color: #222; 
+$link-hover-color: $color-secondary; 
 
 // Background Colors
 $body-background: $color-white; 

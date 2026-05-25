@@ -120,11 +120,11 @@
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #0066cc;
-  --bs-link-color-rgb: 0, 102, 204;
+  --bs-link-color: #0247ac;
+  --bs-link-color-rgb: 2, 71, 172;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #222;
-  --bs-link-hover-color-rgb: 34, 34, 34;
+  --bs-link-hover-color: #d71d22;
+  --bs-link-hover-color-rgb: 215, 29, 34;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: rgb(255, 242.6, 205.4);
@@ -7024,6 +7024,16 @@ progress {
   background-color: #d71d22;
 }
 
+.background-dark-gray {
+  background-color: #161616;
+  color: #ffffff;
+}
+
+.background-light-grey {
+  background-color: #bababb;
+  color: #161616;
+}
+
 .heading-font {
   font-family: "Georgia", serif;
 }
@@ -7090,6 +7100,30 @@ progress {
   border-radius: 0px;
 }
 
+.pw-text-button {
+  font-weight: bold;
+  color: inherit;
+  display: flex;
+  line-height: 1;
+  font-size: 18px;
+  align-items: center;
+}
+.pw-text-button i {
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 8px;
+  transform: rotate(-45deg);
+  background-color: #0247ac;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.pw-text-button:hover i {
+  margin-left: 10px;
+  transform: none;
+  background-color: #d71d22;
+  transition: all 0.3s ease-in-out;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -7136,7 +7170,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #222;
+  color: #161616;
 }
 
 .block-section {
@@ -7156,35 +7190,35 @@ html :where(.wp-block) {
 
 h1, .h1 {
   font-family: "Georgia", serif;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h2, .h2 {
   font-family: "Georgia", serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h3, .h3 {
   font-family: "Georgia", serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h4, .h4 {
   font-family: "Georgia", serif;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h5, .h5 {
   font-family: "Georgia", serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -7207,11 +7241,11 @@ p {
 }
 
 a {
-  color: #0066cc;
+  color: #0247ac;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #222;
+  color: #d71d22;
   text-decoration: underline;
 }
 
@@ -7744,6 +7778,25 @@ small, .small {
   }
 }
 
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.minimal-wildcard {
+  padding: 20px;
+  height: 100%;
+}
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.minimal-wildcard .minimal-wc-title-wrapper {
+  padding-bottom: 15px;
+}
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.minimal-wildcard .minimal-wc-title-wrapper .wildcard-image-wrapper {
+  margin: 0;
+  margin-right: 10px;
+  padding-bottom: 0;
+  max-width: 25px;
+}
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.minimal-wildcard .minimal-wc-title-wrapper .wildcard-title-wrapper {
+  padding-bottom: 0;
+}
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.minimal-wildcard .wildcard-content-wrapper {
+  padding-bottom: 0;
+}
 @media (max-width: 991.98px) {
   .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper {
     padding-bottom: 40px;
