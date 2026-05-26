@@ -20,7 +20,7 @@ $index = 0;
             ?>
 
             <button
-                class="nav-link <?php echo $index === 0 ? 'active' : ''; ?>"
+                class="text-start nav-link <?php echo $index === 0 ? 'active' : ''; ?>"
                 id="<?php echo $tab_id; ?>-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#<?php echo $tab_id; ?>"

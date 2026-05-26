@@ -8,7 +8,7 @@
             "name": "",
             "aria-label": "",
             "type": "accordion",
-            "instructions": "These two sections work together and must stay in the same order.\r\n\r\nEach navigation label connects to its matching content block:\r\n1st label → 1st content block\r\n2nd label → 2nd content block\r\netc.\r\n\r\nIf you add, remove, or reorder items in one section, make sure to do the same in the other section so everything stays aligned properly.",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -156,5 +156,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779815636
+    "modified": 1779818249
 }
