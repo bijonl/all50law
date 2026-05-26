@@ -3,6 +3,20 @@
         .wildcards-row {
             .wildcards-col {
                 .single-wildcard-wrapper {
+                    &.wide-image {
+                        padding: 8px; 
+                        .wildcard-text-content-wrapper {
+                            height: 100%;
+                        }
+                    }
+
+
+
+
+
+
+
+
                     &.minimal-wildcard {
                         padding: 20px; 
                         height: 100%;

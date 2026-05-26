@@ -59,6 +59,11 @@
         'icon'  => 'calculator',
         'description' => "This allows you to provide quick stats at a glance."
     ],
+    'info-tabs' => [
+        'label' => 'Information Tabs',
+        'icon'  => 'default',
+        'description' => "Split the section into two halves: one side with an image, the other with text. Great for sharing medium-length info alongside a picture."
+    ],
     'two-col-img-text' => [
         'label' => 'Two Column Image and Text',
         'icon'  => 'columns',

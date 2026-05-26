@@ -2,7 +2,12 @@
 $cards_per_row = get_field('cards_per_row') ? get_field('cards_per_row') : 4;
 $wildcard_format = get_field('wildcard_format');
 $minimal_format = $wildcard_format === 'minimal'; 
+$wide_image_format = $wildcard_format === 'wide-image'; 
 $card_background_color = get_field('card_background_color');
+
+if($wide_image_format) {
+    $cards_per_row = 1; 
+}
 
 include(locate_template('blocks/partials/global-block-variables.php')); ?>
 
@@ -34,9 +39,13 @@ if(!$has_content) {
                                 <?php include(locate_template('blocks/wildcards/partials/minimal-wildcard.php')); ?>
                             </div>     
 
+                        <?php } elseif($wide_image_format) { ?>
+                            <div class="wildcards-col col mb-3 mx-auto text-center u-focus-style" role="listitem">
+                                <?php include(locate_template('blocks/wildcards/partials/wide-image-wildcard.php')); ?>
+                            </div> 
                         <?php } else { ?>
                             <div class="wildcards-col col mx-auto text-center u-focus-style" role="listitem">
-                                include(locate_template('blocks/wildcards/partials/single-wildcard.php'));
+                                <?php include(locate_template('blocks/wildcards/partials/single-wildcard.php')); ?>
                             </div> 
                         <?php } ?>
                         

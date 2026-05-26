@@ -28,7 +28,15 @@
             "type": "range",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a14a43159e8c",
+                        "operator": "!=",
+                        "value": "wide-image"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -58,7 +66,8 @@
             },
             "choices": {
                 "regular": "Image Wildcard",
-                "minimal": "Minimal Card"
+                "minimal": "Minimal Card",
+                "wide-image": "Wide Image Cards (One Column)"
             },
             "default_value": false,
             "return_format": "value",
@@ -328,5 +337,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779739009
+    "modified": 1779808140
 }

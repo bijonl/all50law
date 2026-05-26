@@ -1,0 +1,160 @@
+{
+    "key": "group_6a15d1ad25a42",
+    "title": "Block : Info Tabs",
+    "fields": [
+        {
+            "key": "field_6a15d1aefd4c4",
+            "label": "Info Tabs Content",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "These two sections work together and must stay in the same order.\r\n\r\nEach navigation label connects to its matching content block:\r\n1st label → 1st content block\r\n2nd label → 2nd content block\r\netc.\r\n\r\nIf you add, remove, or reorder items in one section, make sure to do the same in the other section so everything stays aligned properly.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_6a15d1cefd4c5",
+            "label": "Info Tabs",
+            "name": "info_tabs",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Each label here corresponds to a content section below. \r\nThe order matters — the first label will connect to the first content block, the second label to the second content block, and so on.\r\n\r\nPlease make sure both sections contain the same number of items and remain in the same order.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6a15d22d57503",
+                    "label": "Tab Title",
+                    "name": "tab_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6a15d1cefd4c5"
+                },
+                {
+                    "key": "field_6a15d23957504",
+                    "label": "Tab Subtitle",
+                    "name": "tab_subtitle",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_6a15d1cefd4c5"
+                },
+                {
+                    "key": "field_6a15d27757506",
+                    "label": "Image Content",
+                    "name": "image_content",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_6a15d1cefd4c5"
+                },
+                {
+                    "key": "field_6a15d28957507",
+                    "label": "Tab Content",
+                    "name": "tab_content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0,
+                    "parent_repeater": "field_6a15d1cefd4c5"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/info-tabs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1779815636
+}
