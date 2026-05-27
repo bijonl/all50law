@@ -60,3 +60,7 @@
  
     }
 }
+
+.gform_button.button {
+    @extend .pw-solid-button; 
+}

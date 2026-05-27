@@ -6,17 +6,17 @@ $wide_image_format = $wildcard_format === 'wide-image';
 $two_col_text = $wildcard_format === 'two-col-text'; 
 $card_background_color = get_field('card_background_color');
 $show_numbers = get_field('show_numbers'); 
-$row_classes = 'row-cols-1 row-cols-lg-' . $cards_per_row;
-$container_class = $two_col_text ? 'container-fluid' : 'container'; 
 
 if($two_col_text) {
     $row_classes = ''; 
 }
 
-
 if($wide_image_format) {
     $cards_per_row = 1; 
 }
+
+$row_classes = 'row-cols-1 row-cols-lg-' . $cards_per_row;
+$container_class = $two_col_text ? 'container-fluid' : 'container'; 
 
 include(locate_template('blocks/partials/global-block-variables.php')); ?>
 
@@ -45,7 +45,6 @@ if(!$has_content) {
                 <?php } ?>
                 <?php if($two_col_text) { ?>
                     <div class="wildcard-col-wrapper col-lg-9 d-flex flex-wrap">                   
-
                 <?php } ?>
                 
                 <?php if(have_rows('wildcards')) {

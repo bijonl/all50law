@@ -1,6 +1,6 @@
 {
     "key": "group_687d2b9fc6fe5",
-    "title": "Block : Homepage Hero Block",
+    "title": "Block : Form Hero Block",
     "fields": [
         {
             "key": "field_687d2ba0e54f6",
@@ -22,8 +22,8 @@
         },
         {
             "key": "field_687d2c0f162f4",
-            "label": "Background",
-            "name": "background",
+            "label": "Section Background Color",
+            "name": "section_background_color",
             "aria-label": "",
             "type": "select",
             "instructions": "",
@@ -85,6 +85,120 @@
             "preview_size": "medium"
         },
         {
+            "key": "field_6a172dc6ae792",
+            "label": "Form Title",
+            "name": "form_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6a172d5d176a2",
+            "label": "Form ID",
+            "name": "form_id",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6a172dd1ae793",
+            "label": "Hero Content",
+            "name": "hero_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6a17317221603",
+            "label": "Gallery Title",
+            "name": "gallery_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6a172de7659d0",
+            "label": "Logo Gallery",
+            "name": "logo_gallery",
+            "aria-label": "",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min": "",
+            "max": "",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "insert": "append",
+            "preview_size": "medium"
+        },
+        {
             "key": "field_687d2bdd162f3",
             "label": "Homepage Hero Content End",
             "name": "",
@@ -121,5 +235,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1753034028
+    "modified": 1779904933
 }

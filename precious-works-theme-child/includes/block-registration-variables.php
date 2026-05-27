@@ -25,7 +25,7 @@
         'description' => "A full-width section where you can add any content you want—text, images, or anything else. It's your go-to block for putting stuff on the page."
     ],
     'homepage-hero' => [
-        'label' => 'Homepage Hero',
+        'label' => 'Form Hero',
         'icon'  => 'cover-image',
         'description' => "The big, attention-grabbing area at the top of your homepage. It's perfect for welcoming visitors with a headline, image, or message."
     ],
