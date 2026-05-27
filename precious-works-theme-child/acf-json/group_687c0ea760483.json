@@ -72,6 +72,11 @@
                 "param": "block",
                 "operator": "!=",
                 "value": "acf\/interior-hero"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/link-nav"
             }
         ]
     ],
@@ -84,5 +89,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755701684
+    "modified": 1779888307
 }

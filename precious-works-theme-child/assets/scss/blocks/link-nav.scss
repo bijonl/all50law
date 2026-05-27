@@ -1,0 +1,24 @@
+.page-navigation-section {
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+    .link-list-nav-container  {
+        width: 95%; 
+        .logo-wrapper-nav {
+            width: 150px; 
+        }
+        .link-nav-container {
+            width: 50%; 
+            ul {
+                justify-content: between;
+                li {
+                    a {
+                        font-weight: bold;
+                    }
+                    .pw-solid-button {
+                        font-size: 16px; 
+                    }
+                }
+            }
+        }
+    }
+}

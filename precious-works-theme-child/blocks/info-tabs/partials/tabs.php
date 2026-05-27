@@ -8,7 +8,7 @@ $index = 0;
 <div class="d-flex align-items-start">
 
     <!-- NAV -->
-    <div class="nav flex-column nav-pills me-3 col-lg-6" id="<?php echo $uid; ?>-tablist" role="tablist" aria-orientation="vertical">
+    <div class="nav flex-column nav-pills col-lg-6" id="<?php echo $uid; ?>-tablist" role="tablist" aria-orientation="vertical">
 
         <?php while (have_rows('info_tabs')) { the_row(); ?>
 
@@ -29,7 +29,7 @@ $index = 0;
                 aria-controls="<?php echo $tab_id; ?>"
                 aria-selected="<?php echo $index === 0 ? 'true' : 'false'; ?>"
             >
-                <h3><?php echo esc_html($tab_title); ?></h3>
+                <h3 class="h5"><?php echo esc_html($tab_title); ?></h3>
                 <p><?php echo esc_html($tab_subtitle); ?></p>
             </button>
 
@@ -70,7 +70,7 @@ $index = 0;
                         $image_content['id'],
                         'full',
                         false,
-                        ['class' => 'w-100 h-auto']
+                        ['class' => 'w-100 h-auto mb-4']
                     );
                 }
                 ?>

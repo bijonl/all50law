@@ -1,8 +1,18 @@
 .wildcards-section {
     .wildcards-container {
+        &:has(.regular-card) {
+            padding-left: 0; 
+            padding-right: 0; 
+        }
         .wildcards-row {
             .wildcards-col {
                 .single-wildcard-wrapper {
+                    &.regular-card {
+                        background-color: $color-white; 
+                        padding: 15px; 
+                        border: solid 1px lightgray; 
+                        height: 100%; 
+                    }
                     &.wide-image {
                         padding: 8px; 
                         .wildcard-text-content-wrapper {
@@ -46,7 +56,6 @@
                         padding-bottom: 40px; 
                     }
                     .wildcard-image-wrapper {
-                        margin: auto;
                         padding-bottom: $wildcard-element-spacing; 
                         i {
                             font-size: 65px; 

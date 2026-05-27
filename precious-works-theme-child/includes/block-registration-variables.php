@@ -54,10 +54,20 @@
         'icon'  => 'star-filled',
         'description' => "Display customer reviews or testimonials to build trust and show off great feedback."
     ],
+    'link-nav' => [
+        'label' => 'Page Navigation',
+        'icon'  => 'star-filled',
+        'description' => "List of links to serve as in-page navigation."
+    ],
     'stats' => [
         'label' => 'Stats',
         'icon'  => 'calculator',
         'description' => "This allows you to provide quick stats at a glance."
+    ],
+     'link-list' => [
+        'label' => 'Page Link List',
+        'icon'  => 'list',
+        'description' => "Provide a list of links."
     ],
     'info-tabs' => [
         'label' => 'Information Tabs',

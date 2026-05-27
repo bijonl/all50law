@@ -122,6 +122,11 @@
                 "param": "block",
                 "operator": "!=",
                 "value": "acf\/form-block"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/link-nav"
             }
         ]
     ],
@@ -134,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779736366
+    "modified": 1779888346
 }

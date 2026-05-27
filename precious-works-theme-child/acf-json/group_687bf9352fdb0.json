@@ -125,6 +125,11 @@
                 "param": "block",
                 "operator": "!=",
                 "value": "acf\/photo-divider"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/link-nav"
             }
         ]
     ],
@@ -137,5 +142,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1752963121
+    "modified": 1779888320
 }

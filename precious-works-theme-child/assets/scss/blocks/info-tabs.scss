@@ -1,0 +1,20 @@
+.information-tabs-section {
+    .info-tabs-container {
+        .info-tabs-row  {
+            .nav {
+                margin-right: 25px; 
+                button {
+                    margin-bottom: 8px; 
+                    background-color: transparent; 
+                    color: $color-darkgray; 
+                    border-left: solid 5px $color-secondary; 
+                    border-radius: 0;
+                    &:hover, &.active {
+                        background-color: $color-primary; 
+                        color: $color-white; 
+                    }
+                }
+            }
+        }
+    }
+}
