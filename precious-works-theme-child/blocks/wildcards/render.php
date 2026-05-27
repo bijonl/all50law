@@ -4,6 +4,7 @@ $wildcard_format = get_field('wildcard_format');
 $minimal_format = $wildcard_format === 'minimal'; 
 $wide_image_format = $wildcard_format === 'wide-image'; 
 $card_background_color = get_field('card_background_color');
+$show_numbers = get_field('show_numbers'); 
 
 if($wide_image_format) {
     $cards_per_row = 1; 
@@ -24,8 +25,10 @@ if(!$has_content) {
     <div class="wildcards-container container">
         <div class="wildcards-row row row-cols-1 row-cols-lg-<?php echo $cards_per_row ?>" role="list">
                 <?php if(have_rows('wildcards')) {
+                    $count = 1; 
                     while(have_rows('wildcards')) {
                         the_row(); 
+                      
                         $title = get_sub_field('title'); 
                         $image = get_sub_field('image'); 
                         $icon = get_sub_field('icon'); 
@@ -48,7 +51,7 @@ if(!$has_content) {
                                 <?php include(locate_template('blocks/wildcards/partials/single-wildcard.php')); ?>
                             </div> 
                         <?php } ?>
-                        
+                        <?php $count++ ?>
                           
                 <?php   
                     }

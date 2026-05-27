@@ -3,6 +3,27 @@ $big-title-spacing: 15px;
 $button-row-spacing: 30px; 
 
 .title-area-container {
+    &.horizontal {
+        .title-area-row {
+            padding-bottom: 60px; 
+            .title-area-col {
+                .title-area-content-wrapper {
+                    padding-bottom: 0; 
+                    .title-wrapper h1 {
+                        font-size: 50px; 
+                    }
+                }
+            }
+        }
+        .pw-text-button {
+            justify-content: start;
+        }
+
+        .subtitle-wrapper {
+            padding-bottom: 20px; 
+            font-size: 20px; 
+        }
+    }
     .title-area-row {
         .title-area-col {
             .title-area-content-wrapper {
@@ -27,3 +48,4 @@ $button-row-spacing: 30px;
 .button-row {
     margin-top: 30px; 
 }
+

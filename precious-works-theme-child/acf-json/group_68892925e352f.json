@@ -81,6 +81,35 @@
             "save_options": 0
         },
         {
+            "key": "field_6a16f99c386e8",
+            "label": "Show Numbers",
+            "name": "show_numbers",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a14a43159e8c",
+                        "operator": "==",
+                        "value": "wide-image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_6a14a9435700a",
             "label": "Card Background Color",
             "name": "card_background_color",
@@ -94,6 +123,13 @@
                         "field": "field_6a14a43159e8c",
                         "operator": "==",
                         "value": "minimal"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_6a14a43159e8c",
+                        "operator": "==",
+                        "value": "wide-image"
                     }
                 ]
             ],
@@ -337,5 +373,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779808140
+    "modified": 1779890614
 }

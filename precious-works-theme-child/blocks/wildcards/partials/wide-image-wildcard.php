@@ -1,4 +1,4 @@
-<div class="single-wildcard-wrapper wide-image h-100 row align-items-center background-light-grey mb-3">
+<div class="single-wildcard-wrapper wide-image h-100 row align-items-center background-<?php echo $card_background_color ? $card_background_color : 'background-light-grey' ?> mb-3">
     <div class="wildcard-image-col col-lg-5">
         <div class="wildcard-image-wrapper pb-0 mw-100 ">
         <?php if ($image_type === 'icon') { ?>
@@ -15,6 +15,9 @@
     </div>
     <div class="wildcard-text-content-col h-100 background-white text-start col-lg-7">
         <div class="wildcard-text-content-wrapper px-4 justify-content-center d-flex flex-column">
+        <div class="wildcard-number-wrapper background-<?php echo $card_background_color ?>">
+            <p class="h4 mb-0"><?php echo esc_html($count); ?></p>
+        </div>
         <div class="wildcard-title-wrapper">
             <h4 class="mb-0"><?php echo esc_html($title); ?></h4>
         </div>

@@ -8507,6 +8507,22 @@ small, .small {
   max-width: 100px;
 }
 
+.title-area-container.horizontal .title-area-row {
+  padding-bottom: 60px;
+}
+.title-area-container.horizontal .title-area-row .title-area-col .title-area-content-wrapper {
+  padding-bottom: 0;
+}
+.title-area-container.horizontal .title-area-row .title-area-col .title-area-content-wrapper .title-wrapper h1, .title-area-container.horizontal .title-area-row .title-area-col .title-area-content-wrapper .title-wrapper .h1 {
+  font-size: 50px;
+}
+.title-area-container.horizontal .pw-text-button {
+  justify-content: start;
+}
+.title-area-container.horizontal .subtitle-wrapper {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
   padding-bottom: 60px;
 }
@@ -8704,6 +8720,20 @@ small, .small {
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.wide-image .wildcard-text-content-wrapper {
   height: 100%;
+}
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.wide-image .wildcard-text-content-wrapper .wildcard-number-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.wide-image .wildcard-text-content-wrapper .wildcard-number-wrapper p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.minimal-wildcard {
   padding: 20px;
