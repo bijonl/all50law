@@ -1,10 +1,27 @@
 .wildcards-section {
     .wildcards-container {
+        &.two-col-text-container {
+            width: 80%; 
+            .wildcards-row {
+                .wildcard-col-wrapper {
+                    gap: 5%; 
+                    .wildcards-col {
+                        width: 40%;  
+                        .wildcard-title {
+                            font-size: 18px; 
+                        }
+                    }
+                }
+              
+            }
+        }
+
         &:has(.regular-card) {
             padding-left: 0; 
             padding-right: 0; 
         }
         .wildcards-row {
+            gap: 20px 0;
             .wildcards-col {
                 .single-wildcard-wrapper {
                     &.regular-card {
@@ -45,6 +62,9 @@
                                 margin-right: 10px; 
                                 padding-bottom: 0; 
                                 max-width: 25px;
+                                i {
+                                    font-size: 16px; 
+                                }
 
                             }
                             .wildcard-title-wrapper {

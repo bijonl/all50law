@@ -3,6 +3,7 @@ $display_title = !empty($display_title) ? $display_title : 'h1';
 $display_title .= ' mb-0'; 
 $title_format = get_field('title_format') ? get_field('title_format') : 'vertical';
 $horizonal_title = $title_format === 'horizontal'; 
+$title_alignment = isset($title_alignment) ? $title_alignment : 'text-center'
 ?>
 
 <?php if ($has_title_area) { ?>
@@ -12,7 +13,7 @@ $horizonal_title = $title_format === 'horizontal';
         aria-labelledby="section-title-<?php echo esc_attr($block['id']); ?>"
     >
         <div class="title-area-row row">
-            <div class="title-area-col <?php echo  $horizonal_title ? 'col-lg-6' : 'col-12 text-center' ?>">
+            <div class="title-area-col <?php echo  $horizonal_title ? 'col-lg-6' : 'col-12 '.$title_alignment ?>">
                 <div class="title-area-content-wrapper">
                     
                     <?php if (!empty($section_title)) { ?>

@@ -7,6 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $theme = wp_get_theme();
 define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 
+require_once get_stylesheet_directory() . '/includes/custom-post-types/practices.php';
 
 function pw_enqueue_scripts() {
     wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/assets/dist/css/style.min.css', [], PW_THEME_CHILD_VERSION );

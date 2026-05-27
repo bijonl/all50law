@@ -86,7 +86,11 @@ if(!$has_content) {
                                             <?php echo $icon; ?>
                                         <?php } ?>
 
-                                        <?php echo $link_text ? $link_text :  esc_html($link['title']); ?>
+                                        <?php if($link_text) {
+                                            echo $link_text; 
+                                        } elseif(!empty($link['title'])) {
+                                            echo $link['title'];  
+                                        }  ?>
                                     <?php if(!empty($link)) { ?>
                                         </a>
                                     <?php } ?>

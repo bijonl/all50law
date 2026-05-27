@@ -67,7 +67,8 @@
             "choices": {
                 "regular": "Image Wildcard",
                 "minimal": "Minimal Card",
-                "wide-image": "Wide Image Cards (One Column)"
+                "wide-image": "Text Cards (One Column)",
+                "two-col-text": "Text Cards (Two Column)"
             },
             "default_value": false,
             "return_format": "value",
@@ -373,5 +374,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779890614
+    "modified": 1779897318
 }
