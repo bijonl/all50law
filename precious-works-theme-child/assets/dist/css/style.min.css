@@ -8899,4 +8899,13 @@ small, .small {
   color: #ffffff;
 }
 
+.practice-list-section .practice-list-col ul {
+  column-count: 3;
+  column-gap: 2rem;
+}
+.practice-list-section .practice-list-col ul li {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
 /*# sourceMappingURL=style.min.css.map */

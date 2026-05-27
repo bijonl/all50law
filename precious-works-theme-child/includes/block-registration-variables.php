@@ -24,6 +24,11 @@
         'icon'  => 'text',
         'description' => "A full-width section where you can add any content you want—text, images, or anything else. It's your go-to block for putting stuff on the page."
     ],
+    'practice-list' => [
+        'label' => 'Practice List',
+        'icon'  => 'text',
+        'description' => "Output a list of all the firm practices in alphabetical order."
+    ],
     'homepage-hero' => [
         'label' => 'Form Hero',
         'icon'  => 'cover-image',

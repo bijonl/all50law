@@ -30,16 +30,13 @@ if(!$has_content) {
     <div class="link-list-container container <?php echo $list_format ?>">
         <div class="link-list-row row">
             <div class="link-list-col col-12">
-
                 <?php if (!empty($link_list_title) || !empty($link_list_link)) { ?>
                     <div class="link-list-title-wrapper d-flex align-items-center justify-content-between">
-
                         <?php if (!empty($link_list_title)) { ?>
                             <h3 class="h5 mb-0">
                                 <?php echo esc_html($link_list_title); ?>
                             </h3>
                         <?php } ?>
-
                         <?php if (!empty($link_list_link) && !empty($link_list_link['url']) && !empty($link_list_link['title'])) { ?>
                             <a 
                                 class="pw-text-button link-list-link color-inherit"
@@ -53,15 +50,11 @@ if(!$has_content) {
 
                     </div>
                 <?php } ?>
-
                 <div class="link-list-wrapper">
-
                     <?php if (have_rows('links')) { ?>
                         <ul class="mb-0 list-unstyled d-flex row">
-
                             <?php while (have_rows('links')) { 
                                 the_row();
-
                                 $link = get_sub_field('link');
                                 $icon = get_sub_field('icon');
                                 $link_text = get_sub_field('link_text'); 

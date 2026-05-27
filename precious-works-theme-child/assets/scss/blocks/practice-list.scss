@@ -1,0 +1,13 @@
+.practice-list-section {
+    .practice-list-col {
+        ul {
+            column-count: 3;
+            column-gap: 2rem;
+            li {
+                font-size: 18px; 
+                margin-bottom: 15px; 
+            }
+
+        }
+    }
+}
