@@ -8,6 +8,13 @@ $theme = wp_get_theme();
 define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 
 require_once get_stylesheet_directory() . '/includes/custom-post-types/practices.php';
+require_once get_stylesheet_directory() . '/includes/custom-post-types/professionals.php';
+require_once get_stylesheet_directory() . '/includes/taxonomies/admissions.php';
+require_once get_stylesheet_directory() . '/includes/taxonomies/courts.php';
+require_once get_stylesheet_directory() . '/includes/taxonomies/degrees.php';
+require_once get_stylesheet_directory() . '/includes/taxonomies/positions.php';
+
+
 
 function pw_enqueue_scripts() {
     wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/assets/dist/css/style.min.css', [], PW_THEME_CHILD_VERSION );
@@ -64,5 +71,19 @@ function theme_enqueue_fonts() {
 add_action('wp_enqueue_scripts', 'theme_enqueue_fonts');
 
 
+function disable_gutenberg_for_professionals($use_block_editor, $post_type) {
 
+    if ($post_type === 'professionals') {
+        return false;
+    }
+
+    return $use_block_editor;
+}
+
+add_filter(
+    'use_block_editor_for_post_type',
+    'disable_gutenberg_for_professionals',
+    10,
+    2
+);
 
