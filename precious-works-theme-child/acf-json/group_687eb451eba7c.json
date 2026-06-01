@@ -21,6 +21,35 @@
             "endpoint": 0
         },
         {
+            "key": "field_6a1d7b294f257",
+            "label": "Post Format",
+            "name": "post_format",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "regular": "Regular",
+                "slider": "Slider"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
             "key": "field_687eb4838bc81",
             "label": "Posts",
             "name": "posts",
@@ -47,7 +76,7 @@
             ],
             "return_format": "id",
             "min": "",
-            "max": 3,
+            "max": "",
             "allow_in_bindings": 0,
             "elements": "",
             "bidirectional": 0,
@@ -90,5 +119,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1753134295
+    "modified": 1780316993
 }

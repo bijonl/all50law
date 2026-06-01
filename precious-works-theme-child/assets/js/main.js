@@ -58,3 +58,17 @@ document.addEventListener("scroll", function () {
     header.classList.remove("is-scrolling");
   }
 });
+
+
+var recentPostGlide = new Glide('.recent-posts-glide', {
+  startAt: 0,
+  perView: 3,
+  perTouch: 3, 
+  gap: 20, 
+  peek: {
+      before: 0,
+      after: 100
+  }, 
+})
+
+recentPostGlide.mount()

@@ -1,0 +1,41 @@
+.stats-section {
+    .stats-container {
+        .stats-row {
+            .stats-col {
+                &:first-child {
+                    .single-stat-wrapper {
+                        clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
+                        margin-left: 0;
+                    }
+                }
+                &:last-child {
+                    .single-stat-wrapper {
+                        @extend .background-primary; 
+                    }
+                }
+                .single-stat-wrapper {
+                    height: 100%; 
+                    padding: 15px; 
+                    background-color: $color-offwhite; 
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%, 22px 50%);
+                    margin-left: -18px;
+
+                    .stat-title-wrapper {
+                        padding-bottom: 20px; 
+                        .stat-title {
+                            font-size: 30px; 
+                        }
+                    }
+                    .stat-content-wrapper {
+                        font-weight: 600;
+                        font-size: 20px; 
+                    }
+                }
+            }
+        }
+    }
+}
