@@ -1,6 +1,44 @@
 
 .recent-posts-section {
     .recent-posts-container {
+        &.featured {
+            .recent-posts-row {
+                .blog-featured-wrapper {
+                    display: grid;
+                    grid-template-columns: 4fr 3fr;
+                    gap: 24px;
+                    .main-featured {
+                        .single-post-tile {
+                            background-color: $color-offwhite; 
+                            padding-top: 8px; 
+                            height: 100%; 
+                            padding-bottom: 8px; 
+                            padding-left: 20px; 
+                            padding-right: 20px; 
+                            .single-post-title-wrapper {
+                                .single-post-title {
+                                 
+                                    font-size: 65px; 
+                                    font-family: $body-text-font;
+                                }
+                            }
+                        }
+                    }
+                    .secondary-featured { 
+                        .single-post-tile {
+                            padding-top: 8px; 
+                            padding-bottom: 8px; 
+                            padding-left: 20px; 
+                            padding-right: 20px; 
+                            background-color: $color-offwhite; 
+                            &:first-child {
+                                margin-bottom: 24px; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .recent-posts-row {
             .recent-posts-col {
                 .single-post-tile {

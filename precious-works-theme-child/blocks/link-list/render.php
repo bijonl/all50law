@@ -4,15 +4,16 @@ include(locate_template('blocks/partials/global-block-variables.php'));
 $link_list_title = get_field('link_list_title');
 $link_list_link = get_field('link_list_link');
 $links = get_field('links');
-$link_per_row = get_field('link_per_row'); 
+$links_per_row = get_field('links_per_row'); 
 $list_format = get_field('list_format') ? get_field('list_format') : 'regular';
 $link_col = 'col-lg-4';
-if($link_per_row === 3) {
+if($links_per_row === '3') {
     $link_col = 'col-lg-4'; 
-} else if($link_per_row === 3) {
+} else if($links_per_row === '4') {
     $link_col = 'col-lg-3'; 
+} else if($links_per_row === '2') {
+    $link_col = 'col-lg-6';  
 }
-
 
 ?>
 

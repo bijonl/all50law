@@ -36,7 +36,8 @@
             },
             "choices": {
                 "regular": "Regular",
-                "slider": "Slider"
+                "slider": "Slider",
+                "featured": "Featured Posts"
             },
             "default_value": false,
             "return_format": "value",
@@ -119,5 +120,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780316993
+    "modified": 1780322747
 }

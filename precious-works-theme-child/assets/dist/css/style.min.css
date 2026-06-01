@@ -7980,6 +7980,10 @@ iframe {
   max-width: 100%;
 }
 
+.disclaimer-text {
+  font-size: 14px;
+}
+
 .pw-solid-button, .gform_button.button {
   display: inline-block;
   font-size: 24px;
@@ -8571,6 +8575,33 @@ small, .small {
   color: inherit;
 }
 
+.recent-posts-section .recent-posts-container.featured .recent-posts-row .blog-featured-wrapper {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  gap: 24px;
+}
+.recent-posts-section .recent-posts-container.featured .recent-posts-row .blog-featured-wrapper .main-featured .single-post-tile {
+  background-color: #efefef;
+  padding-top: 8px;
+  height: 100%;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.recent-posts-section .recent-posts-container.featured .recent-posts-row .blog-featured-wrapper .main-featured .single-post-tile .single-post-title-wrapper .single-post-title {
+  font-size: 65px;
+  font-family: "Inter", sans-serif;
+}
+.recent-posts-section .recent-posts-container.featured .recent-posts-row .blog-featured-wrapper .secondary-featured .single-post-tile {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #efefef;
+}
+.recent-posts-section .recent-posts-container.featured .recent-posts-row .blog-featured-wrapper .secondary-featured .single-post-tile:first-child {
+  margin-bottom: 24px;
+}
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-image-wrapper {
   padding-bottom: 20px;
 }
@@ -8619,6 +8650,27 @@ small, .small {
 .glide__bullet:hover, .glide__bullet:focus {
   border: 2px solid #0247ac;
   background-color: #0247ac;
+}
+
+.single-post-tile .single-post-image-wrapper {
+  padding-bottom: 20px;
+}
+.single-post-tile .single-post-image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.single-post-tile .single-post-title-wrapper {
+  width: 90%;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.single-post-tile .single-post-title-wrapper .single-post-title {
+  font-size: 18px;
+  color: #161616;
+  font-family: "Inter", sans-serif;
+}
+.single-post-tile .single-post-title-wrapper .single-post-title:hover {
+  color: #d71d22;
 }
 
 .accordions-container .accordions-row .accordions-col .single-accordion {

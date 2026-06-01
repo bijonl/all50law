@@ -65,7 +65,7 @@
                 "id": ""
             },
             "default_value": "",
-            "min": 3,
+            "min": 2,
             "max": 4,
             "allow_in_bindings": 0,
             "step": "",
@@ -232,5 +232,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779886409
+    "modified": 1780321444
 }

@@ -1,7 +1,12 @@
 <?php include(locate_template('blocks/partials/global-block-variables.php')); 
 $recent_posts = get_field('posts'); 
 $post_format = get_field('post_format') ? get_field('post_format') : 'regular' ; 
+$is_regular = $post_format === 'regular'; 
 $is_slider = $post_format === 'slider'; 
+$is_featured = $post_format === 'featured'; 
+
+
+
 
 if(empty($recent_posts)) {
     $posts_args = array(
@@ -18,7 +23,7 @@ if(empty($recent_posts)) {
         include(locate_template('blocks/partials/title-area.php'));
     } ?>
     <?php if($recent_posts) { ?>
-        <?php if(!$is_slider) { ?>
+        <?php if($is_regular) { ?>
             <div class="recent-posts-container container">
                 <div class="recent-posts-row row">
                     <?php foreach($recent_posts as $id) { ?>
@@ -35,6 +40,13 @@ if(empty($recent_posts)) {
                     <?php include __DIR__ . '/partials/post-slider.php'; ?>
                 </div>
             </div>
+        <?php } elseif($is_featured) { ?>
+            <div class="recent-posts-container container <?php echo $post_format ?>">
+                <div class="recent-posts-row row">
+                    <?php include __DIR__ . '/partials/featured-posts.php'; ?>
+                </div>
+            </div>
+
         <?php } ?>
 
       
