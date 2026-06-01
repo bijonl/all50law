@@ -325,27 +325,6 @@
             "selected": 0
         },
         {
-            "key": "field_65f307401c396",
-            "label": "Introduction",
-            "name": "introduction",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "This will serve as the introductory paragraph on the individual's bio page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
             "key": "field_65f307611c397",
             "label": "Professional Narrative",
             "name": "professional_narrative",
@@ -364,160 +343,6 @@
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_65f3082360dd1",
-            "label": "Memberships",
-            "name": "memberships",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "Enter any professional memberships. This will appear in the Summary section of the individual's bio page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "allow_in_bindings": 1,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_65f3083260dd2",
-            "label": "Recognition",
-            "name": "recognition",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "Enter any professional recognition. This will appear in the Summary section of the individual's bio page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "allow_in_bindings": 1,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_67ab630b9b0d2",
-            "label": "Thought Leadership",
-            "name": "thought_leadership",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "Enter any professional thought leadership. This will appear in the Summary section of the individual's bio page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "allow_in_bindings": 1,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_65f3079a1c398",
-            "label": "Representative Matters",
-            "name": "professional_experience",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "This will serve as the introductory paragraph in the Experience section of the individual's bio page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "allow_in_bindings": 1,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_67ab63749b0d6",
-            "label": "Reported Cases",
-            "name": "reported_cases",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "Enter any professional reported cases. This will appear in the Summary section of the individual's bio page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "allow_in_bindings": 1,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_67ab635d9b0d5",
-            "label": "Community Service",
-            "name": "personal_activities_and_interests_copy",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "Enter any professional community service. This will appear in the Summary section of the individual's bio page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "allow_in_bindings": 0,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_67ab632a9b0d4",
-            "label": "Personal Activities and Interests",
-            "name": "personal_activities_and_interests",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "Enter any professional personal activities and interests. This will appear in the Summary section of the individual's bio page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "allow_in_bindings": 1,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
             "delay": 0
         },
         {
@@ -546,28 +371,6 @@
             "aria-label": "",
             "type": "wysiwyg",
             "instructions": "This will serve as a quick summary of this professional. This will appear throughout the site whenever the professional is referenced.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "allow_in_bindings": 1,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_65f30904818dd",
-            "label": "News and Insights",
-            "name": "news",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "This will serve as the introductory paragraph in the News section of the individual's bio page.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -687,6 +490,36 @@
             },
             "post_type": [
                 "locations"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "min": "",
+            "max": "",
+            "allow_in_bindings": 1,
+            "elements": "",
+            "bidirectional": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_6a1ddcfaa0684",
+            "label": "Related Results",
+            "name": "related_results",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "Choose the Offices that are associated with this professional. If the desired office isn't appearing, that office needs to be added in the Offices section of the Dashboard. The first in the list will serve as their primary location and will appear in their virtual business card.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "results"
             ],
             "post_status": "",
             "taxonomy": "",
@@ -908,59 +741,6 @@
                     "prepend": "",
                     "append": "",
                     "parent_repeater": "field_65f8885fec0fe"
-                },
-                {
-                    "key": "field_65f8885fec106",
-                    "label": "Free Description",
-                    "name": "free_description",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "This field serves as an override for the admission display on the bio page. This has no bearing on filtering.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "100",
-                        "class": "",
-                        "id": ""
-                    },
-                    "relevanssi_exclude": 0,
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": "",
-                    "parent_repeater": "field_65f8885fec0fe"
-                },
-                {
-                    "key": "field_67ab63d09b0d7",
-                    "label": "Status",
-                    "name": "status",
-                    "aria-label": "",
-                    "type": "select",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "relevanssi_exclude": 0,
-                    "choices": {
-                        "active": "Active",
-                        "inactive": "Inactive"
-                    },
-                    "default_value": false,
-                    "return_format": "value",
-                    "multiple": 0,
-                    "allow_null": 0,
-                    "allow_in_bindings": 0,
-                    "ui": 0,
-                    "ajax": 0,
-                    "placeholder": "",
-                    "parent_repeater": "field_65f8885fec0fe",
-                    "create_options": 0,
-                    "save_options": 0
                 }
             ]
         },
@@ -1052,28 +832,6 @@
                     "prepend": "",
                     "append": "",
                     "parent_repeater": "field_65f888d415f91"
-                },
-                {
-                    "key": "field_65f888d415f95",
-                    "label": "Free Description",
-                    "name": "free_description",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "relevanssi_exclude": 0,
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": "",
-                    "parent_repeater": "field_65f888d415f91"
                 }
             ]
         }
@@ -1098,5 +856,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780338822
+    "modified": 1780342142
 }

@@ -34,6 +34,21 @@
         'icon'  => 'text',
         'description' => "Output a list of all the firm lcoations by state in alphabetical order."
     ],
+    'attorney-list' => [
+        'label' => 'Attorney List',
+        'icon'  => 'text',
+        'description' => "Output a list of all the firm lcoations by state in alphabetical order."
+    ],
+    'result-list' => [
+        'label' => 'Results List',
+        'icon'  => 'text',
+        'description' => "Output a list of all the firm lcoations by state in alphabetical order."
+    ],
+    'video-list' => [
+        'label' => 'Video List',
+        'icon'  => 'text',
+        'description' => "Output a list of all the firm lcoations by state in alphabetical order."
+    ],
     'homepage-hero' => [
         'label' => 'Form Hero',
         'icon'  => 'cover-image',
