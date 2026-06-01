@@ -8999,6 +8999,15 @@ small, .small {
   margin-bottom: 15px;
 }
 
+.location-list-section .location-list-col {
+  column-count: 3;
+  column-gap: 2rem;
+}
+.location-list-section .location-list-col ul li {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
 .stats-section .stats-container .stats-row .stats-col:first-child .single-stat-wrapper {
   clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
   margin-left: 0;

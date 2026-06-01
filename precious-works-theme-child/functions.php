@@ -9,10 +9,13 @@ define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 
 require_once get_stylesheet_directory() . '/includes/custom-post-types/practices.php';
 require_once get_stylesheet_directory() . '/includes/custom-post-types/professionals.php';
+require_once get_stylesheet_directory() . '/includes/custom-post-types/locations.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/admissions.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/courts.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/degrees.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/positions.php';
+require_once get_stylesheet_directory() . '/includes/taxonomies/states.php';
+
 
 
 
@@ -115,3 +118,95 @@ function theme_enqueue_glide_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_glide_styles');
+
+
+// add_action('admin_init', function () {
+
+//     $taxonomy = 'states';
+
+//     $states = [
+//         'Alabama' => 'AL',
+//         'Alaska' => 'AK',
+//         'Arizona' => 'AZ',
+//         'Arkansas' => 'AR',
+//         'California' => 'CA',
+//         'Colorado' => 'CO',
+//         'Connecticut' => 'CT',
+//         'Delaware' => 'DE',
+//         'Florida' => 'FL',
+//         'Georgia' => 'GA',
+//         'Hawaii' => 'HI',
+//         'Idaho' => 'ID',
+//         'Illinois' => 'IL',
+//         'Indiana' => 'IN',
+//         'Iowa' => 'IA',
+//         'Kansas' => 'KS',
+//         'Kentucky' => 'KY',
+//         'Louisiana' => 'LA',
+//         'Maine' => 'ME',
+//         'Maryland' => 'MD',
+//         'Massachusetts' => 'MA',
+//         'Michigan' => 'MI',
+//         'Minnesota' => 'MN',
+//         'Mississippi' => 'MS',
+//         'Missouri' => 'MO',
+//         'Montana' => 'MT',
+//         'Nebraska' => 'NE',
+//         'Nevada' => 'NV',
+//         'New Hampshire' => 'NH',
+//         'New Jersey' => 'NJ',
+//         'New Mexico' => 'NM',
+//         'New York' => 'NY',
+//         'North Carolina' => 'NC',
+//         'North Dakota' => 'ND',
+//         'Ohio' => 'OH',
+//         'Oklahoma' => 'OK',
+//         'Oregon' => 'OR',
+//         'Pennsylvania' => 'PA',
+//         'Rhode Island' => 'RI',
+//         'South Carolina' => 'SC',
+//         'South Dakota' => 'SD',
+//         'Tennessee' => 'TN',
+//         'Texas' => 'TX',
+//         'Utah' => 'UT',
+//         'Vermont' => 'VT',
+//         'Virginia' => 'VA',
+//         'Washington' => 'WA',
+//         'West Virginia' => 'WV',
+//         'Wisconsin' => 'WI',
+//         'Wyoming' => 'WY',
+//     ];
+
+//     foreach ($states as $state_name => $abbreviation) {
+
+//         $term = term_exists($state_name, $taxonomy);
+
+//         if (!$term) {
+//             $term = wp_insert_term($state_name, $taxonomy);
+
+//             if (is_wp_error($term)) {
+//                 continue;
+//             }
+
+//             $term_id = $term['term_id'];
+//         } else {
+//             $term_id = is_array($term) ? $term['term_id'] : $term;
+//         }
+
+//         // ACF term meta field.
+//         update_field(
+//             'state_abbreviation',
+//             $abbreviation,
+//             $taxonomy . '_' . $term_id
+//         );
+
+//         // Optional native WP term meta.
+//         update_term_meta(
+//             $term_id,
+//             'state_abbreviation',
+//             $abbreviation
+//         );
+//     }
+
+//     wp_die('States imported successfully.');
+// });

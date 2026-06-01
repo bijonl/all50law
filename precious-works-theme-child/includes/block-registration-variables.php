@@ -29,6 +29,11 @@
         'icon'  => 'text',
         'description' => "Output a list of all the firm practices in alphabetical order."
     ],
+    'location-list' => [
+        'label' => 'Location List',
+        'icon'  => 'text',
+        'description' => "Output a list of all the firm lcoations by state in alphabetical order."
+    ],
     'homepage-hero' => [
         'label' => 'Form Hero',
         'icon'  => 'cover-image',

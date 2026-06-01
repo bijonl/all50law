@@ -1,0 +1,14 @@
+.location-list-section {
+    .location-list-col {
+        column-count: 3;
+        column-gap: 2rem;
+        ul {
+         
+            li {
+                font-size: 18px; 
+                margin-bottom: 15px; 
+            }
+
+        }
+    }
+}
