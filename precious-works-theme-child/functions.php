@@ -10,6 +10,8 @@ define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 require_once get_stylesheet_directory() . '/includes/custom-post-types/practices.php';
 require_once get_stylesheet_directory() . '/includes/custom-post-types/professionals.php';
 require_once get_stylesheet_directory() . '/includes/custom-post-types/locations.php';
+require_once get_stylesheet_directory() . '/includes/custom-post-types/results.php';
+require_once get_stylesheet_directory() . '/includes/custom-post-types/videos.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/admissions.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/courts.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/degrees.php';
