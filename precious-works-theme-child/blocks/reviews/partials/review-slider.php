@@ -1,6 +1,6 @@
 <?php
     $per_view = 1;
-    $bullet_count = ceil(count($reviews) / $per_view);
+    // $bullet_count = ceil(count($reviews) / $per_view);
 ?>
 
 <div class="reviews-container reviews-slider-container container">

@@ -64,7 +64,8 @@
                 "id": ""
             },
             "post_type": [
-                "reviews"
+                "reviews",
+                "videos"
             ],
             "post_status": [
                 "publish"
@@ -118,5 +119,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780395601
+    "modified": 1780399012
 }
