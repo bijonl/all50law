@@ -43,9 +43,13 @@ $text_col_width = 'col-lg-6'; ?>
         </div>
     </div>
   
-    <div class="button-row row">
-        <div class="button-col col-12 mx-auto text-center">
-            <?php include(locate_template('blocks/partials/button-area.php')); ?>
-        </div>
-    </div>   
+    <?php if (!empty($videos) && $is_video_slider) { ?>
+        <?php foreach ($videos as $video) { ?>
+            <?php $video_id = $video->ID; 
+                include locate_template('components/variables/video-variables.php');
+                $video_uid = $video_id . '-' . $block['id'];
+                include locate_template('blocks/video-list/partials/video-modal-content.php');
+            ?>
+        <?php } ?>
+    <?php } ?>
 </section>

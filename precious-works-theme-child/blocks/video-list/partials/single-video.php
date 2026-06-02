@@ -1,4 +1,6 @@
-<?php $display_title = $video_title ? $video_title : $default_video_title; 
+<?php 
+$default_video_title = get_the_title($video_id); 
+$display_title = $video_title ? $video_title : $default_video_title; 
 $video_uid = $video_id . '-' . $block['id'];
 
 ?>
