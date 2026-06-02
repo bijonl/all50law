@@ -37,8 +37,8 @@ if (!$has_content) {
         </div>
 
     <?php } elseif ($video_list_format === 'slider') { ?>
-
-        <?php include locate_template('blocks/video-list/partials/video-slider.php'); ?>
+        <?php $per_view = 3 ?>
+        <?php include locate_template('blocks/partials/video-slider.php'); ?>
 
     <?php }; ?>
 

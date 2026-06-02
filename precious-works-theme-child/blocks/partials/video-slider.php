@@ -11,7 +11,13 @@ $bullet_count = count($videos); ?>
             <ul class="glide__slides">
 
                 <?php foreach ($videos as $video) { ?>
-                    <?php $video_id = $video->ID;  ?>
+                    <?php $video_id = 0;
+
+                    if (is_object($video) && isset($video->ID)) {
+                        $video_id = (int) $video->ID;
+                    } elseif (is_numeric($video)) {
+                        $video_id = (int) $video;
+                    } ?>
                     <?php include locate_template('components/variables/video-variables.php'); ?>
 
                     <li class="videos-col glide__slide">
