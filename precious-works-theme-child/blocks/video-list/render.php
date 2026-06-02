@@ -42,4 +42,18 @@ if (!$has_content) {
 
     <?php }; ?>
 
+
+
+
+    <?php if (!empty($videos)) { ?>
+
+        <?php foreach ($videos as $video_id) { ?>
+            <?php
+                include locate_template('components/variables/video-variables.php');
+                $video_uid = $video_id . '-' . $block['id'];
+                include locate_template('blocks/video-list/partials/video-modal-content.php');
+            ?>
+        <?php } ?>
+    <?php } ?>
+
 </section>

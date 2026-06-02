@@ -12,20 +12,12 @@
 
 
 .single-video-modal-wrapper {
-     
-    &.modal-content-slider  {
-        .modal-content {
-            width: 50%; 
-            margin: auto; 
-        }
-
-    }
     .modal-dialog {
         max-width: none;
     }
 
     .modal-content {
-        width: 85%; 
+        width: 50%; 
         margin: auto; 
     }
 
