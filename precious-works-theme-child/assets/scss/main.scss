@@ -21,7 +21,6 @@
 
 @import '../../../precious-works-theme-child/assets/scss/blocks/reviews-block';
 @import '../../../precious-works-theme-child/assets/scss/blocks/recent-posts';
-@import '../../../precious-works-theme-child/assets/scss/blocks/partials/single-post-tile';
 @import '../../../precious-works-parent/assets/scss/blocks/accordions';
 @import '../../../precious-works-parent/assets/scss/blocks/homepage-hero';
 @import '../../../precious-works-parent/assets/scss/blocks/photo-divider';
@@ -34,6 +33,11 @@
 @import '../../../precious-works-theme-child/assets/scss/blocks/practice-list';
 @import '../../../precious-works-theme-child/assets/scss/blocks/location-list';
 @import '../../../precious-works-theme-child/assets/scss/blocks/stats';
+
+
+@import '../../../precious-works-theme-child/assets/scss/blocks/partials/single-post-tile';
+@import '../../../precious-works-theme-child/assets/scss/blocks/partials/single-review-card';
+@import '../../../precious-works-theme-child/assets/scss/blocks/partials/single-video-card';
 
 
 

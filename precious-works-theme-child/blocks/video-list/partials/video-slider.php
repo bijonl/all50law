@@ -1,22 +1,18 @@
-<?php
+<?php $per_view = 1;
+$bullet_count = count($videos); ?>
 
-$per_view = 1;
-$bullet_count = count($reviews);
-
-?>
-
-<div class="reviews-container reviews-slider-container container">
-    <div class="reviews-glide glide">
+<div class="videos-container videos-slider-container container">
+    <div class="videos-glide glide">
 
         <div class="glide__track" data-glide-el="track">
 
             <ul class="glide__slides">
 
-                <?php foreach ($reviews as $review_id) { ?>
-                    <?php include locate_template('components/variables/review-variables.php'); ?>
+                <?php foreach ($videos as $video_id) { ?>
+                    <?php include locate_template('components/variables/video-variables.php'); ?>
 
-                    <li class="reviews-col glide__slide">
-                        <?php include locate_template('blocks/reviews/partials/single-review.php'); ?>
+                    <li class="videos-col glide__slide">
+                        <?php include locate_template('blocks/video-list/partials/single-video.php'); ?>
                     </li>
 
                 <?php }; ?>
@@ -34,7 +30,7 @@ $bullet_count = count($reviews);
                     <button
                         class="glide__bullet"
                         data-glide-dir="=<?php echo $i; ?>"
-                        aria-label="Go to review <?php echo $i + 1; ?>">
+                        aria-label="Go to videos <?php echo $i + 1; ?>">
                     </button>
 
                 <?php }; ?>

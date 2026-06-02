@@ -1,14 +1,16 @@
 .reviews-section {
     .reviews-container {
+        .glide__slide {
+            height: auto; 
+            .review-card {
+                display: flex; 
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
         .reviews-row {
             .reviews-col {
-                &.glide__slide {
-                    .review-card {
-                        display: flex; 
-                        flex-direction: column;
-                        justify-content: space-between;
-                    }
-                }
+                
                 .review-card {
                     height: 100%; 
                     border: solid 2px $review-border-color;  

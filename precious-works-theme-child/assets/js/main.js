@@ -84,7 +84,20 @@ var reviewsGlide = new Glide('.reviews-glide', {
   }, 
 })
 
-reviewsGlide.mount()
+reviewsGlide.mount(); 
+
+var videoGlide = new Glide('.videos-glide', {
+  startAt: 0,
+  perView: 3,
+  perTouch: 1, 
+  gap: 20, 
+  peek: {
+      before: 0,
+      after: 100
+  }, 
+})
+
+videoGlide.mount()
 
 function equalizeHeights(selector) {
     const elements = document.querySelectorAll(selector);
@@ -106,4 +119,4 @@ function equalizeHeights(selector) {
     });
 }
 
-equalizeHeights('.reviews-col.glide__slide .review-card');
+// equalizeHeights('.reviews-col.glide__slide .review-card');

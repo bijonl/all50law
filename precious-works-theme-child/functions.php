@@ -122,6 +122,7 @@ function theme_enqueue_glide_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_glide_styles');
+add_action('enqueue_block_editor_assets', 'theme_enqueue_glide_styles');
 
 
 // add_action('admin_init', function () {
