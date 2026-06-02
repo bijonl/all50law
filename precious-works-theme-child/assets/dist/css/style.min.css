@@ -9417,6 +9417,10 @@ small, .small {
 .single-video-wrapper .single-video-content-wrapper .video-title-content-wrapper {
   padding-top: 20px;
 }
+.single-video-modal-wrapper.modal-content-slider .modal-content {
+  width: 50%;
+  margin: auto;
+}
 .single-video-modal-wrapper .modal-dialog {
   max-width: none;
 }

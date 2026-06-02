@@ -1,7 +1,7 @@
 <?php
 
 $videos = get_field('videos') ?: [];
-$video_list_format = get_field('video_list_format');
+$video_list_format = get_field('video_list_format') ? get_field('video_list_format') : 'regular';
 
 include locate_template('blocks/partials/global-block-variables.php');
 

@@ -60,44 +60,92 @@ document.addEventListener("scroll", function () {
 });
 
 
-var recentPostGlide = new Glide('.recent-posts-glide', {
-  startAt: 0,
-  perView: 3,
-  perTouch: 3, 
-  gap: 20, 
-  peek: {
-      before: 0,
-      after: 100
-  }, 
-})
+// Recent Posts Slider
+document.querySelectorAll('.recent-posts-glide').forEach(function(slider) {
 
-recentPostGlide.mount()
+    const perView = 3;
+    const autoplay = false;
+    const peek = {
+        before: 0,
+        after: 100
+    };
 
-var reviewsGlide = new Glide('.reviews-glide', {
-  startAt: 0,
-  perView: 3,
-  perTouch: 1, 
-  gap: 20, 
-  peek: {
-      before: 0,
-      after: 100
-  }, 
-})
+    new Glide(slider, {
+        startAt: 0,
+        perView: perView,
+        perTouch: 3,
+        autoplay: autoplay,
+        gap: 20,
+        peek: peek
+    }).mount();
 
-reviewsGlide.mount(); 
+});
 
-var videoGlide = new Glide('.videos-glide', {
-  startAt: 0,
-  perView: 3,
-  perTouch: 1, 
-  gap: 20, 
-  peek: {
-      before: 0,
-      after: 100
-  }, 
-})
 
-videoGlide.mount()
+// Reviews Slider
+document.querySelectorAll('.reviews-glide').forEach(function(slider) {
+
+    const perView = 3;
+    const autoplay = false;
+    const peek = {
+        before: 0,
+        after: 100
+    };
+
+    new Glide(slider, {
+        startAt: 0,
+        perView: perView,
+        perTouch: 1,
+        autoplay: autoplay,
+        gap: 20,
+        peek: peek
+    }).mount();
+
+});
+
+
+// Image Slider
+document.querySelectorAll('.image-glide').forEach(function(slider) {
+
+    const perView = parseInt(slider.dataset.perView) || 3;    
+    const autoplay = slider.dataset.autoplay || false;
+    const peek = {
+        before: 0,
+        after: 0
+    };
+
+    new Glide(slider, {
+        startAt: 0,
+        perView: perView,
+        perTouch: 1,
+        autoplay: autoplay,
+        gap: 20,
+        peek: peek
+    }).mount();
+
+});
+
+
+// Videos Slider
+document.querySelectorAll('.videos-glide').forEach(function(slider) {
+
+    const perView = parseInt(slider.dataset.perView) || 3;    
+    const autoplay = false;
+    const peek = {
+        before: 0,
+        after: 100
+    };
+
+    new Glide(slider, {
+        startAt: 0,
+        perView: perView,
+        perTouch: 1,
+        autoplay: autoplay,
+        gap: 20,
+        peek: peek
+    }).mount();
+
+});
 
 function equalizeHeights(selector) {
     const elements = document.querySelectorAll(selector);
@@ -120,3 +168,21 @@ function equalizeHeights(selector) {
 }
 
 // equalizeHeights('.reviews-col.glide__slide .review-card');
+
+document.querySelectorAll('.single-video-modal-wrapper').forEach(function(modal) {
+
+    modal.addEventListener('hidden.bs.modal', function() {
+
+        const iframe = modal.querySelector('iframe');
+
+        if (!iframe) {
+            return;
+        }
+
+        const src = iframe.src;
+        iframe.src = '';
+        iframe.src = src;
+
+    });
+
+});
