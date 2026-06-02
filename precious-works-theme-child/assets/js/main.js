@@ -72,3 +72,38 @@ var recentPostGlide = new Glide('.recent-posts-glide', {
 })
 
 recentPostGlide.mount()
+
+var reviewsGlide = new Glide('.reviews-glide', {
+  startAt: 0,
+  perView: 3,
+  perTouch: 1, 
+  gap: 20, 
+  peek: {
+      before: 0,
+      after: 100
+  }, 
+})
+
+reviewsGlide.mount()
+
+function equalizeHeights(selector) {
+    const elements = document.querySelectorAll(selector);
+
+    // Reset heights first
+    elements.forEach(el => {
+        el.style.height = 'auto';
+    });
+
+    // Find tallest
+    let tallest = 0;
+    elements.forEach(el => {
+        tallest = Math.max(tallest, el.offsetHeight);
+    });
+
+    // Apply tallest height
+    elements.forEach(el => {
+        el.style.height = `${tallest}px`;
+    });
+}
+
+equalizeHeights('.reviews-col.glide__slide .review-card');
