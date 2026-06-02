@@ -1,8 +1,10 @@
-<?php $per_view = 1;
+<?php $per_view = !isset($per_view) ? 1 : $per_view;
 $bullet_count = count($videos); ?>
 
 <div class="videos-container videos-slider-container container">
-    <div class="videos-glide glide">
+    <div class="videos-glide glide"
+        data-per-view="<?php echo esc_attr($per_view); ?>" 
+        data-autoplay='false'>
 
         <div class="glide__track" data-glide-el="track">
 

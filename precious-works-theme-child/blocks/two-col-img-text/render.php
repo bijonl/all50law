@@ -32,6 +32,7 @@ $text_col_width = 'col-lg-6'; ?>
                     $images = $image_slider_images; 
                     include(locate_template('blocks/partials/image-slider.php')); 
                 } elseif($is_video_slider) {
+                    $per_view = 1; 
                     include(locate_template('blocks/partials/video-slider.php')); 
                 } else { 
                     echo wp_get_attachment_image($image, 'full', false, array('class' => 'w-100 h-auto')); 
