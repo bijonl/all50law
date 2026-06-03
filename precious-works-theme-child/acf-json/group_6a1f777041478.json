@@ -1,10 +1,10 @@
 {
-    "key": "group_6a1f3ce042dd8",
-    "title": "Block : Video List",
+    "key": "group_6a1f777041478",
+    "title": "Block : Attorney List",
     "fields": [
         {
-            "key": "field_6a1f3ce04b1f3",
-            "label": "Video List Content",
+            "key": "field_6a1f77718aad4",
+            "label": "Attorney Content",
             "name": "",
             "aria-label": "",
             "type": "accordion",
@@ -21,9 +21,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_6a1f3ce04b217",
-            "label": "Video List Format",
-            "name": "video_list_format",
+            "key": "field_6a1f779e8aad5",
+            "label": "Attorney Format",
+            "name": "attorney_format",
             "aria-label": "",
             "type": "select",
             "instructions": "",
@@ -50,9 +50,9 @@
             "save_options": 0
         },
         {
-            "key": "field_6a1f3ce04b21e",
-            "label": "Videos",
-            "name": "videos",
+            "key": "field_6a1f77b98aad6",
+            "label": "Attorneys",
+            "name": "attorneys",
             "aria-label": "",
             "type": "relationship",
             "instructions": "",
@@ -64,11 +64,9 @@
                 "id": ""
             },
             "post_type": [
-                "videos"
+                "professionals"
             ],
-            "post_status": [
-                "publish"
-            ],
+            "post_status": "",
             "taxonomy": "",
             "filters": [
                 "search"
@@ -82,8 +80,8 @@
             "bidirectional_target": []
         },
         {
-            "key": "field_6a1f3ce04b228",
-            "label": "Review Content END",
+            "key": "field_6a1f77def93a8",
+            "label": "Attorney Content END",
             "name": "",
             "aria-label": "",
             "type": "accordion",
@@ -105,7 +103,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/video-list"
+                "value": "acf\/attorney-list"
             }
         ]
     ],
@@ -118,5 +116,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780453506
+    "modified": 1780447403
 }

@@ -17,8 +17,10 @@ require_once get_stylesheet_directory() . '/includes/taxonomies/courts.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/degrees.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/positions.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/states.php';
+require_once get_stylesheet_directory() . '/includes/acf-options.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/education-type.php';
 
+add_image_size( 'square', 500, 500, true ); 
 
 
 

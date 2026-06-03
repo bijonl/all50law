@@ -93,6 +93,14 @@
     border: 0;
 }
 
+.color-primary {
+    color: $color-primary
+}
+
+.color-secondary {
+    color: $color-secondary
+}
+
 iframe {
     max-width: 100%; 
 }

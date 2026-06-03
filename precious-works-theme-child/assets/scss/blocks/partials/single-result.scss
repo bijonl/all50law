@@ -1,0 +1,26 @@
+.single-result-wrapper {
+    .single-result-content-wrapper {
+        gap: 25px; 
+        .single-result-money-wrapper {
+            .money-heading {
+                font-size: 38px;
+                line-height: 1;
+            }   
+        }
+        .single-result-meta-wrapper {
+            width: 85%; 
+            .single-result-name-wrapper {
+                .name-heading {
+                    font-size: 15px; 
+                }
+            }
+            .single-result-location-year-wrapper  {
+                column-gap: 5px;
+                font-weight: bold;
+                p {
+                    font-size: 15px; 
+                }
+            } 
+        }
+    } 
+}

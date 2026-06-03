@@ -1,10 +1,10 @@
 {
-    "key": "group_6a1f3ce042dd8",
-    "title": "Block : Video List",
+    "key": "group_6a1f82219e9f3",
+    "title": "Block : Results List",
     "fields": [
         {
-            "key": "field_6a1f3ce04b1f3",
-            "label": "Video List Content",
+            "key": "field_6a1f8221afaf8",
+            "label": "Attorney Content",
             "name": "",
             "aria-label": "",
             "type": "accordion",
@@ -21,9 +21,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_6a1f3ce04b217",
-            "label": "Video List Format",
-            "name": "video_list_format",
+            "key": "field_6a1f8221afb02",
+            "label": "Results Format",
+            "name": "results_format",
             "aria-label": "",
             "type": "select",
             "instructions": "",
@@ -36,6 +36,7 @@
             },
             "choices": {
                 "regular": "Regular",
+                "flip-card": "Flip Card",
                 "slider": "Slider"
             },
             "default_value": false,
@@ -50,9 +51,9 @@
             "save_options": 0
         },
         {
-            "key": "field_6a1f3ce04b21e",
-            "label": "Videos",
-            "name": "videos",
+            "key": "field_6a1f8221afb0b",
+            "label": "Results",
+            "name": "results",
             "aria-label": "",
             "type": "relationship",
             "instructions": "",
@@ -64,11 +65,9 @@
                 "id": ""
             },
             "post_type": [
-                "videos"
+                "results"
             ],
-            "post_status": [
-                "publish"
-            ],
+            "post_status": "",
             "taxonomy": "",
             "filters": [
                 "search"
@@ -82,8 +81,8 @@
             "bidirectional_target": []
         },
         {
-            "key": "field_6a1f3ce04b228",
-            "label": "Review Content END",
+            "key": "field_6a1f8221afb12",
+            "label": "Attorney Content END",
             "name": "",
             "aria-label": "",
             "type": "accordion",
@@ -105,7 +104,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/video-list"
+                "value": "acf\/result-list"
             }
         ]
     ],
@@ -118,5 +117,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780453506
+    "modified": 1780450053
 }

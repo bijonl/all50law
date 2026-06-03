@@ -1,0 +1,17 @@
+.single-attorney-wrapper {
+    .single-attorney-content-wrapper {
+        .single-attorney-contact-wrapper {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            a {
+                color: $color-primary; 
+                &:hover {
+                    color: $color-secondary; 
+                    text-decoration: none;
+                }
+            } 
+        }
+    }
+}

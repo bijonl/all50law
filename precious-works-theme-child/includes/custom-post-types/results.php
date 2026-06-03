@@ -29,7 +29,7 @@
         'label'               => 'result',
         'description'         => '',
         'public'              => true,
-        'publicly_queryable'  => true,
+        'publicly_queryable'  => false,
         'show_in_menu'        => true,
         'show_in_nav_menus'   => true,
         'capability_type'     => 'page',
@@ -39,7 +39,7 @@
         'exclude_from_search' => true,
         'menu_icon'           => 'dashicons-star-filled',
         'show_in_rest'        => true,
-        'supports'            => array( 'title', 'thumbnail', 'editor'),
+        'supports'            => array( 'title'),
         'labels'              => $labels,
         'map_meta_cap'        => true,
     ));

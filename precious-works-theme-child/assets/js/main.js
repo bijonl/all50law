@@ -103,6 +103,51 @@ document.querySelectorAll('.reviews-glide').forEach(function(slider) {
 
 });
 
+// Results Slider
+document.querySelectorAll('.results-glide').forEach(function(slider) {
+
+    const perView = parseInt(slider.dataset.perView) || 2;    
+    const autoplay = slider.dataset.autoplay || false;
+    const peek = {
+        before: 100,
+        after: 100
+    };
+
+    new Glide(slider, {
+        type: 'carousel', 
+        focusAt: 'center', 
+        perView: perView,
+        perTouch: 1,
+        autoplay: autoplay,
+        gap: 20,
+        peek: peek
+    }).mount();
+
+});
+
+// Attorney Slider
+document.querySelectorAll('.attorneys-glide').forEach(function(slider) {
+
+    const perView = parseInt(slider.dataset.perView) || 3;    
+    const autoplay = slider.dataset.autoplay || false;
+    const peek = {
+        before: 100,
+        after: 100
+    };
+
+    new Glide(slider, {
+        type: 'slider', 
+        startAt: 0,
+        perView: perView,
+        perTouch: 1,
+        autoplay: autoplay,
+        gap: 20,
+        peek: peek
+    }).mount();
+
+});
+
+
 
 // Image Slider
 document.querySelectorAll('.image-glide').forEach(function(slider) {

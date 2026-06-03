@@ -8307,6 +8307,14 @@ progress {
   border: 0;
 }
 
+.color-primary {
+  color: #0247ac;
+}
+
+.color-secondary {
+  color: #d71d22;
+}
+
 iframe {
   max-width: 100%;
 }
@@ -9434,6 +9442,41 @@ small, .small {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
+}
+
+.single-attorney-wrapper .single-attorney-content-wrapper .single-attorney-contact-wrapper {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.single-attorney-wrapper .single-attorney-content-wrapper .single-attorney-contact-wrapper a {
+  color: #0247ac;
+}
+.single-attorney-wrapper .single-attorney-content-wrapper .single-attorney-contact-wrapper a:hover {
+  color: #d71d22;
+  text-decoration: none;
+}
+
+.single-result-wrapper .single-result-content-wrapper {
+  gap: 25px;
+}
+.single-result-wrapper .single-result-content-wrapper .single-result-money-wrapper .money-heading {
+  font-size: 38px;
+  line-height: 1;
+}
+.single-result-wrapper .single-result-content-wrapper .single-result-meta-wrapper {
+  width: 85%;
+}
+.single-result-wrapper .single-result-content-wrapper .single-result-meta-wrapper .single-result-name-wrapper .name-heading {
+  font-size: 15px;
+}
+.single-result-wrapper .single-result-content-wrapper .single-result-meta-wrapper .single-result-location-year-wrapper {
+  column-gap: 5px;
+  font-weight: bold;
+}
+.single-result-wrapper .single-result-content-wrapper .single-result-meta-wrapper .single-result-location-year-wrapper p {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.min.css.map */

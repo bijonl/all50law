@@ -24,6 +24,27 @@
             "append": ""
         },
         {
+            "key": "field_6a1f83a12a508",
+            "label": "Case Location",
+            "name": "case_location",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6a1dd8d7a1617",
             "label": "Reward Money",
             "name": "reward_money",
@@ -118,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780341063
+    "modified": 1780450218
 }
