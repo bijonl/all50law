@@ -1,5 +1,9 @@
-<?php $per_view = !isset($per_view) ? 1 : $per_view;
-$bullet_count = count($videos); ?>
+<?php 
+if($videos) {
+    $per_view = !isset($per_view) ? 1 : $per_view;
+    $bullet_count = count($videos); ?>
+
+
 
 <div class="videos-container videos-slider-container container">
     <div class="videos-glide glide"
@@ -48,3 +52,5 @@ $bullet_count = count($videos); ?>
         <?php }; ?>
     </div>
 </div>
+<?php 
+} ?>

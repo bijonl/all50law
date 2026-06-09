@@ -8887,6 +8887,12 @@ small, .small {
   margin-top: 30px;
 }
 
+.reviews-section.background-primary .review-card, .stats-section .stats-container .stats-row .stats-col:last-child .reviews-section.single-stat-wrapper .review-card, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .review-card {
+  border: solid 2px white;
+}
+.reviews-section.background-primary .quote-wrapper, .stats-section .stats-container .stats-row .stats-col:last-child .reviews-section.single-stat-wrapper .quote-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .quote-wrapper {
+  color: inherit;
+}
 .reviews-section .reviews-container .glide__slide {
   height: auto;
 }

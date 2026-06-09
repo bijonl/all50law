@@ -1,4 +1,12 @@
 .reviews-section {
+    &.background-primary {
+        .review-card {
+            border: solid 2px white;  
+        }
+        .quote-wrapper {
+            color: inherit; 
+        }
+    }
     .reviews-container {
         .glide__slide {
             height: auto; 
