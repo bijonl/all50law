@@ -8323,6 +8323,10 @@ iframe {
   font-size: 14px;
 }
 
+footer .disclaimer-text {
+  font-size: 12px;
+}
+
 .pw-solid-button, .gform_button.button {
   display: inline-block;
   font-size: 24px;
@@ -8824,34 +8828,83 @@ small, .small {
 }
 
 .site-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: black;
-  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: white;
+  color: #161616;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
+.site-footer .site-footer-content-container .site-footer-content-row {
+  padding-bottom: 40px;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-logo-col .footer-logo-wrapper {
+  max-width: 170px;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-logo-col .footer-note-wrapper {
+  margin-top: 15px;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-logo-col .footer-review-note-wrapper {
+  margin-top: 40px;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .footer-menu {
+  font-size: 18px;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .footer-menu .footer-menu-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Inter", sans-serif;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .footer-menu .footer-menu-list .footer-menu-item {
+  margin-bottom: 20px;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .footer-menu .footer-menu-list .footer-menu-item:last-child {
   margin-bottom: 0;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .social-list li {
-  padding-right: 25px;
+.site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col .footer-menu-title {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-family: "Inter", sans-serif;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .social-list li a {
-  color: inherit;
-  text-decoration: none;
+.site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col .social-list li i {
+  font-size: 28px;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .social-list li a img {
-  width: 25px;
-  height: 25px;
+.site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col.app-store-nav {
+  margin-top: 20px;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .social-list li a i {
-  font-size: 26px;
+.site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col.app-store-nav .social-list {
+  gap: 15px;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .footer-logo-wrapper {
-  max-width: 100px;
+.site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col.app-store-nav .social-list li {
+  max-width: 50%;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col.app-store-nav .social-list li img {
+  width: 100%;
+  height: auto;
+}
+.site-footer .site-footer-content-container .footer-logo-gallery-row {
+  margin-bottom: 40px;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+.site-footer .site-footer-content-container .footer-logo-gallery-row .footer-logo-gallery-col .single-image-wrapper {
+  width: 175px;
+  text-align: center;
+}
+.site-footer .site-footer-content-container .footer-logo-gallery-row .footer-logo-gallery-col .single-image-wrapper img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+.site-footer .site-footer-content-container .footer-address-row {
+  padding-bottom: 15px;
+}
+.site-footer .site-footer-content-container .footer-copyright-row {
+  padding-top: 25px;
+}
+.site-footer .site-footer-content-container .footer-copyright-row .footer-copyright-col .copyright-wrapper {
+  font-size: 12px;
 }
 
 .title-area-container.horizontal .title-area-row {
