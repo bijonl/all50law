@@ -8240,7 +8240,7 @@ progress {
   color: inherit;
 }
 
-.rounded-corners {
+.rounded-corners, .practice-hero-section {
   border-radius: 12px;
 }
 
@@ -8320,7 +8320,7 @@ iframe {
 }
 
 .disclaimer-text {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 footer .disclaimer-text {
@@ -9190,6 +9190,80 @@ small, .small {
   .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .image-wrapper {
     width: 100%;
   }
+}
+
+.practice-hero-section {
+  width: 99%;
+  margin: auto;
+}
+.practice-hero-section .practice-hero-container {
+  max-width: 95%;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .practice-hero-callut-col {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .practice-hero-callut-col .practice-hero-callout-text {
+  padding: 12px;
+  border-radius: 12px 12px 0px 0px;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .practice-hero-callut-col .practice-hero-callout-text .text-wrapper {
+  font-size: 20px;
+  font-weight: 600;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .practice-hero-callut-col .practice-hero-callout-text .image-wrapper {
+  width: 60px;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .practice-hero-callut-col .practice-hero-callout-text .image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .practice-hero-callut-col .practice-hero-callout-meta-link {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #efefef;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .practice-hero-callut-col .practice-hero-callout-meta-link .meta-wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .practice-hero-callut-col .practice-hero-callout-meta-link .meta-wrapper .position {
+  font-size: 13px;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .practice-hero-callut-col .practice-hero-callout-meta-link .link-wrapper {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  color: #d71d22;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .title-wrapper {
+  background-color: white;
+  padding: 30px 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .title-wrapper .big-title-wrapper {
+  margin-bottom: 40px;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .title-wrapper .big-title-wrapper .h2 {
+  font-size: 4rem;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .title-wrapper .subtitle-wrapper {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.practice-hero-section .practice-hero-container .practice-hero-row .title-wrapper .button-area-wrapper {
+  margin-bottom: 40px;
 }
 
 .wildcards-section .wildcards-container.two-col-text-container {

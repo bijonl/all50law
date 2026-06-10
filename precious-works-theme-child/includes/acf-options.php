@@ -15,6 +15,11 @@
         'menu_title'    => 'Attorney Settings',
         'parent_slug'   => 'edit.php?post_type=professionals',
     ));
+     acf_add_options_sub_page(array(
+        'page_title'    => 'Practice Settings',
+        'menu_title'    => 'Practice Settings',
+        'parent_slug'   => 'edit.php?post_type=practices',
+    ));
     acf_add_options_sub_page(array(
         'page_title'    => 'Blog Settings',
         'menu_title'    => 'Blog Settings',

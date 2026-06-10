@@ -1,0 +1,88 @@
+.practice-hero-section {
+    width: 99%; 
+    margin: auto; 
+    // min-height: 800px; 
+    @extend .rounded-corners; 
+    .practice-hero-container {
+        max-width: 95%;
+        .practice-hero-row {
+            .practice-hero-callut-col {
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                .practice-hero-callout-text {
+                    padding: 12px; 
+                    border-radius: 12px 12px 0px 0px;
+                    background-color: white; 
+                    display: flex; ;
+                    gap: 15px; 
+                    align-items: center;
+                    .text-wrapper {
+                        font-size: 20px; 
+                        font-weight: 600;
+                    }
+                    .image-wrapper {
+                        width: 60px;
+                        img {
+                            width: 100%; 
+                            height: auto; ;
+                        } 
+                    }
+                }
+                .practice-hero-callout-meta-link {
+                    padding: 12px; 
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 0px 0px 12px 12px;
+
+                    background-color: $color-offwhite; 
+                    .meta-wrapper {
+                        display: flex;
+                        gap: 5px; 
+                        align-items: center;
+                        font-weight: bold; 
+                        font-size: 18px; 
+                        .position {
+                            font-size: 13px; 
+                        }
+                    }
+
+                    .link-wrapper {
+                        font-weight: bold; 
+                        font-size: 18px; 
+                        line-height: 1;
+                        color: $color-secondary; 
+                    }
+
+
+                }
+            }
+        
+        
+        
+        
+   
+            .title-wrapper {
+                background-color: white; 
+                padding: 30px 60px; 
+                margin-left: auto;
+                margin-right: auto;
+
+                .big-title-wrapper {
+                    margin-bottom: 40px; 
+                    .h2 {
+                        font-size: 4rem; 
+
+                    }
+                }
+                .subtitle-wrapper {
+                    font-size: 24px; 
+                    margin-bottom: 40px; 
+                }
+                .button-area-wrapper {
+                    margin-bottom: 40px; 
+                }
+            }
+        }
+    }
+}

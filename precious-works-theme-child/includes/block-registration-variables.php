@@ -59,6 +59,11 @@
         'icon'  => 'images-alt2',
         'description' => "This is an image gallery to show off multiple images. Great for showing off photos or products."
     ],
+    'practice-hero' => [
+        'label' => 'Practice Hero',
+        'icon'  => 'format-image',
+        'description' => "This is a hero for the practice page. Includes title, button, and quote-callout"
+    ],
     'interior-hero' => [
         'label' => 'Interior Hero',
         'icon'  => 'format-image',
