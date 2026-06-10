@@ -2,6 +2,7 @@
     .link-list-container {
         .link-list-row {
             .link-list-col {
+                border-radius: 12px;
                 padding: 20px; 
                 .link-list-title-wrapper {
                     padding-bottom: 20px; 
@@ -41,6 +42,7 @@
                         .link-col {
                             .single-link-wrapper {
                                 font-size: 18px; 
+                                border-radius: 12px;
                                 padding: 25px; 
                                 text-align: center; 
                                 @extend .background-primary; 

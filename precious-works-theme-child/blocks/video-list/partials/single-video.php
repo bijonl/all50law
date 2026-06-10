@@ -8,17 +8,25 @@ $video_uid = $video_id . '-' . $block['id'];
 <article class="single-video-wrapper" aria-labelledby="video-title-<?php echo $video_uid; ?>">
     <div class="single-video-content-wrapper">
 
-        <div class="video-image-wrapper">
+        <div class="video-image-wrapper position-relative">
+            
             <button
                 type="button"
                 class="border-0 bg-transparent"
                 data-bs-toggle="modal"
                 data-bs-target="#video-<?php echo $video_uid; ?>"
                 aria-label="Play video: <?php echo esc_attr($display_title); ?>">
+                <div class="play-wrapper position-absolute w-100 h-100">
+                    <svg class="d-flex justify-content-center h-100 m-auto align-items-center"
+                        width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="36" cy="36" r="36" fill="currentColor"/>
+                        <path d="M31 24L49 36L31 48V24Z" fill="white"/>
+                    </svg>
+                </div>
 
                 <?php echo wp_get_attachment_image(
                     $video_image_id,
-                    'full',
+                    'vertical-img',
                     false,
                     array(
                         'class' => 'w-100 h-auto'
@@ -31,9 +39,9 @@ $video_uid = $video_id . '-' . $block['id'];
         <div class="video-title-content-wrapper">
 
             <div class="video-title-wrapper">
-                <h5 id="video-title-<?php echo $video_uid; ?>">
+                <p class="fw-bold id="video-title-<?php echo $video_uid; ?>">
                     <?php echo esc_html($display_title); ?>
-                </h5>
+                </p>
             </div>
 
             <?php if($video_subtitle) { ?>

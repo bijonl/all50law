@@ -21,6 +21,7 @@ require_once get_stylesheet_directory() . '/includes/acf-options.php';
 require_once get_stylesheet_directory() . '/includes/taxonomies/education-type.php';
 
 add_image_size( 'square', 500, 500, true ); 
+add_image_size( 'vertical-img', 460, 600, true ); 
 
 
 

@@ -19,8 +19,10 @@ if(!$has_content) {
     return; 
 } 
 
-$image_col_width = 'col-lg-6'; 
-$text_col_width = 'col-lg-6'; ?>
+$image_col_width = $is_video_slider ? 'col-lg-7' : 'col-lg-6'; 
+$text_col_width =  $is_video_slider ? 'col-lg-5' : 'col-lg-6'; 
+
+?>
 
 <section <?php echo pw_block_section_classes($block) ?>>
     <?php include(locate_template('blocks/partials/title-area.php')); ?>
@@ -32,7 +34,7 @@ $text_col_width = 'col-lg-6'; ?>
                     $images = $image_slider_images; 
                     include(locate_template('blocks/partials/image-slider.php')); 
                 } elseif($is_video_slider) {
-                    $per_view = 1; 
+                    $per_view = 2; 
                     include(locate_template('blocks/partials/video-slider.php')); 
                 } else { 
                     echo wp_get_attachment_image($image, 'full', false, array('class' => 'w-100 h-auto')); 

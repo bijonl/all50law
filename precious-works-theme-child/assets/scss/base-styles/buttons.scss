@@ -62,5 +62,7 @@
 }
 
 .gform_button.button {
+    width: 100%; 
     @extend .pw-solid-button; 
 }
+

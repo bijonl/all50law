@@ -53,9 +53,11 @@ if(!$has_content) {
                 </div>
             </div>
             <div class="form-block-col col-lg-5 mx-auto">
-                <h3><?php echo $form_title ?></h3>
-                <p><?php echo $form_subtitle ?></p>
-                <?php echo do_shortcode('[gravityform id="' . $form_id . '" title="false" description="false" ajax="true" tabindex="49"]'); ?>
+                <div class="form-block-wrapper">
+                    <h3><?php echo $form_title ?></h3>
+                    <p><?php echo $form_subtitle ?></p>
+                    <?php echo do_shortcode('[gravityform id="' . $form_id . '" title="false" description="false" ajax="true" tabindex="49"]'); ?>
+                </div>
             </div>
         </div>
     </div>

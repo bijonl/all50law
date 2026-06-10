@@ -24,6 +24,7 @@
             gap: 20px 0;
             .wildcards-col {
                 .single-wildcard-wrapper {
+                    border-radius: 12px;
                     &.regular-card {
                         background-color: $color-white; 
                         padding: 15px; 

@@ -8248,16 +8248,19 @@ progress {
   color: inherit;
 }
 
-.background-primary, .single-attorney-post-section .results-section .results-container .table-responsive table thead, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper {
+.background-primary, .single-attorney-post-section .results-section .results-container .table-responsive table thead, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper {
   color: #ffffff;
   background-color: #0247ac;
 }
-.background-primary .glide__bullet:hover, .single-attorney-post-section .results-section .results-container .table-responsive table thead .glide__bullet:hover, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper .glide__bullet:hover, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:hover, .background-primary .glide__bullet:focus, .single-attorney-post-section .results-section .results-container .table-responsive table thead .glide__bullet:focus, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper .glide__bullet:focus, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:focus {
+.background-primary a, .single-attorney-post-section .results-section .results-container .table-responsive table thead a, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper a {
+  color: #d71d22;
+}
+.background-primary .glide__bullet:hover, .single-attorney-post-section .results-section .results-container .table-responsive table thead .glide__bullet:hover, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:hover, .background-primary .glide__bullet:focus, .single-attorney-post-section .results-section .results-container .table-responsive table thead .glide__bullet:focus, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:focus {
   border: 2px solid #efefef;
   background-color: #efefef;
 }
 
-.background-secondary {
+.background-secondary, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper {
   color: #ffffff;
   background-color: #d71d22;
 }
@@ -8268,7 +8271,7 @@ progress {
 }
 
 .background-light-grey {
-  background-color: #bababb;
+  background-color: #efefef;
   color: #161616;
 }
 
@@ -8387,6 +8390,10 @@ footer .disclaimer-text {
   transition: all 0.3s ease-in-out;
 }
 
+.gform_button.button {
+  width: 100%;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -8449,6 +8456,10 @@ body {
 
 html :where(.wp-block) {
   max-width: none;
+}
+
+img {
+  border-radius: 12px;
 }
 
 h1, .h1 {
@@ -8944,10 +8955,10 @@ small, .small {
   margin-top: 30px;
 }
 
-.reviews-section.background-primary .review-card, .single-attorney-post-section .results-section .results-container .table-responsive table thead.reviews-section .review-card, .stats-section .stats-container .stats-row .stats-col:last-child .reviews-section.single-stat-wrapper .review-card, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .review-card {
+.reviews-section.background-primary .review-card, .single-attorney-post-section .results-section .results-container .table-responsive table thead.reviews-section .review-card, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .review-card {
   border: solid 2px white;
 }
-.reviews-section.background-primary .quote-wrapper, .single-attorney-post-section .results-section .results-container .table-responsive table thead.reviews-section .quote-wrapper, .stats-section .stats-container .stats-row .stats-col:last-child .reviews-section.single-stat-wrapper .quote-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .quote-wrapper {
+.reviews-section.background-primary .quote-wrapper, .single-attorney-post-section .results-section .results-container .table-responsive table thead.reviews-section .quote-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .quote-wrapper {
   color: inherit;
 }
 .reviews-section .reviews-container .glide__slide {
@@ -9196,6 +9207,12 @@ small, .small {
   }
 }
 
+.form-hero-section .form-block-wrapper {
+  border-radius: 12px;
+  border: solid 2px red;
+  padding: 20px;
+}
+
 .practice-hero-section {
   width: 99%;
   margin: auto;
@@ -9415,6 +9432,9 @@ small, .small {
 .wildcards-section .wildcards-container .wildcards-row {
   gap: 20px 0;
 }
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper {
+  border-radius: 12px;
+}
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.regular-card {
   background-color: #ffffff;
   padding: 15px;
@@ -9492,6 +9512,7 @@ small, .small {
 }
 
 .page-link-list-section .link-list-container .link-list-row .link-list-col {
+  border-radius: 12px;
   padding: 20px;
 }
 .page-link-list-section .link-list-container .link-list-row .link-list-col .link-list-title-wrapper {
@@ -9521,6 +9542,7 @@ small, .small {
 }
 .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper {
   font-size: 18px;
+  border-radius: 12px;
   padding: 25px;
   text-align: center;
 }
@@ -9653,6 +9675,7 @@ small, .small {
 
 .review-card {
   height: 100%;
+  border-radius: 12px;
   border: solid 2px #0247ac;
   padding: 15px;
   margin-bottom: 15px;

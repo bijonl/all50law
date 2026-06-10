@@ -19,9 +19,8 @@
             "choices": {
                 "none": "None",
                 "primary": "Primary Blue",
-                "secondary": "Primary Red",
                 "dark-gray": "Dark Gray",
-                "light-grey": "Light Grey"
+                "light-grey": "Off-White"
             },
             "default_value": false,
             "return_format": "value",
@@ -68,5 +67,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779888333
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1781116373
 }

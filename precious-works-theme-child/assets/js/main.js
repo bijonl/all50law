@@ -203,7 +203,7 @@ document.querySelectorAll('.videos-glide').forEach(function(slider) {
         perView: perView,
         perTouch: 1,
         autoplay: autoplay,
-        gap: 20,
+        gap: 0,
         peek: peek
     }).mount();
 
