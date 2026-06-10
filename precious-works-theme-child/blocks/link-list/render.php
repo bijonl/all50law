@@ -100,5 +100,4 @@ if(!$has_content) {
             </div>
         </div>
     </div>
-    <?php include(locate_template('blocks/partials/button-area.php')); ?>
 </section>

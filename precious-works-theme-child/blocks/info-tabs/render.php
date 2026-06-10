@@ -17,5 +17,4 @@ include(locate_template('blocks/partials/global-block-variables.php')); ?>
             </div>
         </div>
     </div>
-    <?php include(locate_template('blocks/partials/button-area.php')); ?>
 </section>

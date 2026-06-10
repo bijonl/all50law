@@ -26,12 +26,12 @@
     ],
     'practice-list' => [
         'label' => 'Practice List',
-        'icon'  => 'text',
+        'icon'  => 'networking',
         'description' => "Output a list of all the firm practices in alphabetical order."
     ],
     'location-list' => [
         'label' => 'Location List',
-        'icon'  => 'text',
+        'icon'  => 'location-alt',
         'description' => "Output a list of all the firm lcoations by state in alphabetical order."
     ],
     'attorney-list' => [
@@ -41,12 +41,12 @@
     ],
     'result-list' => [
         'label' => 'Results List',
-        'icon'  => 'text',
+        'icon'  => 'awards',
         'description' => "Output a list of all the firm lcoations by state in alphabetical order."
     ],
     'video-list' => [
         'label' => 'Video List',
-        'icon'  => 'text',
+        'icon'  => 'video-alt3',
         'description' => "Output a list of all the firm lcoations by state in alphabetical order."
     ],
     'homepage-hero' => [
@@ -101,12 +101,12 @@
     ],
      'link-list' => [
         'label' => 'Page Link List',
-        'icon'  => 'list',
+        'icon'  => 'admin-links',
         'description' => "Provide a list of links."
     ],
     'info-tabs' => [
         'label' => 'Information Tabs',
-        'icon'  => 'default',
+        'icon'  => 'index-card',
         'description' => "Split the section into two halves: one side with an image, the other with text. Great for sharing medium-length info alongside a picture."
     ],
     'two-col-img-text' => [
