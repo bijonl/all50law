@@ -34,6 +34,10 @@
 .background-primary {
     color: $primary-background-text-color; 
     background-color: $primary-background-color; 
+    .glide__bullet:hover, .glide__bullet:focus {
+        border: 2px solid $color-offwhite;
+        background-color:  $color-offwhite;
+    }
 }
 
 .background-secondary {

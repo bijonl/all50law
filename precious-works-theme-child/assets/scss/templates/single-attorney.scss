@@ -37,6 +37,47 @@
                         }
                     }
                 }
+
+                .professional-bio-col {
+                    .name-wrapper {
+                        margin-bottom: 30px; 
+                    }
+                    .bio-wrapper {
+                        @extend .wysiwyg; 
+                        margin-bottom: 40px; 
+                    }
+
+                    .results-container  {
+                        margin-bottom: 50px; 
+                        .results-glide {
+                            margin-bottom: 20px; 
+                            .glide__bullets {
+                                justify-content: flex-start;
+                            }
+                            .glide__arrows {
+                                display: flex;
+                                margin-top: 15px; 
+                                .glide__arrow {
+                                    border: 0; 
+                                    padding: 0; 
+                                    box-shadow: none;
+                                    position: relative;
+                                    left: 0; 
+                                    right: 0;  
+                                    &:hover {
+                                        color: $color-secondary; 
+                                    }
+                                }
+
+                            }
+                           
+                        }
+                        h5 {
+                            margin-bottom: 20px; 
+                        }
+
+                    }
+                }
             }
         }
     }

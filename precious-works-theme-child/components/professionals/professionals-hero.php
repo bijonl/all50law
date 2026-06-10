@@ -12,9 +12,8 @@
             <div class="bio-wrapper">
                 <?php echo $professional_narrative   ?>
             </div>
-            <div class="results-wrapper">
-                <?php echo 'results'  ?>
-            </div>
+            <?php include locate_template('components/professionals/professionals-results.php'); ?>
+
             <?php if($practice_crosslinks) { ?>
                 <div class="practice-wrapper">
                     <h5>Practice Areas</h5>

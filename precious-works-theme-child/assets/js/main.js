@@ -125,6 +125,23 @@ document.querySelectorAll('.results-glide').forEach(function(slider) {
 
 });
 
+// Results Slider
+document.querySelectorAll('.single-attorney-post-section .results-glide').forEach(function(slider) {
+
+    const perView = 1;    
+    const autoplay = slider.dataset.autoplay || false;
+
+    new Glide(slider, {
+        type: 'slider', 
+        perView: 2,
+        startAt: 0,
+        perTouch: 1,
+        autoplay: autoplay,
+        gap: 0,
+    }).mount();
+
+});
+
 // Attorney Slider
 document.querySelectorAll('.attorneys-glide').forEach(function(slider) {
 

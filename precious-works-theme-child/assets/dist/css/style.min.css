@@ -8217,7 +8217,7 @@ progress {
   opacity: 0.25;
 }
 
-.wysiwyg p:last-child {
+.wysiwyg p:last-child, .single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .bio-wrapper p:last-child {
   margin-bottom: 0;
 }
 
@@ -8251,6 +8251,10 @@ progress {
 .background-primary, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper {
   color: #ffffff;
   background-color: #0247ac;
+}
+.background-primary .glide__bullet:hover, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper .glide__bullet:hover, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:hover, .background-primary .glide__bullet:focus, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper .glide__bullet:focus, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:focus {
+  border: 2px solid #efefef;
+  background-color: #efefef;
 }
 
 .background-secondary {
@@ -9772,6 +9776,39 @@ small, .small {
   border-top: solid 1px white;
   padding-top: 25px;
   margin-top: 25px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .name-wrapper {
+  margin-bottom: 30px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .bio-wrapper {
+  margin-bottom: 40px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container {
+  margin-bottom: 50px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container .results-glide {
+  margin-bottom: 20px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container .results-glide .glide__bullets {
+  justify-content: flex-start;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container .results-glide .glide__arrows {
+  display: flex;
+  margin-top: 15px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container .results-glide .glide__arrows .glide__arrow {
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container .results-glide .glide__arrows .glide__arrow:hover {
+  color: #d71d22;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container h5, .single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container .h5 {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.min.css.map */

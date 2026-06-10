@@ -1,7 +1,8 @@
 <?php echo get_header(); ?>
 <?php $id = get_the_id(); 
-$practice_crosslinks = get_field('practice_crosslinks'); 
-$office_crosslinks = get_field('office_crosslinks');
+$practice_crosslinks = get_field('practice_crosslinks', $id); 
+$office_crosslinks = get_field('office_crosslinks', $id);
+$related_results = get_field('related_results', $id); 
 include locate_template('components/variables/professionals-variables.php'); ?>
 
 
