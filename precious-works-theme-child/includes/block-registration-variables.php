@@ -64,6 +64,11 @@
         'icon'  => 'format-image',
         'description' => "This is a hero for the practice page. Includes title, button, and quote-callout"
     ],
+    'location-hero' => [
+        'label' => 'Location Hero',
+        'icon'  => 'format-image',
+        'description' => "This is a hero for the location page. Includes title, button, and quote-callout"
+    ],
     'interior-hero' => [
         'label' => 'Interior Hero',
         'icon'  => 'format-image',

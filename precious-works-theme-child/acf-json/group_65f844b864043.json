@@ -313,67 +313,6 @@
             "append": ""
         },
         {
-            "key": "field_65f84799f08ea",
-            "label": "Office Narrative",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0,
-            "selected": 0
-        },
-        {
-            "key": "field_664cd7edacf08",
-            "label": "Office Intro Statement",
-            "name": "office_intro_statement",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "This will be intro display paragraph on the office detail page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "allow_in_bindings": 1,
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_65f847def08ec",
-            "label": "Narrative",
-            "name": "narrative",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "Type out the case narrative here. This will serve as the body content on the job detail page.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "relevanssi_exclude": 0,
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
             "key": "field_65f84aeebb8a4",
             "label": "Office Contacts",
             "name": "",
@@ -500,5 +439,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780326895
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1781097039
 }

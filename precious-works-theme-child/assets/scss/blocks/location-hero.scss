@@ -1,0 +1,157 @@
+.location-hero-section {
+    width: 99%; 
+    margin: auto; 
+    padding-top: 0; 
+    padding-bottom: 0; 
+    min-height: 600px; 
+    @extend .rounded-corners; 
+    .location-hero-container {
+        max-width: 97%;
+        margin: auto;
+        .location-hero-row {
+            .location-hero-callut-col{
+                width: 50%; 
+                border-radius: 12px 0 0 12px;
+                display: flex;
+                align-items: flex-end;
+                font-size: 18px; 
+
+                .location-hero-callout-wrapper {
+                    padding: 12px; 
+                    border-radius: 12px;
+                    background-color: white; 
+                    display: flex; ;
+                    gap:60px; 
+                    margin-bottom: 50px; 
+                    margin-left: auto;
+                    margin-right: auto; 
+                    white-space: nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    .address-wrapper{
+                        gap: 10px; 
+                        font-weight: 600;
+                        i {
+                            font-size: 24px; 
+                        }
+                    }
+                    .phone-wrapper {
+                       
+                    }
+                }
+                .practice-hero-callout-meta-link {
+                    padding: 12px; 
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 0px 0px 12px 12px;
+
+                    background-color: $color-offwhite; 
+                    .meta-wrapper {
+                        display: flex;
+                        gap: 5px; 
+                        align-items: center;
+                        font-weight: bold; 
+                        font-size: 18px; 
+                        .position {
+                            font-size: 13px; 
+                        }
+                    }
+
+                    .link-wrapper {
+                        font-weight: bold; 
+                        font-size: 18px; 
+                        line-height: 1;
+                        color: $color-secondary; 
+                    }
+
+
+                }
+            }
+        
+        
+        
+        
+   
+            .location-text-title-wrapper {
+                background-color: lightgray;
+                width: 50%;  
+                border-radius: 0 12px 12px 0;
+                padding: 30px 60px; 
+                margin-left: auto;
+                margin-right: auto;
+
+                .big-title-wrapper {
+                    margin-bottom: 40px; 
+                    .h2 {
+                        font-size: 4rem; 
+
+                    }
+                }
+                .subtitle-wrapper {
+                    font-size: 24px; 
+                    margin-bottom: 40px; 
+                }
+                .button-area-wrapper {
+                    margin-bottom: 40px; 
+                }
+            }
+        }
+    }
+
+    .review-wrapper {
+        display: flex;
+        margin-bottom: 50px; 
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .review-top {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .review-rating,
+    .review-count {
+        line-height: 1;
+    }
+
+    .review-stars {
+        display: flex;
+        gap: 2px;
+    }
+
+    .rating-star {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        line-height: 0;
+    }
+
+    .rating-star > svg,
+    .rating-star-fill svg {
+        display: block;
+        width: 16px;
+        height: 15px;
+    }
+
+    .rating-star-fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .review-link {
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+}
