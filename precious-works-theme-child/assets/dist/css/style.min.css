@@ -8248,11 +8248,11 @@ progress {
   color: inherit;
 }
 
-.background-primary, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper {
+.background-primary, .single-attorney-post-section .results-section .results-container .table-responsive table thead, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper {
   color: #ffffff;
   background-color: #0247ac;
 }
-.background-primary .glide__bullet:hover, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper .glide__bullet:hover, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:hover, .background-primary .glide__bullet:focus, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper .glide__bullet:focus, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:focus {
+.background-primary .glide__bullet:hover, .single-attorney-post-section .results-section .results-container .table-responsive table thead .glide__bullet:hover, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper .glide__bullet:hover, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:hover, .background-primary .glide__bullet:focus, .single-attorney-post-section .results-section .results-container .table-responsive table thead .glide__bullet:focus, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper .glide__bullet:focus, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:focus {
   border: 2px solid #efefef;
   background-color: #efefef;
 }
@@ -8944,10 +8944,10 @@ small, .small {
   margin-top: 30px;
 }
 
-.reviews-section.background-primary .review-card, .stats-section .stats-container .stats-row .stats-col:last-child .reviews-section.single-stat-wrapper .review-card, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .review-card {
+.reviews-section.background-primary .review-card, .single-attorney-post-section .results-section .results-container .table-responsive table thead.reviews-section .review-card, .stats-section .stats-container .stats-row .stats-col:last-child .reviews-section.single-stat-wrapper .review-card, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .review-card {
   border: solid 2px white;
 }
-.reviews-section.background-primary .quote-wrapper, .stats-section .stats-container .stats-row .stats-col:last-child .reviews-section.single-stat-wrapper .quote-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .quote-wrapper {
+.reviews-section.background-primary .quote-wrapper, .single-attorney-post-section .results-section .results-container .table-responsive table thead.reviews-section .quote-wrapper, .stats-section .stats-container .stats-row .stats-col:last-child .reviews-section.single-stat-wrapper .quote-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .quote-wrapper {
   color: inherit;
 }
 .reviews-section .reviews-container .glide__slide {
@@ -9809,6 +9809,92 @@ small, .small {
 }
 .single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container h5, .single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .results-container .h5 {
   margin-bottom: 20px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .practice-wrapper h5, .single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .practice-wrapper .h5 {
+  margin-bottom: 20px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .practice-wrapper .button-wrapper {
+  width: fit-content;
+  background-color: #bababb;
+  padding: 12px;
+  color: #161616;
+  border-radius: 12px;
+}
+.single-attorney-post-section .attorney-main-content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row {
+  gap: 30px;
+}
+.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col {
+  border-radius: 12px;
+  background-color: #efefef;
+}
+.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col h2, .single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col .h2 {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col ul {
+  font-size: 18px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col ul li i {
+  color: #0247ac;
+}
+.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col ul li a {
+  color: inherit;
+}
+.single-attorney-post-section .results-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #efefef;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive {
+  margin-top: 50px;
+  border: solid 1px;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table {
+  border-radius: 12px;
+  width: 100%;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table th {
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table th:last-child {
+  border-right: 0;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table thead {
+  border-radius: 12px;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table thead tr {
+  border-bottom: solid 1px;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table tbody {
+  border-bottom: solid 1px black;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table tbody tr:last-child td, .single-attorney-post-section .results-section .results-container .table-responsive table tbody tr:last-child th {
+  border-bottom: 0;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table td {
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table td:last-child {
+  border-right: 0;
+}
+.single-attorney-post-section .results-section .results-container .table-responsive table tr, .single-attorney-post-section .results-section .results-container .table-responsive table td, .single-attorney-post-section .results-section .results-container .table-responsive table th {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.min.css.map */

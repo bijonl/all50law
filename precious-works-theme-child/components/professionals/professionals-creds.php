@@ -12,10 +12,12 @@
     </div>
    <div class="position-contact-wrapper d-flex flex-column">
 
-        <?php if ($office_crosslinks) { ?>
-            <?php foreach ($office_crosslinks as $office) { ?>
+        <?php if ($office_crosslinks) { 
+            $count = 0; ?>
+            <?php foreach ($office_crosslinks as $office) { 
+                $count++;
+                ?>
                 <?php $office_title = get_the_title($office->ID); ?>
-
                 <a
                     href="<?php echo esc_url(get_permalink($office->ID)); ?>"
                     class="contact-info location"
@@ -24,6 +26,9 @@
                     <i class="fa-solid fa-location-arrow" aria-hidden="true"></i>
                     <span><?php echo esc_html($office_title); ?></span>
                 </a>
+                <?php if($count === 1) {
+                    break; 
+                } ?>
             <?php }; ?>
         <?php }; ?>
 

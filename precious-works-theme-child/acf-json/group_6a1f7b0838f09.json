@@ -1,6 +1,6 @@
 {
     "key": "group_6a1f7b0838f09",
-    "title": "Attorney Settings",
+    "title": "Global Attorney Settings",
     "fields": [
         {
             "key": "field_6a1f7b2400c70",
@@ -45,6 +45,27 @@
             "mime_types": "",
             "allow_in_bindings": 0,
             "preview_size": "medium"
+        },
+        {
+            "key": "field_6a2995318b624",
+            "label": "Attorney Disclaimer",
+            "name": "attorney_disclaimer",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This will go under the results slider on the attorney hero.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -65,5 +86,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780448053
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1781110140
 }

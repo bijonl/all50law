@@ -77,6 +77,116 @@
                         }
 
                     }
+
+                    .practice-wrapper {
+                        h5 {
+                            margin-bottom: 20px; 
+                        }
+                        .button-wrapper {
+                            width: fit-content; 
+                            background-color: $color-lightgray; 
+                            padding: 12px; 
+                            color: $base-text-color; 
+                            border-radius: 12px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .attorney-main-content {
+        padding-top: 80px; 
+        padding-bottom: 80px; 
+        .attorney-main-content-container  {
+            .attorney-main-content-row  {
+                gap: 30px; 
+                .info-col {
+                    border-radius: 12px;
+                    background-color: $color-offwhite; 
+                    h2 {
+                        padding-top: 20px; 
+                        padding-left: 20px; 
+                    }
+                    ul {
+                        font-size: 18px; 
+                        padding-bottom: 20px; 
+                        padding-left: 20px; 
+                        li {
+                            margin-top: 20px; 
+                            margin-bottom: 20px; 
+                            font-weight: bold;
+                            i {
+                                color: $color-primary; 
+                            }
+                            a {
+                                color: inherit; 
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    } 
+
+    .results-section {
+        padding-top: 80px; 
+        padding-bottom: 80px; 
+        background-color: $color-offwhite; 
+        .results-container {
+            .table-responsive {
+                margin-top: 50px; 
+                border: solid 1px; 
+                table {
+                    // background-color: white; 
+                    border-radius: 12px;
+                    width: 100%; 
+                    th {
+                        border-right: solid 1px; 
+                        border-bottom: solid 1px; 
+
+                         &:last-child {
+                            border-right: 0; 
+
+                        }
+                    }
+                    thead {
+                        border-radius: 12px;
+                        @extend .background-primary; 
+                        tr {
+                            border-bottom: solid 1px;
+                        }
+                    }
+                    tbody {
+                        border-bottom: solid 1px black; 
+                        tr {
+                            &:nth-child(odd) {
+                                background-color: white; 
+                            }
+                            &:last-child {
+                                td, th {
+                                    border-bottom: 0;
+                                }
+                            }
+
+                        }
+
+                    }
+                   
+                    td {
+                        border-right: solid 1px;
+                        border-bottom: solid 1px; 
+
+                        &:last-child {
+                            border-right: 0;
+                        }
+                    }
+                   
+                    tr, td, th {
+                        padding: 20px; 
+                    }
                 }
             }
         }

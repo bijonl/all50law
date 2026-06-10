@@ -21,10 +21,11 @@
                         $practice_id = $practice->ID; 
                         $practice_title = get_the_title($practice_id); 
                         $practice_link = get_the_permalink($practice_id);  ?>
-
-                        <a href="<?php echo $practice_link ?>">
-                            <?php echo $practice_title;  ?> 
-                        </a>
+                        <div class="button-wrapper">
+                            <a href="<?php echo $practice_link ?>" class="color-inherit">
+                                <?php echo $practice_title;  ?> 
+                            </a>
+                        </div>
                 </div>
                 <?php } ?>
             <?php } ?>

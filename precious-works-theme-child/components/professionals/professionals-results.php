@@ -2,6 +2,7 @@
 $related_results = get_field('related_results');
 $per_view = 2;
 $bullet_count = count($related_results);
+$attorney_disclaimer = get_field('attorney_disclaimer', 'options');
 
 if ($related_results) {
 ?>
@@ -74,7 +75,14 @@ if ($related_results) {
 
     <?php } ?>
     </div>
-    <a href="#result-table" class="btn btn-primary color-inherit">View More</a>
+    <a href="#result-table" class="fw-bold text-decoration-underline btn btn-primary color-inherit">
+        View More
+        <i class="fa-solid fa-chevron-down"></i>
+    
+    </a>
+    <?php if($attorney_disclaimer) { ?>
+        <p class="disclaimer-text mt-2"><?php echo $attorney_disclaimer ?></p>
+    <?php } ?>
 
 </div>
 
