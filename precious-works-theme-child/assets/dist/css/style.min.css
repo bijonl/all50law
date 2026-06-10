@@ -9738,4 +9738,40 @@ small, .small {
   font-size: 15px;
 }
 
+.single-attorney-post-section .professionals-hero {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-creds-col .prof-creds-wrapper {
+  background-color: #161616;
+  border-radius: 12px;
+  padding: 12px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-creds-col .prof-creds-wrapper .prof-image-wrapper {
+  margin-bottom: 25px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-creds-col .prof-creds-wrapper .prof-name-wrapper {
+  margin-bottom: 25px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-creds-col .prof-creds-wrapper .prof-position-wrapper {
+  border-top: solid 1px white;
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-creds-col .prof-creds-wrapper .position-contact-wrapper {
+  border-top: solid 1px white;
+  padding-top: 25px;
+  margin-top: 25px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-creds-col .prof-creds-wrapper .position-contact-wrapper a {
+  font-size: 18px;
+  padding-bottom: 5px;
+  color: inherit;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-creds-col .prof-creds-wrapper .prof-edu-wrapper {
+  border-top: solid 1px white;
+  padding-top: 25px;
+  margin-top: 25px;
+}
+
 /*# sourceMappingURL=style.min.css.map */
