@@ -1,0 +1,28 @@
+.photo-divider-section {
+    width: 96%;
+    margin: auto;  
+    margin-top: 12px; 
+    border-radius: 12px;
+    &.block-section {
+        padding-top: 0; 
+        padding-bottom: 0; 
+    }
+    .photo-divider-overlay {
+        background-color: black; 
+        opacity: 0.6;
+        border-radius: 12px;
+    }
+
+    .photo-divider-container {
+        position: relative; 
+        z-index: 2;
+        .title-area-content-wrapper {
+            .title-wrapper {
+                padding-bottom: 40px; 
+            }
+            .subtitle-wrapper {
+                font-size: 24px; 
+            }
+        }
+    }
+}

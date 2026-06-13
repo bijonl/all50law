@@ -9150,9 +9150,30 @@ small, .small {
   text-align: center;
 }
 
+.photo-divider-section {
+  width: 96%;
+  margin: auto;
+  margin-top: 12px;
+  border-radius: 12px;
+}
 .photo-divider-section.block-section {
   padding-top: 0;
   padding-bottom: 0;
+}
+.photo-divider-section .photo-divider-overlay {
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 12px;
+}
+.photo-divider-section .photo-divider-container {
+  position: relative;
+  z-index: 2;
+}
+.photo-divider-section .photo-divider-container .title-area-content-wrapper .title-wrapper {
+  padding-bottom: 40px;
+}
+.photo-divider-section .photo-divider-container .title-area-content-wrapper .subtitle-wrapper {
+  font-size: 24px;
 }
 
 .image-gallery-col .glightbox:focus {
