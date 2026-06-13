@@ -1,0 +1,60 @@
+.link-list-and-slider-section  {
+    background-color: $color-lightgray; 
+    .link-list-and-slider-container  {
+        .link-list-and-slider-title-row {
+                padding-bottom: 50px; 
+        }
+        .link-list-and-slider-row {
+           
+                .link-list-and-slider-col {
+                    .link-list-title-wrapper {
+                        padding-bottom: 30px; 
+                    }
+                    .link-list-and-slider-wrapper {
+                        gap: 16px; 
+                        .single-link-wrapper {
+                            width: 48%;
+                            a {
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                    .button-area-wrapper {
+                        margin-top: 20px; 
+                    }
+                &.slider-col {
+                    .link-glide {
+                        .slide-content-wrapper {
+                            background-color: white; 
+                            border-radius: 12px;
+                            padding-top: 16px; 
+                            .slider-text-wrapper {
+                                padding-left: 24px; 
+                                padding-right: 24px; 
+                                padding-bottom: 16px; 
+                                .slide-title-wrapper {
+                                    padding-bottom: 16px; 
+                                    h5 {
+                                        font-size: 18px; 
+                                    }
+                                }
+                            }
+                            .slide-link-wrapper { 
+                                padding-top: 16px; 
+                                padding-bottom: 16px; 
+                                padding-left: 24px; 
+                                padding-right: 24px; 
+                                border-radius: 0 0 12px 12px;
+                                a {
+                                    color: white; 
+                                }
+
+                            }
+                        }
+                    }
+                }
+                    
+            }
+        }
+    }
+}

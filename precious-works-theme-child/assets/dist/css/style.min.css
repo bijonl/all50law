@@ -9652,6 +9652,54 @@ small, .small {
   font-size: 20px;
 }
 
+.link-list-and-slider-section {
+  background-color: #bababb;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-title-row {
+  padding-bottom: 50px;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col .link-list-title-wrapper {
+  padding-bottom: 30px;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col .link-list-and-slider-wrapper {
+  gap: 16px;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col .link-list-and-slider-wrapper .single-link-wrapper {
+  width: 48%;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col .link-list-and-slider-wrapper .single-link-wrapper a {
+  white-space: nowrap;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col .button-area-wrapper {
+  margin-top: 20px;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col.slider-col .link-glide .slide-content-wrapper {
+  background-color: white;
+  border-radius: 12px;
+  padding-top: 16px;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col.slider-col .link-glide .slide-content-wrapper .slider-text-wrapper {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col.slider-col .link-glide .slide-content-wrapper .slider-text-wrapper .slide-title-wrapper {
+  padding-bottom: 16px;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col.slider-col .link-glide .slide-content-wrapper .slider-text-wrapper .slide-title-wrapper h5, .link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col.slider-col .link-glide .slide-content-wrapper .slider-text-wrapper .slide-title-wrapper .h5 {
+  font-size: 18px;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col.slider-col .link-glide .slide-content-wrapper .slide-link-wrapper {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 0 0 12px 12px;
+}
+.link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col.slider-col .link-glide .slide-content-wrapper .slide-link-wrapper a {
+  color: white;
+}
+
 .single-post-tile .single-post-image-wrapper {
   padding-bottom: 20px;
 }
@@ -9763,6 +9811,15 @@ small, .small {
 }
 .single-result-wrapper .single-result-content-wrapper .single-result-meta-wrapper .single-result-location-year-wrapper p {
   font-size: 15px;
+}
+
+.single-link-wrapper {
+  padding: 16px 32px;
+  background-color: #efefef;
+  border-radius: 12px;
+}
+.single-link-wrapper .single-link {
+  font-size: 20px;
 }
 
 .single-attorney-post-section .professionals-hero {

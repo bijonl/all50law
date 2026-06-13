@@ -29,6 +29,11 @@
         'icon'  => 'networking',
         'description' => "Output a list of all the firm practices in alphabetical order."
     ],
+    'link-list-and-slider' => [
+        'label' => 'Link List and Slider',
+        'icon'  => 'networking',
+        'description' => "Output a list of all the firm practices in alphabetical order."
+    ],
     'location-list' => [
         'label' => 'Location List',
         'icon'  => 'location-alt',

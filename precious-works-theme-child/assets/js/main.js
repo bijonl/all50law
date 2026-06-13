@@ -164,6 +164,18 @@ document.querySelectorAll('.attorneys-glide').forEach(function(slider) {
 
 });
 
+// Image Slider
+document.querySelectorAll('.link-glide').forEach(function(slider) {
+    new Glide(slider, {
+        startAt: 0,
+        perView: 1,
+        perTouch: 1,
+        autoplay: false,
+        gap: 0,
+    }).mount();
+
+});
+
 
 
 // Image Slider
