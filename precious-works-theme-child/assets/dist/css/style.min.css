@@ -8252,7 +8252,7 @@ progress {
   color: #ffffff;
   background-color: #0247ac;
 }
-.background-primary a, .single-attorney-post-section .results-section .results-container .table-responsive table thead a, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper a {
+.background-primary a:not(.pw-solid-button):not(.gform_button.button):not(.pw-solid-button *):not(.gform_button.button *), .single-attorney-post-section .results-section .results-container .table-responsive table thead a:not(.pw-solid-button):not(.gform_button.button):not(.pw-solid-button *):not(.gform_button.button *), .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper a:not(.pw-solid-button):not(.gform_button.button):not(.pw-solid-button *):not(.gform_button.button *) {
   color: #d71d22;
 }
 .background-primary .glide__bullet:hover, .single-attorney-post-section .results-section .results-container .table-responsive table thead .glide__bullet:hover, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:hover, .background-primary .glide__bullet:focus, .single-attorney-post-section .results-section .results-container .table-responsive table thead .glide__bullet:focus, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .glide__bullet:focus {
@@ -8922,6 +8922,9 @@ small, .small {
   font-size: 12px;
 }
 
+.title-area-container.vertical .button-area-wrapper {
+  margin-top: 20px;
+}
 .title-area-container.horizontal .title-area-row {
   padding-bottom: 60px;
 }
@@ -9775,6 +9778,150 @@ small, .small {
 }
 .review-card .star-wrapper {
   color: #d71d22;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  aspect-ratio: 4/3;
+  height: auto;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front {
+  border-radius: 12px;
+}
+.flip-card-front .front-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.flip-card-front .front-card-wrapper .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.flip-card-front .front-card-wrapper .icon-wrapper img {
+  width: 25px;
+  height: auto;
+}
+.flip-card-front .front-card-wrapper .location-wrapper {
+  font-size: 16px;
+  line-height: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #161616;
+}
+.flip-card-front .front-card-wrapper .location-wrapper p {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.flip-card-front .front-card-wrapper .front-card-body-wrapper {
+  padding: 24px;
+}
+.flip-card-front .front-card-wrapper .front-card-body-wrapper .number-wrapper {
+  font-family: "Georgia", serif;
+  font-size: 34px;
+  color: #0247ac;
+}
+.flip-card-front .front-card-wrapper .front-card-body-wrapper .number-wrapper p {
+  margin-bottom: 0;
+}
+.flip-card-front .front-card-wrapper .front-card-body-wrapper .title-wrapper {
+  font-size: 18px;
+  font-weight: 700;
+}
+.flip-card-front .front-card-wrapper .front-card-button-wrapper {
+  border-radius: 0 0 12px 12px;
+  background-color: #d71d22;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flip-card-front .front-card-wrapper .front-card-button-wrapper button {
+  font-weight: bold;
+  color: white;
+}
+
+.flip-card-back {
+  border-radius: 12px;
+}
+.flip-card-back .back-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.flip-card-back .back-card-wrapper .content-wrapper {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flip-card-back .back-card-wrapper .content-wrapper p {
+  margin-bottom: 0;
+}
+.flip-card-back .back-card-wrapper .back-body-wrapper {
+  padding: 10px;
+}
+.flip-card-back .back-card-wrapper .back-body-wrapper .number-wrapper {
+  font-family: "Georgia", serif;
+  font-size: 34px;
+  color: #0247ac;
+}
+.flip-card-back .back-card-wrapper .back-body-wrapper .number-wrapper p {
+  margin-bottom: 0;
+}
+.flip-card-back .back-card-wrapper .back-body-wrapper .title-wrapper {
+  font-size: 18px;
+  font-weight: 700;
+}
+.flip-card-back .back-card-wrapper .front-card-button-wrapper {
+  border-radius: 0 0 12px 12px;
+  background-color: #d71d22;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.flip-card-back .back-card-wrapper .front-card-button-wrapper button {
+  font-weight: bold;
+  color: white;
+}
+
+.flip-card-front {
+  display: block;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flip-card-front {
+  background-color: #efefef;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #efefef;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flipped .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
 .single-video-wrapper .single-video-content-wrapper .video-title-content-wrapper {

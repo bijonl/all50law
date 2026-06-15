@@ -5,4 +5,6 @@ $practices = get_field('practices', $result_id);
 $reward_money = get_field('reward_money', $result_id);
 $case_location = get_field('case_location', $result_id);
 $practices = get_field('practices', $result_id);
+$case_content = get_field('case_content', $result_id); 
+$result_icon = get_field('result_icon', $result_id); 
 ?>

@@ -3,6 +3,12 @@ $big-title-spacing: 15px;
 $button-row-spacing: 30px; 
 
 .title-area-container {
+    &.vertical {
+        .button-area-wrapper {
+            margin-top: 20px; 
+
+        }
+    }
     &.horizontal {
         .title-area-row {
             padding-bottom: 60px; 

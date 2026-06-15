@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6a1f8221afaf8",
-            "label": "Attorney Content",
+            "label": "Results Content",
             "name": "",
             "aria-label": "",
             "type": "accordion",
@@ -81,6 +81,27 @@
             "bidirectional_target": []
         },
         {
+            "key": "field_6a300f6a9b325",
+            "label": "Result Disclaimer Text",
+            "name": "result_disclaimer_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6a1f8221afb12",
             "label": "Attorney Content END",
             "name": "",
@@ -117,5 +138,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780450053
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1781534589
 }

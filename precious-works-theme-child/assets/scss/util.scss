@@ -34,7 +34,7 @@
 .background-primary {
     color: $primary-background-text-color; 
     background-color: $primary-background-color; 
-    a {
+    a:not(.pw-solid-button):not(.pw-solid-button *) {
         color: $color-secondary; 
     }
     .glide__bullet:hover, .glide__bullet:focus {

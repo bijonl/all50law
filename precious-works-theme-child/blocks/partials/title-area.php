@@ -36,6 +36,10 @@ $title_alignment = isset($title_alignment) ? $title_alignment : 'text-center'
                         </div>
                     <?php } ?>
 
+                    <?php if(!$horizonal_title) {
+                        include(locate_template('blocks/partials/button-area.php')); ?>
+                    <?php } ?>
+
                 </div>
             </div>
             <div class="button-area-col text-start <?php echo  $horizonal_title ? 'col-lg-5 ms-auto' : 'col-12 text-center' ?>">
@@ -48,8 +52,8 @@ $title_alignment = isset($title_alignment) ? $title_alignment : 'text-center'
                 
                 <?php if($horizonal_title) {
                     $button_type = 'pw-text-button'; 
-                } ?>
-                <?php include(locate_template('blocks/partials/button-area.php')); ?>
+                    include(locate_template('blocks/partials/button-area.php')); ?>
+                <?php } ?>
             </div>
         </div>
     </section>

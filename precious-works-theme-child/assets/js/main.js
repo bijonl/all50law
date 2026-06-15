@@ -260,3 +260,22 @@ document.querySelectorAll('.single-video-modal-wrapper').forEach(function(modal)
     });
 
 });
+
+document.querySelectorAll('.flip-card').forEach((card) => {
+    const buttons = card.querySelectorAll('[data-flip-trigger]');
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const isFlipped = card.classList.contains('flipped');
+
+            card.classList.toggle('flipped');
+
+            card.querySelectorAll('[data-flip-trigger]').forEach((btn) => {
+                btn.setAttribute(
+                    'aria-expanded',
+                    (!isFlipped).toString()
+                );
+            });
+        });
+    });
+});
