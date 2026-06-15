@@ -1,7 +1,10 @@
 <?php 
 $display_title = !empty($display_title) ? $display_title : 'h1'; 
+$disclaimer_text = get_field('disclaimer_text');
 $display_title .= ' mb-0'; 
-$title_format = get_field('title_format') ? get_field('title_format') : 'vertical';
+if(!isset($title_format)) {
+    $title_format = get_field('title_format') ? get_field('title_format') : 'vertical';
+}
 $horizonal_title = $title_format === 'horizontal'; 
 $title_alignment = isset($title_alignment) ? $title_alignment : 'text-center'
 ?>

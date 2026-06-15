@@ -41,6 +41,9 @@
         border: 2px solid $color-offwhite;
         background-color:  $color-offwhite;
     }
+    .pw-text-button i {
+        background-color: $color-secondary; 
+    }
 }
 
 .background-secondary {

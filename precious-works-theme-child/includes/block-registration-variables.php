@@ -19,6 +19,11 @@
         'icon'  => 'feedback',
         'description' => "Use this block to add a Gravity Form. It lets visitors send you messages, sign up, or share info easily."
     ],
+    'featured-quote' => [
+        'label' => 'Featured Quote',
+        'icon'  => 'quotes',
+        'description' => "Use this block to add a fancy pull quote."
+    ],
     'general-content' => [
         'label' => 'General Content',
         'icon'  => 'text',

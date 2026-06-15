@@ -1,7 +1,7 @@
 <?php
 $related_results = get_field('related_results');
 $per_view = 2;
-$bullet_count = count($related_results);
+$bullet_count = $related_results ? count($related_results) : '';
 $attorney_disclaimer = get_field('attorney_disclaimer', 'options');
 
 if ($related_results) {

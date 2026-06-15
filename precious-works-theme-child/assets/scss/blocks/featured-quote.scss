@@ -1,0 +1,42 @@
+.featured-quote-section {
+    .featured-quote-container {
+        .featured-quote-row {
+            border-radius: 12px;
+            padding: 10px; 
+
+            .featured-quote-col {
+                padding-left: 0; 
+                .featured-quote-wrapper {
+                    padding-top: 30px; 
+                    padding-bottom: 30px; 
+                    padding-left: 30px; 
+                    .quote-body {
+                        font-size: 20px; 
+                        font-weight: 700; 
+                        width: 85%; 
+                        .quote-text-wrapper {
+                            padding-top: 25px; 
+                        }
+                    }
+                    .quote-attribute-wrapper {
+                        .line-one {
+                            font-weight: 700;
+                            font-size: 18px;
+                        }
+                        .line-two {
+                            font-weight: 16px;
+                        }
+                        .line-quote {
+                            font-weight: 16px;
+                            a {
+                                color: white; 
+                                text-decoration: underline;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

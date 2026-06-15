@@ -1,4 +1,41 @@
 .page-link-list-section {
+    &.background-primary {
+         .link-list-container.card {
+             .link-list-row {
+                .link-list-col {
+                    .link-list-wrapper {
+                        .link-col {
+                            .single-link-wrapper {
+                                font-size: 18px; 
+                                border-radius: 12px;
+                                padding: 25px; 
+                                text-align: center; 
+                                @extend .background-light-grey; 
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+        .link-list-container.regular {
+             .link-list-row {
+                .link-list-col {
+                    color: $color-darkgray; 
+                    .link-list-wrapper {
+                        .link-col {
+                            color: $color-darkgray; 
+                            .single-link-wrapper {
+                               
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+
+    }
     .link-list-container {
         .link-list-row {
             .link-list-col {

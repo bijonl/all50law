@@ -8259,8 +8259,11 @@ progress {
   border: 2px solid #efefef;
   background-color: #efefef;
 }
+.background-primary .pw-text-button i, .single-attorney-post-section .results-section .results-container .table-responsive table thead .pw-text-button i, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper .pw-text-button i {
+  background-color: #d71d22;
+}
 
-.background-secondary, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper {
+.background-secondary, .stats-section .stats-container .stats-row .stats-col:last-child .single-stat-wrapper, .stats-section.background-light-grey .stats-container .stats-row .stats-col:last-child .single-stat-wrapper, .page-link-list-section.background-primary .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .stats-section.single-link-wrapper .stats-container .stats-row .stats-col:last-child .single-stat-wrapper, .single-attorney-post-section .results-section .results-container .table-responsive table thead.page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .stats-section.single-link-wrapper .stats-container .stats-row .stats-col:last-child .single-stat-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .page-link-list-section.single-link-wrapper .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .stats-section.single-link-wrapper .stats-container .stats-row .stats-col:last-child .single-stat-wrapper {
   color: #ffffff;
   background-color: #d71d22;
 }
@@ -8270,7 +8273,7 @@ progress {
   color: #ffffff;
 }
 
-.background-light-grey {
+.background-light-grey, .page-link-list-section.background-primary .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper, .single-attorney-post-section .results-section .results-container .table-responsive table thead.page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .page-link-list-section.single-link-wrapper .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper {
   background-color: #efefef;
   color: #161616;
 }
@@ -9535,6 +9538,18 @@ small, .small {
   min-width: auto;
 }
 
+.page-link-list-section.background-primary .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper, .single-attorney-post-section .results-section .results-container .table-responsive table thead.page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .page-link-list-section.single-link-wrapper .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper {
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+}
+.page-link-list-section.background-primary .link-list-container.regular .link-list-row .link-list-col, .single-attorney-post-section .results-section .results-container .table-responsive table thead.page-link-list-section .link-list-container.regular .link-list-row .link-list-col, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .page-link-list-section.single-link-wrapper .link-list-container.regular .link-list-row .link-list-col {
+  color: #161616;
+}
+.page-link-list-section.background-primary .link-list-container.regular .link-list-row .link-list-col .link-list-wrapper .link-col, .single-attorney-post-section .results-section .results-container .table-responsive table thead.page-link-list-section .link-list-container.regular .link-list-row .link-list-col .link-list-wrapper .link-col, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .page-link-list-section.single-link-wrapper .link-list-container.regular .link-list-row .link-list-col .link-list-wrapper .link-col {
+  color: #161616;
+}
 .page-link-list-section .link-list-container .link-list-row .link-list-col {
   border-radius: 12px;
   padding: 20px;
@@ -9650,6 +9665,13 @@ small, .small {
   margin-bottom: 15px;
 }
 
+.stats-section.background-light-grey .stats-container .stats-row .stats-col:first-child .single-stat-wrapper, .page-link-list-section.background-primary .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .stats-section.single-link-wrapper .stats-container .stats-row .stats-col:first-child .single-stat-wrapper, .single-attorney-post-section .results-section .results-container .table-responsive table thead.page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .stats-section.single-link-wrapper .stats-container .stats-row .stats-col:first-child .single-stat-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .page-link-list-section.single-link-wrapper .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .stats-section.single-link-wrapper .stats-container .stats-row .stats-col:first-child .single-stat-wrapper {
+  clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
+  margin-left: 0;
+}
+.stats-section.background-light-grey .stats-container .stats-row .stats-col .single-stat-wrapper, .page-link-list-section.background-primary .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .stats-section.single-link-wrapper .stats-container .stats-row .stats-col .single-stat-wrapper, .single-attorney-post-section .results-section .results-container .table-responsive table thead.page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .stats-section.single-link-wrapper .stats-container .stats-row .stats-col .single-stat-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .page-link-list-section.single-link-wrapper .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .stats-section.single-link-wrapper .stats-container .stats-row .stats-col .single-stat-wrapper {
+  background-color: white;
+}
 .stats-section .stats-container .stats-row .stats-col:first-child .single-stat-wrapper {
   clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
   margin-left: 0;
@@ -9722,6 +9744,41 @@ small, .small {
 }
 .link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col.slider-col .link-glide .slide-content-wrapper .slide-link-wrapper a {
   color: white;
+}
+
+.featured-quote-section .featured-quote-container .featured-quote-row {
+  border-radius: 12px;
+  padding: 10px;
+}
+.featured-quote-section .featured-quote-container .featured-quote-row .featured-quote-col {
+  padding-left: 0;
+}
+.featured-quote-section .featured-quote-container .featured-quote-row .featured-quote-col .featured-quote-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+.featured-quote-section .featured-quote-container .featured-quote-row .featured-quote-col .featured-quote-wrapper .quote-body {
+  font-size: 20px;
+  font-weight: 700;
+  width: 85%;
+}
+.featured-quote-section .featured-quote-container .featured-quote-row .featured-quote-col .featured-quote-wrapper .quote-body .quote-text-wrapper {
+  padding-top: 25px;
+}
+.featured-quote-section .featured-quote-container .featured-quote-row .featured-quote-col .featured-quote-wrapper .quote-attribute-wrapper .line-one {
+  font-weight: 700;
+  font-size: 18px;
+}
+.featured-quote-section .featured-quote-container .featured-quote-row .featured-quote-col .featured-quote-wrapper .quote-attribute-wrapper .line-two {
+  font-weight: 16px;
+}
+.featured-quote-section .featured-quote-container .featured-quote-row .featured-quote-col .featured-quote-wrapper .quote-attribute-wrapper .line-quote {
+  font-weight: 16px;
+}
+.featured-quote-section .featured-quote-container .featured-quote-row .featured-quote-col .featured-quote-wrapper .quote-attribute-wrapper .line-quote a {
+  color: white;
+  text-decoration: underline;
 }
 
 .single-post-tile .single-post-image-wrapper {

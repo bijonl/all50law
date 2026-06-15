@@ -1,4 +1,26 @@
 .stats-section {
+    &.background-light-grey {
+        .stats-container {
+            .stats-row {
+                .stats-col {
+                    &:first-child {
+                        .single-stat-wrapper {
+                            clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
+                            margin-left: 0;
+                        }
+                    }
+                    &:last-child {
+                        .single-stat-wrapper {
+                            @extend .background-secondary; 
+                        }
+                    }
+                    .single-stat-wrapper {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
     .stats-container {
         .stats-row {
             .stats-col {
