@@ -21,13 +21,13 @@ if(!$has_content) {
         <div class="interior-hero-row row h-100">
             <div class="title-wrapper col-lg-5 me-auto">
                     <?php if($section_title) { ?>
-                        <div class="big-title-wrapper">
+                        <div class="big-title-wrapper pb-4">
                             <?php echo pw_seo_heading($section_title, $section_title_tag, $display_title) ?>
                         </div>
                     <?php } ?>
                     
                     <?php if($section_subtitle){ ?>
-                        <div class="subtitle-wrapper">
+                        <div class="subtitle-wrapper pb-4">
                             <?php echo $section_subtitle ?>
                         </div>
                     <?php }; ?>

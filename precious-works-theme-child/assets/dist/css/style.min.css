@@ -8962,6 +8962,8 @@ small, .small {
 }
 
 .reviews-section.background-primary .review-card, .single-attorney-post-section .results-section .results-container .table-responsive table thead.reviews-section .review-card, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .review-card {
+  background-color: white;
+  color: #161616;
   border: solid 2px white;
 }
 .reviews-section.background-primary .quote-wrapper, .single-attorney-post-section .results-section .results-container .table-responsive table thead.reviews-section .quote-wrapper, .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .reviews-section.single-link-wrapper .quote-wrapper {
@@ -9470,6 +9472,7 @@ small, .small {
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.wide-image {
   padding: 8px;
+  border: solid 1px #efefef;
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.wide-image .wildcard-text-content-wrapper {
   height: 100%;
@@ -9516,6 +9519,7 @@ small, .small {
   }
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-image-wrapper {
+  display: flex;
   padding-bottom: 20px;
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-image-wrapper i {
@@ -9577,6 +9581,8 @@ small, .small {
   opacity: 1;
 }
 .page-link-list-section .link-list-container.big-title article {
+  padding: 0;
+  background-color: transparent;
   letter-spacing: -1px;
 }
 .page-link-list-section .link-list-container.card .link-list-row .link-list-col .link-list-wrapper .link-col .single-link-wrapper {
