@@ -59,6 +59,20 @@ document.addEventListener("scroll", function () {
   }
 });
 
+document.querySelectorAll('.submenu-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+
+        const submenu = button.nextElementSibling;
+        const menuItem = button.closest('.menu-item-has-children');
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+
+        button.setAttribute('aria-expanded', !expanded);
+
+        submenu.classList.toggle('is-open');
+        menuItem.classList.toggle('open-active');
+    });
+});
+
 
 // Recent Posts Slider
 document.querySelectorAll('.recent-posts-glide').forEach(function(slider) {

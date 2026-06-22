@@ -218,3 +218,23 @@ add_action('enqueue_block_editor_assets', 'theme_enqueue_glide_styles');
 
 //     wp_die('States imported successfully.');
 // });
+
+function pw_add_menu_toggle_button( $item_output, $item, $depth, $args ) {
+
+    // Check if this menu item has children
+    if ( in_array( 'menu-item-has-children', $item->classes ) ) {
+
+        $item_output .= '
+            <button
+                class="submenu-toggle border-0 bg-transparent box-shadow-0"
+                aria-expanded="false"
+                aria-label="Toggle submenu for ' . esc_attr( $item->title ) . '"
+            >
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>';
+    }
+
+    return $item_output;
+}
+
+add_filter( 'walker_nav_menu_start_el', 'pw_add_menu_toggle_button', 10, 4 );

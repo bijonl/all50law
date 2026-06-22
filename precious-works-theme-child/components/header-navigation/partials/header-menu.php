@@ -1,4 +1,4 @@
- <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Main Header Navigation">
+<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Main Header Navigation">
     <?php 
     wp_nav_menu( array(
         'theme_location' => 'primary', 
