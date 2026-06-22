@@ -8,9 +8,25 @@ $logo_gallery_bg : lightgray;
     .site-footer-content-container {
         .site-footer-content-row {
             padding-bottom: 40px; 
+            @include media-breakpoint-down(lg) {
+                row-gap: 40px; 
+            }
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 0; 
+            }
             .footer-logo-col  {
+                @include media-breakpoint-down(sm) {
+                    padding-bottom: 40px; 
+                    margin-bottom: 40px; 
+                    border-bottom: solid 1px $color-secondary; 
+                }
                 .footer-logo-wrapper {
                     max-width: 170px; 
+                    @include media-breakpoint-down(sm) {
+                        margin: auto; 
+                        max-width: 75%;
+                        padding-bottom: 40px; 
+                    }
                 }
                  .footer-note-wrapper {
                     margin-top: 15px;  
@@ -23,18 +39,32 @@ $logo_gallery_bg : lightgray;
             }
 
             .footer-menu-col  {
-                .footer-menu {
-                    font-size: 18px; 
-                    .footer-menu-title {
-                        font-size: 18px; 
-                        margin-bottom: 15px; 
-                        font-family: $body-text-font;
+                @include media-breakpoint-down(sm) {
+                    padding-bottom: 40px; 
+                    margin-bottom: 40px; 
+                    border-bottom: solid 1px $color-secondary;  
+                }
+                .menu-col-wrapper {
+                    @include media-breakpoint-down(sm) {
+                        flex-wrap: wrap; 
+                        row-gap: 40px;
                     }
-                    .footer-menu-list {
-                        .footer-menu-item {
-                            margin-bottom: 20px; 
-                            &:last-child {
-                                margin-bottom: 0; 
+                    .footer-menu {
+                        font-size: 18px; 
+                        @include media-breakpoint-down(sm) {
+                            width: 50%; 
+                        }
+                        .footer-menu-title {
+                            font-size: 18px; 
+                            margin-bottom: 15px; 
+                            font-family: $body-text-font;
+                        }
+                        .footer-menu-list {
+                            .footer-menu-item {
+                                margin-bottom: 20px; 
+                                &:last-child {
+                                    margin-bottom: 0; 
+                                }
                             }
                         }
                     }
@@ -42,6 +72,11 @@ $logo_gallery_bg : lightgray;
             }
 
             .social-menu-col {
+                @include media-breakpoint-down(sm) {
+                    padding-bottom: 40px; 
+                    margin-bottom: 40px; 
+                    border-bottom: solid 1px $color-secondary;  
+                }
                 .footer-social-col  {
                     .footer-menu-title {
                         font-size: 16px; 
@@ -57,6 +92,10 @@ $logo_gallery_bg : lightgray;
                     }
                     &.app-store-nav  {
                         margin-top: 20px; 
+                        @include media-breakpoint-down(sm) {
+                            margin-top: 40px; 
+
+                        }
                         .social-list {
                             gap: 15px; 
                             li {
@@ -80,11 +119,39 @@ $logo_gallery_bg : lightgray;
             padding-top: 25px; 
             padding-bottom: 25px; 
             align-items: center;
+            @include media-breakpoint-down(xl) {
+                row-gap: 40px; 
+            }
+            @include media-breakpoint-down(lg) {
+                gap: 40px; 
+            }
+            @include media-breakpoint-between(sm, lg) {
+                row-gap: 40px; 
+                column-gap: 0; 
+            }
+            @include media-breakpoint-down(sm) {
+                gap: 40px; 
+                border-radius: 0;
+                background-color: transparent; 
+                padding-bottom: 40px; 
+                margin-bottom: 40px; 
+                border-bottom: solid 1px $color-secondary;  
+            }
             .footer-logo-gallery-col {
                 .single-image-wrapper {
                     width: 175px; 
                     text-align: center;
+                    @include media-breakpoint-down(lg) {
+                        width: 75%; 
+                        height: auto; 
+                        margin: auto; 
+                    }
+                    @include media-breakpoint-down(sm) {
+                        width: 75%; 
+                        margin: auto; 
+                    }
                     img {
+                        border-radius: 0;
                         height: auto; 
                         width: 100%; 
                         max-width: 100%;
@@ -96,13 +163,24 @@ $logo_gallery_bg : lightgray;
 
         .footer-address-row {
             padding-bottom: 15px; 
+            address {
+                margin-bottom: 0; 
+            }
         }
 
         .footer-copyright-row {
             padding-top: 25px; 
+            @include media-breakpoint-down(sm) {
+                padding-top: 40px;
+            }
             .footer-copyright-col {
                 .copyright-wrapper {
                     font-size: 12px; 
+                }
+            }
+            .footer-privacy-menu-col {
+                @include media-breakpoint-down(sm) {
+                    padding-top: 20px;
                 }
             }
         }

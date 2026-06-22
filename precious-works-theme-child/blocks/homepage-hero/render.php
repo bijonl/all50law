@@ -44,9 +44,9 @@ if(!$has_content) {
                         <h3 class="gallery-title mt-4"><?php echo $gallery_title ?></h3>
                     <?php } ?>
                     <?php if($logo_gallery) { ?>
-                        <div class="gallery-wrapper d-flex align-items-center gap-3">
+                        <div class="gallery-wrapper d-flex flex-wrap flex-sm-wrap align-items-center gap-3">
                             <?php foreach($logo_gallery as $image) {
-                                echo wp_get_attachment_image($image['id'], 'full', false); 
+                                echo wp_get_attachment_image($image['id'], 'full', false, array('class' => 'rounded-0')); 
                             } ?>
                         </div>
                     <?php } ?>

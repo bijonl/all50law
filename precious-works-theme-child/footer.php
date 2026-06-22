@@ -11,7 +11,7 @@ include locate_template('components/variables/footer-variables.php'); ?>
             <?php
             if ( $footer_logo || $footer_review_note ) {
                 ?>
-                <div class="footer-logo-col col-sm-3">
+                <div class="footer-logo-col col-12 col-sm-4 col-lg-3">
 
                     <?php
                     if ( $footer_logo ) {
@@ -31,7 +31,7 @@ include locate_template('components/variables/footer-variables.php'); ?>
             <?php
             if ( array_filter( $footer_menu_array ) ) {
                 ?>
-                <div class="footer-menu-col col-sm-5 mx-auto">
+                <div class="footer-menu-col col-12 col-sm-8 col-lg-5 mx-auto">
 
                     <div class="d-flex justify-content-between menu-col-wrapper">
 
@@ -56,7 +56,7 @@ include locate_template('components/variables/footer-variables.php'); ?>
             <?php
             if ( $social_media_footer || $app_store_icons ) {
                 ?>
-                <div class="social-menu-col col-sm-3">
+                <div class="social-menu-col col-12 col-sm-6 col-lg-3">
 
                     <?php
                     if ( have_rows( 'social_media_footer', 'options' ) ) {
@@ -96,7 +96,7 @@ include locate_template('components/variables/footer-variables.php'); ?>
         <?php
         if ( ! empty( $footer_logo_gallery ) ) {
             ?>
-            <div class="row footer-logo-gallery-row justify-content-between">
+            <div class="row footer-logo-gallery-row justify-content-sm-center justify-content-lg-center justify-content-xl-between">
 
                 <?php include locate_template( 'components/footer/footer-logo-gallery.php' ); ?>
 
@@ -147,7 +147,7 @@ include locate_template('components/variables/footer-variables.php'); ?>
                 <?php
                 if ( $copyright_text ) {
                     ?>
-                    <div class="footer-copyright-col col text-start">
+                    <div class="footer-copyright-col col-sm text-start">
 
                         <?php include locate_template( 'components/footer/copyright.php' ); ?>
 
@@ -159,7 +159,7 @@ include locate_template('components/variables/footer-variables.php'); ?>
                 <?php
                 if ( have_rows( 'privacy_menu', 'options' ) ) {
                     ?>
-                    <div class="footer-privacy-menu-col col text-start">
+                    <div class="footer-privacy-menu-col col-sm text-start">
 
                         <?php include locate_template( 'components/footer/privacy-menu.php' ); ?>
 

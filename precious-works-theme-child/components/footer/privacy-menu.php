@@ -1,7 +1,7 @@
 <?php
 if ( have_rows( 'privacy_menu', 'option' ) ) { ?>
     <nav class="footer-privacy-nav" aria-label="Privacy and legal links">
-        <ul class="footer-privacy-menu list-unstyled d-flex flex-wrap gap-3 mb-0 justify-content-end">
+        <ul class="footer-privacy-menu list-unstyled d-flex flex-wrap gap-2 gap-sm-3 mb-0 justify-content-start justify-content-sm-end ms-0">
 
             <?php
             while ( have_rows( 'privacy_menu', 'option' ) ) {

@@ -8908,8 +8908,32 @@ body.home .site-header.is-scrolling .submenu-toggle {
 .site-footer .site-footer-content-container .site-footer-content-row {
   padding-bottom: 40px;
 }
+@media (max-width: 991.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row {
+    row-gap: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-col {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px #d71d22;
+  }
+}
 .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-col .footer-logo-wrapper {
   max-width: 170px;
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-col .footer-logo-wrapper {
+    margin: auto;
+    max-width: 75%;
+    padding-bottom: 40px;
+  }
 }
 .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-col .footer-note-wrapper {
   margin-top: 15px;
@@ -8917,19 +8941,44 @@ body.home .site-header.is-scrolling .submenu-toggle {
 .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-col .footer-review-note-wrapper {
   margin-top: 40px;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .footer-menu {
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px #d71d22;
+  }
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .menu-col-wrapper {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .menu-col-wrapper .footer-menu {
   font-size: 18px;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .footer-menu .footer-menu-title {
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .menu-col-wrapper .footer-menu {
+    width: 50%;
+  }
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .menu-col-wrapper .footer-menu .footer-menu-title {
   font-size: 18px;
   margin-bottom: 15px;
   font-family: "Inter", sans-serif;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .footer-menu .footer-menu-list .footer-menu-item {
+.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .menu-col-wrapper .footer-menu .footer-menu-list .footer-menu-item {
   margin-bottom: 20px;
 }
-.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .footer-menu .footer-menu-list .footer-menu-item:last-child {
+.site-footer .site-footer-content-container .site-footer-content-row .footer-menu-col .menu-col-wrapper .footer-menu .footer-menu-list .footer-menu-item:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .social-menu-col {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px #d71d22;
+  }
 }
 .site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col .footer-menu-title {
   font-size: 16px;
@@ -8941,6 +8990,11 @@ body.home .site-header.is-scrolling .submenu-toggle {
 }
 .site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col.app-store-nav {
   margin-top: 20px;
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col.app-store-nav {
+    margin-top: 40px;
+  }
 }
 .site-footer .site-footer-content-container .site-footer-content-row .social-menu-col .footer-social-col.app-store-nav .social-list {
   gap: 15px;
@@ -8960,11 +9014,51 @@ body.home .site-header.is-scrolling .submenu-toggle {
   padding-bottom: 25px;
   align-items: center;
 }
+@media (max-width: 1199.98px) {
+  .site-footer .site-footer-content-container .footer-logo-gallery-row {
+    row-gap: 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  .site-footer .site-footer-content-container .footer-logo-gallery-row {
+    gap: 40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .site-footer .site-footer-content-container .footer-logo-gallery-row {
+    row-gap: 40px;
+    column-gap: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .footer-logo-gallery-row {
+    gap: 40px;
+    border-radius: 0;
+    background-color: transparent;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: solid 1px #d71d22;
+  }
+}
 .site-footer .site-footer-content-container .footer-logo-gallery-row .footer-logo-gallery-col .single-image-wrapper {
   width: 175px;
   text-align: center;
 }
+@media (max-width: 991.98px) {
+  .site-footer .site-footer-content-container .footer-logo-gallery-row .footer-logo-gallery-col .single-image-wrapper {
+    width: 75%;
+    height: auto;
+    margin: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .footer-logo-gallery-row .footer-logo-gallery-col .single-image-wrapper {
+    width: 75%;
+    margin: auto;
+  }
+}
 .site-footer .site-footer-content-container .footer-logo-gallery-row .footer-logo-gallery-col .single-image-wrapper img {
+  border-radius: 0;
   height: auto;
   width: 100%;
   max-width: 100%;
@@ -8972,11 +9066,24 @@ body.home .site-header.is-scrolling .submenu-toggle {
 .site-footer .site-footer-content-container .footer-address-row {
   padding-bottom: 15px;
 }
+.site-footer .site-footer-content-container .footer-address-row address {
+  margin-bottom: 0;
+}
 .site-footer .site-footer-content-container .footer-copyright-row {
   padding-top: 25px;
 }
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .footer-copyright-row {
+    padding-top: 40px;
+  }
+}
 .site-footer .site-footer-content-container .footer-copyright-row .footer-copyright-col .copyright-wrapper {
   font-size: 12px;
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .footer-copyright-row .footer-privacy-menu-col {
+    padding-top: 20px;
+  }
 }
 
 .title-area-container.vertical .button-area-wrapper {
