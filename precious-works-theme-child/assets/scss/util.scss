@@ -125,5 +125,11 @@ footer {
     }
 }
 
+.mobile-spacing-row {
+    @include media-breakpoint-down(sm) {
+        row-gap: 40px;
+    }
+}
+
 
 

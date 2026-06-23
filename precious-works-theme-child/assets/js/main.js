@@ -90,7 +90,13 @@ document.querySelectorAll('.recent-posts-glide').forEach(function(slider) {
         perTouch: 3,
         autoplay: autoplay,
         gap: 20,
-        peek: peek
+        peek: peek, 
+         breakpoints: {
+        568: {
+                perView: 1,
+                peek: 0
+            }
+        }
     }).mount();
 
 });
@@ -112,7 +118,13 @@ document.querySelectorAll('.reviews-glide').forEach(function(slider) {
         perTouch: 1,
         autoplay: autoplay,
         gap: 20,
-        peek: peek
+        peek: peek, 
+        breakpoints: {
+            568: {
+                perView: 1,
+                peek: 0
+            }
+        }
     }).mount();
 
 });
@@ -178,7 +190,7 @@ document.querySelectorAll('.attorneys-glide').forEach(function(slider) {
 
 });
 
-// Image Slider
+// Link Slider
 document.querySelectorAll('.link-glide').forEach(function(slider) {
     new Glide(slider, {
         startAt: 0,
@@ -230,7 +242,13 @@ document.querySelectorAll('.videos-glide').forEach(function(slider) {
         perTouch: 1,
         autoplay: autoplay,
         gap: 0,
-        peek: peek
+        peek: peek, 
+        breakpoints: {
+            568: {
+                perView: 1,
+                peek: 0
+            }
+        }
     }).mount();
 
 });

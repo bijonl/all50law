@@ -18,7 +18,7 @@ if(!$has_content) {
 
 <section <?php echo pw_block_section_classes($block) ?>>
     <div class="cta-form-block-container container">
-        <div class="cta-form-block-row row">
+        <div class="cta-form-block-row row mobile-spacing-row">
             <div class="cta-form-text-col col-lg-6">
                 <div class="cta-form-text-wrapper position-relative h-100">
                      <?php 

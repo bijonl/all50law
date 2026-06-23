@@ -32,7 +32,7 @@ if(!$has_content) {
         <div class="link-list-row row">
             <div class="link-list-col col-12">
                 <?php if (!empty($link_list_title) || !empty($link_list_link)) { ?>
-                    <div class="link-list-title-wrapper d-flex align-items-center justify-content-between">
+                    <div class="link-list-title-wrapper flex-column flex-sm-row d-flex align-items-center justify-content-between">
                         <?php if (!empty($link_list_title)) { ?>
                             <h3 class="h5 mb-0">
                                 <?php echo esc_html($link_list_title); ?>
@@ -40,7 +40,7 @@ if(!$has_content) {
                         <?php } ?>
                         <?php if (!empty($link_list_link) && !empty($link_list_link['url']) && !empty($link_list_link['title'])) { ?>
                             <a 
-                                class="pw-text-button link-list-link color-inherit"
+                                class="pw-text-button w-100 pb-3 pb-sm-0 justify-content-end link-list-link color-inherit order-first order-sm-last"
                                 target="<?php echo !empty($link_list_link['target']) ? esc_attr($link_list_link['target']) : '_self'; ?>"
                                 href="<?php echo esc_url($link_list_link['url']); ?>"
                             >

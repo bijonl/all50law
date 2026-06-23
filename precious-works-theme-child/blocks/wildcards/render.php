@@ -66,7 +66,7 @@ if(!$has_content) {
                             </div>     
 
                         <?php } elseif($wide_image_format) { ?>
-                            <div class="wildcards-col col mb-3 mx-auto text-center u-focus-style" role="listitem">
+                            <div class="wildcards-col col mb-sm-3 mx-auto text-center u-focus-style" role="listitem">
                                 <?php include(locate_template('blocks/wildcards/partials/wide-image-wildcard.php')); ?>
                             </div> 
                         <?php } elseif($two_col_text) { ?>

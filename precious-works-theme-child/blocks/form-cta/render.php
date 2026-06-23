@@ -17,7 +17,7 @@ if(!$has_content) {
 
 <section <?php echo pw_block_section_classes($block) ?>>
     <div class="cta-form-block-container container">
-        <div class="cta-form-block-row row">
+        <div class="cta-form-block-row row mobile-spacing-row">
             <div class="cta-form-text-col col-lg-6">
                 <div class="cta-form-text-wrapper position-relative h-100">
                      <?php 
@@ -29,7 +29,7 @@ if(!$has_content) {
                             [ 'id' => 'section-title-' . esc_attr($block['id']), 'class' => 'u-focus-style' ]
                         ); 
                     ?>
-                    <h2 class="bottom-0 position-absolute"><?php echo $bottom_title ?></h2>
+                    <h2 class="bottom-0 position-sm-absolute"><?php echo $bottom_title ?></h2>
                 </div>
             </div>
             <div class="form-block-col col-lg-6 mx-auto">

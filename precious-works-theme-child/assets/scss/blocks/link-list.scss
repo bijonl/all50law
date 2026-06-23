@@ -22,9 +22,11 @@
              .link-list-row {
                 .link-list-col {
                     color: $color-darkgray; 
+                   
                     .link-list-wrapper {
                         .link-col {
                             color: $color-darkgray; 
+                           
                             .single-link-wrapper {
                                
                             }
@@ -38,12 +40,23 @@
     }
     .link-list-container {
         .link-list-row {
+            @include media-breakpoint-down(sm) {
+                margin-left: 0; 
+                margin-right: 0; 
+            }
             .link-list-col {
                 border-radius: 12px;
                 padding: 20px; 
+                @include media-breakpoint-down(sm) {
+                    padding: 0; 
+
+                }
                 .link-list-title-wrapper {
                     padding-bottom: 20px; 
                     font-size: 18px; 
+                    @include media-breakpoint-down(sm) {
+                        padding-bottom: 40px; 
+                    }
                     a {
                         font-weight: 800;
                     }
@@ -51,13 +64,28 @@
                 }
                 .link-list-wrapper {
                     padding-top: 20px; 
+                    @include media-breakpoint-down(sm) {
+                        padding-top: 0; 
+                    }
                     ul {
+                        
                         gap: 20px 0;
+                        @include media-breakpoint-down(sm) {
+                            margin-left: 0; 
+                            margin-right: 0; 
+                        }
                         i {
                             width: 13px; 
                             margin-right: 10px; 
                         }
+                        li.link-col {
+                            @include media-breakpoint-down(sm) {
+                                padding-left: 0; 
+                                padding-right: 0; 
+                            }
+                        }
                     }
+                    
 
                 }
             }

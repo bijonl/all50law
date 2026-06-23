@@ -45,4 +45,11 @@ $container-max-widths: (
   padding-left: $container-padding-x;
 }
 
+.row {
+  @include media-breakpoint-down(sm) {
+    margin-left: 0; 
+    margin-right: 0; 
+  }
+}
+
 

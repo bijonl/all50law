@@ -7,11 +7,18 @@
                         .single-stat-wrapper {
                             clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
                             margin-left: 0;
+                            @include media-breakpoint-down(sm) {
+                                clip-path: none;
+                            }
+                           
                         }
                     }
                     &:last-child {
                         .single-stat-wrapper {
                             @extend .background-secondary; 
+                        }
+                        @include media-breakpoint-down(sm) {
+                            clip-path: none;
                         }
                     }
                     .single-stat-wrapper {
@@ -23,11 +30,17 @@
     }
     .stats-container {
         .stats-row {
+            @include media-breakpoint-down(sm) {
+                row-gap: 20px;
+            }
             .stats-col {
                 &:first-child {
                     .single-stat-wrapper {
                         clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
                         margin-left: 0;
+                        @include media-breakpoint-down(sm) {
+                            clip-path: none;
+                        }
                     }
                 }
                 &:last-child {
@@ -45,6 +58,11 @@
                     justify-content: center;
                     clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%, 22px 50%);
                     margin-left: -18px;
+                    @include media-breakpoint-down(sm) {
+                        clip-path: none;
+                        margin-left: 0; 
+                        margin-bottom: 10px; 
+                    }
 
                     .stat-title-wrapper {
                         padding-bottom: 20px; 
