@@ -5,10 +5,10 @@ $uid = 'tabs-' . get_the_ID() . '-' . wp_rand(1000, 9999);
 $index = 0;
 ?>
 
-<div class="d-flex align-items-start">
+<div class="d-flex flex-wrap align-items-start">
 
     <!-- NAV -->
-    <div class="nav flex-column nav-pills col-lg-6" id="<?php echo $uid; ?>-tablist" role="tablist" aria-orientation="vertical">
+    <div class="nav flex-column nav-pills col-12 col-lg-6" id="<?php echo $uid; ?>-tablist" role="tablist" aria-orientation="vertical">
 
         <?php while (have_rows('info_tabs')) { the_row(); ?>
 
@@ -40,7 +40,7 @@ $index = 0;
     </div>
 
     <!-- CONTENT -->
-    <div class="tab-content col-lg-6" id="<?php echo $uid; ?>-content">
+    <div class="tab-content col-12 col-lg-6" id="<?php echo $uid; ?>-content">
 
         <?php
         $index = 0;

@@ -51,5 +51,11 @@
     }
 }
 
+.bottom-title {
+    position: absolute; 
+    @include media-breakpoint-down(xl) {
+        position: relative; 
+    }
+}
 
 

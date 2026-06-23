@@ -46,7 +46,7 @@ $container-max-widths: (
 }
 
 .row {
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(lg) {
     margin-left: 0; 
     margin-right: 0; 
   }

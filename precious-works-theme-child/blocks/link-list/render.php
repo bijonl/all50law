@@ -10,7 +10,7 @@ $link_col = 'col-lg-4';
 if($links_per_row === '3') {
     $link_col = 'col-lg-4'; 
 } else if($links_per_row === '4') {
-    $link_col = 'col-lg-3'; 
+    $link_col = 'col-lg-3 col-sm-6 col-12'; 
 } else if($links_per_row === '2') {
     $link_col = 'col-lg-6';  
 }

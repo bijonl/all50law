@@ -29,7 +29,7 @@ if(!$has_content) {
                             [ 'id' => 'section-title-' . esc_attr($block['id']), 'class' => 'u-focus-style' ]
                         ); 
                     ?>
-                    <h2 class="bottom-0 position-sm-absolute"><?php echo $bottom_title ?></h2>
+                    <h2 class="bottom-0 bottom-title"><?php echo $bottom_title ?></h2>
                 </div>
             </div>
             <div class="form-block-col col-lg-6 mx-auto">

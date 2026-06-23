@@ -2,11 +2,23 @@
     .wildcards-container {
         &.two-col-text-container {
             width: 80%; 
+            @include media-breakpoint-down(sm) {
+                width: 100%; 
+            }
             .wildcards-row {
                 .wildcard-col-wrapper {
                     gap: 5%; 
+                    @include media-breakpoint-down(sm) {
+                        gap: 1%; 
+                        padding-left: 0; 
+                        padding-right: 0; 
+                        justify-content: space-between;
+                    }
                     .wildcards-col {
                         width: 40%;  
+                        @include media-breakpoint-down(sm) {
+                            width: 48%; 
+                        }
                         .wildcard-title {
                             font-size: 18px; 
                         }
@@ -17,7 +29,7 @@
         }
 
         &:has(.regular-card) {
-            @include media-breakpoint-up(sm) {
+            @include media-breakpoint-up(lg) {
                 padding-left: 0; 
                 padding-right: 0;
             }
@@ -25,18 +37,18 @@
         }
         .wildcards-row {
             gap: 20px 0;
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 margin-left: auto; 
                 margin-right: auto; 
             }
             .wildcards-col {
-                @include media-breakpoint-down(sm) {
+                @include media-breakpoint-down(lg) {
                     padding-left: 0; 
                     padding-right: 0; 
                 }
                 .single-wildcard-wrapper {
                     border-radius: 12px;
-                    @include media-breakpoint-up(sm) {
+                    @include media-breakpoint-up(lg) {
                         height: 100%; 
                     }
                     &.regular-card {
@@ -49,19 +61,19 @@
                         padding: 8px; 
                         border: solid 1px $color-offwhite; 
                         .wildcard-image-col {
-                            @include media-breakpoint-down(sm) {
+                            @include media-breakpoint-down(lg) {
                                 padding-left: 0; 
                                 padding-right: 0; 
                             }
                         }
                         .wildcard-text-content-col  {
-                             @include media-breakpoint-down(sm) {
+                             @include media-breakpoint-down(lg) {
                                 padding-left: 0; 
                                 padding-right: 0; 
                             }
                             .wildcard-text-content-wrapper {
                                 height: 100%;
-                                @include media-breakpoint-down(sm) {
+                                @include media-breakpoint-down(lg) {
                                     padding:20px; 
                                 }
                             .wildcard-number-wrapper {

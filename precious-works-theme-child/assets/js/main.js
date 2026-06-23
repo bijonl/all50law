@@ -92,6 +92,10 @@ document.querySelectorAll('.recent-posts-glide').forEach(function(slider) {
         gap: 20,
         peek: peek, 
          breakpoints: {
+        769: {
+            perView: 2,
+            peek: 0
+        },
         568: {
                 perView: 1,
                 peek: 0
@@ -120,6 +124,10 @@ document.querySelectorAll('.reviews-glide').forEach(function(slider) {
         gap: 20,
         peek: peek, 
         breakpoints: {
+            768: {
+                perView: 2,
+                peek: 0
+            },
             568: {
                 perView: 1,
                 peek: 0
@@ -146,12 +154,22 @@ document.querySelectorAll('.results-glide').forEach(function(slider) {
         perTouch: 1,
         autoplay: autoplay,
         gap: 20,
-        peek: peek
+        peek: peek, 
+        breakpoints: {
+            768: {
+                perView: 2,
+                peek: 0
+            },
+            568: {
+                perView: 1,
+                peek: 0
+            }
+        }
     }).mount();
 
 });
 
-// Results Slider
+// Results Slider (attorney page)
 document.querySelectorAll('.single-attorney-post-section .results-glide').forEach(function(slider) {
 
     const perView = 1;    
@@ -164,6 +182,16 @@ document.querySelectorAll('.single-attorney-post-section .results-glide').forEac
         perTouch: 1,
         autoplay: autoplay,
         gap: 0,
+        breakpoints: {
+            768: {
+                perView: 2,
+                peek: 0
+            },
+            568: {
+                perView: 1,
+                peek: 0
+            }
+        }
     }).mount();
 
 });
@@ -185,7 +213,17 @@ document.querySelectorAll('.attorneys-glide').forEach(function(slider) {
         perTouch: 1,
         autoplay: autoplay,
         gap: 20,
-        peek: peek
+        peek: peek, 
+        breakpoints: {
+            768: {
+                perView: 2,
+                peek: 0
+            },
+            568: {
+                perView: 1,
+                peek: 0
+            }
+        }
     }).mount();
 
 });
@@ -244,6 +282,10 @@ document.querySelectorAll('.videos-glide').forEach(function(slider) {
         gap: 0,
         peek: peek, 
         breakpoints: {
+            768: {
+                perView: 2,
+                peek: 0
+            },
             568: {
                 perView: 1,
                 peek: 0

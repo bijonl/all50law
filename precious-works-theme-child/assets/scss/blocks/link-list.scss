@@ -40,14 +40,14 @@
     }
     .link-list-container {
         .link-list-row {
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 margin-left: 0; 
                 margin-right: 0; 
             }
             .link-list-col {
                 border-radius: 12px;
                 padding: 20px; 
-                @include media-breakpoint-down(sm) {
+                @include media-breakpoint-down(lg) {
                     padding: 0; 
 
                 }
@@ -64,13 +64,13 @@
                 }
                 .link-list-wrapper {
                     padding-top: 20px; 
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(lg) {
                         padding-top: 0; 
                     }
                     ul {
                         
                         gap: 20px 0;
-                        @include media-breakpoint-down(sm) {
+                        @include media-breakpoint-down(lg) {
                             margin-left: 0; 
                             margin-right: 0; 
                         }

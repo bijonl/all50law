@@ -12,7 +12,7 @@ $button-row-spacing: 30px;
     &.horizontal {
         .title-area-row {
             padding-bottom: 60px; 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 padding-bottom: 40px;
             }
             .title-area-col {
@@ -37,7 +37,7 @@ $button-row-spacing: 30px;
         .title-area-col {
             .title-area-content-wrapper {
                 padding-bottom: $title-area-wrapper-spacing; 
-                @include media-breakpoint-down(sm) {
+                @include media-breakpoint-down(lg) {
                     padding-bottom: 40px; 
                 }
                 .title-wrapper {
@@ -48,7 +48,7 @@ $button-row-spacing: 30px;
                     font-size: 20px; 
                     margin: auto; 
                     padding-top: $big-title-spacing; 
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(lg) {
                         width: 100%; 
                     }
                     p {

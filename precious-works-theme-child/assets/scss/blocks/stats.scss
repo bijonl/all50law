@@ -7,7 +7,7 @@
                         .single-stat-wrapper {
                             clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
                             margin-left: 0;
-                            @include media-breakpoint-down(sm) {
+                            @include media-breakpoint-down(lg) {
                                 clip-path: none;
                             }
                            
@@ -17,7 +17,7 @@
                         .single-stat-wrapper {
                             @extend .background-secondary; 
                         }
-                        @include media-breakpoint-down(sm) {
+                        @include media-breakpoint-down(lg) {
                             clip-path: none;
                         }
                     }
@@ -30,7 +30,7 @@
     }
     .stats-container {
         .stats-row {
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 row-gap: 20px;
             }
             .stats-col {
@@ -38,7 +38,7 @@
                     .single-stat-wrapper {
                         clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%);
                         margin-left: 0;
-                        @include media-breakpoint-down(sm) {
+                        @include media-breakpoint-down(lg) {
                             clip-path: none;
                         }
                     }
@@ -58,7 +58,7 @@
                     justify-content: center;
                     clip-path: polygon(0 0, calc(100% - 22px) 0, 100% 50%, calc(100% - 22px) 100%, 0 100%, 22px 50%);
                     margin-left: -18px;
-                    @include media-breakpoint-down(sm) {
+                    @include media-breakpoint-down(lg) {
                         clip-path: none;
                         margin-left: 0; 
                         margin-bottom: 10px; 

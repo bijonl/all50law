@@ -29,14 +29,14 @@ if(!$has_content) {
         <div class="link-list-and-slider-title-row row">
             <div class="col-sm-8">
                <?php if(!empty($link_list_title)) { ?>
-                    <div class="link-list-title-wrapper d-none d-sm-block">
+                    <div class="link-list-title-wrapper d-none d-lg-block">
                         <h3 class="h5"><?php echo $link_list_title ?></h3>
                     </div>
                 <?php } ?>
             </div>
             <div class="col-sm-4">
                 <?php if(!empty($slider_title)) { ?>
-                    <div class="link-list-title-wrapper d-none d-sm-block">
+                    <div class="link-list-title-wrapper d-none d-lg-block">
                         <h3 class="h5"><?php echo $slider_title ?></h3>
                     </div>
                 <?php } ?>
@@ -45,9 +45,9 @@ if(!$has_content) {
 
         <div class="link-list-and-slider-row row">
             <?php if(have_rows('link_list')) { ?>
-                <div class="link-list-and-slider-col link-col col-sm-8">
+                <div class="link-list-and-slider-col link-col col-lg-8">
                     <?php if(!empty($link_list_title)) { ?>
-                        <div class="link-list-title-wrapper d-block d-sm-none">
+                        <div class="link-list-title-wrapper d-block d-lg-none">
                             <h3 class="h5"><?php echo $link_list_title ?></h3>
 
                         </div>
@@ -67,9 +67,9 @@ if(!$has_content) {
             <?php } ?>
 
                <?php if(have_rows('slides')) { ?>
-                <div class="link-list-and-slider-col slider-col col-sm-4">
+                <div class="link-list-and-slider-col slider-col col-lg-4">
                     <?php if(!empty($slider_title)) { ?>
-                    <div class="link-list-title-wrapper d-block d-sm-none">
+                    <div class="link-list-title-wrapper d-block d-lg-none">
                         <h3 class="h5"><?php echo $slider_title ?></h3>
                     </div>
                     <?php } ?>

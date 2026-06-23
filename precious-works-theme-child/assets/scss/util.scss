@@ -126,7 +126,7 @@ footer {
 }
 
 .mobile-spacing-row {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
         row-gap: 40px;
     }
 }

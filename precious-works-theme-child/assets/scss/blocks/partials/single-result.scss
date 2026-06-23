@@ -1,6 +1,9 @@
 .single-result-wrapper {
     .single-result-content-wrapper {
         gap: 25px; 
+        @include media-breakpoint-down(sm) {
+             text-align: center;
+        }
         .single-result-money-wrapper {
             .money-heading {
                 font-size: 38px;
@@ -9,6 +12,9 @@
         }
         .single-result-meta-wrapper {
             width: 85%; 
+            @include media-breakpoint-down(sm) {
+                width: 100%; 
+            }
             .single-result-name-wrapper {
                 .name-heading {
                     font-size: 15px; 
@@ -17,6 +23,9 @@
             .single-result-location-year-wrapper  {
                 column-gap: 5px;
                 font-weight: bold;
+                @include media-breakpoint-down(sm) {
+                    justify-content: center;
+                }
                 p {
                     font-size: 15px; 
                 }

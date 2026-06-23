@@ -46,7 +46,7 @@ if (!$has_content) {
                         
                         <?php include locate_template('components/variables/result-variables.php'); ?>
 
-                        <div class="results-col col-md-4 col-lg-4">
+                        <div class="results-col col-12 col-sm-6 col-md-6 col-lg-4">
                             <?php include locate_template('blocks/result-list/partials/single-flip-card.php'); ?>
                         </div>
                

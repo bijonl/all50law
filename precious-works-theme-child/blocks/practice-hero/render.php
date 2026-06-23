@@ -36,7 +36,7 @@ if(!$has_content) {
 
 >
     <div class="practice-hero-container container">
-        <div class="practice-hero-row row gx-5 h-100">
+        <div class="practice-hero-row row mobile-spacing-row gx-5 h-100">
             <div class="practice-hero-callut-col col-lg-5 me-auto">
                 <?php include(locate_template('blocks/practice-hero/partials/callout.php')); ?> 
             </div>
