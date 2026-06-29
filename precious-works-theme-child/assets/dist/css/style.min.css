@@ -8726,21 +8726,16 @@ small, .small {
   top: 0;
   z-index: 1020;
 }
-body.home .site-header {
+body.home .site-header:not(.is-scrolling) {
   background: #0247ac;
   color: white;
 }
-body.home .site-header .submenu-toggle {
+body.home .site-header:not(.is-scrolling) .submenu-toggle {
   color: white;
 }
-body.home .site-header .menu__btn > span,
-body.home .site-header .menu__btn > span::before,
-body.home .site-header .menu__btn > span::after {
-  background: white;
-}
-body.home .site-header .site-header-mobile-button-col .mobile-menu-wrapper .menu__btn > span,
-body.home .site-header .site-header-mobile-button-col .mobile-menu-wrapper .menu__btn > span::before,
-body.home .site-header .site-header-mobile-button-col .mobile-menu-wrapper .menu__btn > span::after {
+body.home .site-header:not(.is-scrolling) .menu__btn > span,
+body.home .site-header:not(.is-scrolling) .menu__btn > span::before,
+body.home .site-header:not(.is-scrolling) .menu__btn > span::after {
   background: white;
 }
 body.home .site-header.is-scrolling {

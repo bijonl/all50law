@@ -11,13 +11,15 @@
     position: sticky;
     top: 0;
     z-index: 1020;
+    
   }
 
   // ==========================================
   // Home Page Overrides
   // ==========================================
 
-  body.home & {
+body.home & {
+  &:not(.is-scrolling) {
     background: $color-primary;
     color: white;
 
@@ -32,24 +34,17 @@
         background: white;
       }
     }
+  }
 
-    .site-header-mobile-button-col .mobile-menu-wrapper .menu__btn  {
-        > span,
-        > span::before,
-        > span::after {
-            background: white;
-        }
-    }
+  &.is-scrolling {
+    background: white;
+    color: $base-text-color;
 
-    &.is-scrolling {
-      background: white;
+    .submenu-toggle {
       color: $base-text-color;
-
-      .submenu-toggle {
-        color: $base-text-color;
-      }
     }
   }
+}
 
   // ==========================================
   // Layout
