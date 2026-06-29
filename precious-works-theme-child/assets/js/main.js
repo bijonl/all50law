@@ -48,6 +48,16 @@ function toggleAccordion(id) {
   }
 }
 
+const menuToggle = document.getElementById('menu__toggle');
+
+if (menuToggle) {
+    const navigation = menuToggle.parentElement.querySelector('.main-navigation');
+
+    menuToggle.addEventListener('change', () => {
+        menuToggle.classList.toggle('button-checked', menuToggle.checked);
+    });
+}
+
 document.addEventListener("scroll", function () {
   const header = document.querySelector("header.site-header"); // adjust selector if needed
   if (!header) return;

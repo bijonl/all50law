@@ -1,265 +1,333 @@
-// ===============================
-// Site Header Layout
-// ===============================
+// ==========================================
+// Site Header
+// ==========================================
 
-body.home {
-  .site-header {
-    background-color: $color-primary; 
-    color: white; 
+.site-header {
+  background: $header-background;
+  padding: 12px 0;
+  border-bottom: 1px solid lightgray;
+
+  &.is-scrolling {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
+  // ==========================================
+  // Home Page Overrides
+  // ==========================================
+
+  body.home & {
+    background: $color-primary;
+    color: white;
+
     .submenu-toggle {
-      color: white; 
+      color: white;
     }
+
+    .menu__btn {
+      > span,
+      > span::before,
+      > span::after {
+        background: white;
+      }
+    }
+
+    .site-header-mobile-button-col .mobile-menu-wrapper .menu__btn  {
+        > span,
+        > span::before,
+        > span::after {
+            background: white;
+        }
+    }
+
     &.is-scrolling {
-      background-color: white;
-      color: $base-text-color; 
+      background: white;
+      color: $base-text-color;
+
       .submenu-toggle {
-        color: $base-text-color; 
+        color: $base-text-color;
       }
     }
   }
-}
 
-
-
-
-.site-header {
-  background-color: $header-background;
-  padding-top: 12px; 
-  padding-bottom: 12px; 
-  border-bottom: solid 1px lightgray; 
-  &.is-scrolling {
-      position: sticky;
-      top: 0;
-      z-index: 1020;
-  }
+  // ==========================================
+  // Layout
+  // ==========================================
 
   .site-header-container {
     .site-header-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+  }
 
-      // Logo
-      .site-header-logo-col {
-        .site-brand-logo-wrapper {
-          width: $header-logo-width;
-          height: $header-logo-height;
-        }
+  .site-header-logo-col {
+    .site-brand-logo-wrapper {
+      width: $header-logo-width;
+      height: $header-logo-height;
+    }
+  }
+
+  .header-menu-col-phone {
+    font-size: 35px;
+    font-weight: 700;
+    white-space: nowrap;
+
+    a {
+      color: $color-secondary;
+    }
+  }
+
+  // ==========================================
+  // Shared Navigation
+  // ==========================================
+
+  .header-menu-col,
+  .site-header-mobile-button-col {
+    nav {
+      height: 100%;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
       }
 
-      .header-menu-col-phone {
-        font-size: 35px; 
+      li {
+        margin-bottom: 0;
         font-weight: 700;
-        white-space: nowrap;
-        a {
-          color: $color-secondary; 
+      }
+
+      a {
+        color: $header-link-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
         }
       }
 
-      // Shared nav styling for desktop & mobile
-      .site-header-mobile-button-col,
-      .header-menu-col {
-        nav {
-          height: 100%;
-
-          ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            li {
-              margin-bottom: 0; 
-            }
-          }
-
-          a {
-            color: $header-link-color;
-            text-decoration: none;
-          }
-        }
+      .submenu-toggle {
+        color: inherit;
       }
 
-      // ===============================
-      // Desktop Navigation
-      // ===============================
-      .header-menu-col {
-        display: none;
+      .menu-item-has-children {
+        position: relative;
 
-        @include media-breakpoint-up(lg) {
-          display: block;
+        &.open-active {
+          color: $color-secondary;
 
-          nav {
-            ul {
-              display: flex;
-              gap: 40px; 
-              align-items: center;
-              justify-content: space-around;
-
-              li {
-                font-weight: 700; 
-                a {
-                  &:hover {
-                    text-decoration: underline;
-                  }
-                }
-                &.menu-item-has-children {
-
-                  position: relative; 
-
-                  &.open-active {
-                    color: $color-secondary; 
-                    .submenu-toggle {
-                      color: $color-secondary; 
-                    }
-                  }
-                  .sub-menu {
-                    position: absolute;
-                    flex-direction: column;
-                    gap: 0; 
-                    background: white;
-                    border: solid 1px lightgray; 
-                    color: black;
-                    z-index: 9999;
-                    white-space: nowrap;
-                    margin-top: 20px;
-                     // Hidden state
-                    visibility: hidden;
-                    opacity: 0;
-                    transform: scaleY(0);
-                    transform-origin: top center;
-                      transition:
-                        transform 0.25s ease,
-                        opacity 0.2s ease,
-                        visibility 0.25s;
-                    li {
-                      width: 100%;
-                      text-align: center;
-                      padding: 0.5rem; 
-                      border-bottom: solid 1px lightgray; 
-                    }
-                        &.is-open {
-                          visibility: visible;
-                          opacity: 1;
-                  
-                          transform: scaleY(1);
-                      }
-                    
-                  }
-                }
-              }
-            }
+          .submenu-toggle {
+            color: $color-secondary;
           }
         }
-      }
 
-      // ===============================
-      // Mobile Navigation
-      // ===============================
-      .site-header-mobile-button-col {
-        display: none;
+        .sub-menu {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
 
-        @include media-breakpoint-down(lg) {
-          display: block;
-        }
+          visibility: hidden;
+          opacity: 0;
+          transform: scaleY(0);
+          transform-origin: top center;
 
-        .mobile-menu-wrapper {
-          // Hide the checkbox input
-          #menu__toggle {
-            opacity: 0;
+          transition:
+            transform .25s ease,
+            opacity .2s ease,
+            visibility .25s;
 
-            // Transform hamburger to "X"
-            &:checked ~ .menu__btn > span {
-              transform: rotate(45deg);
-            }
-
-            &:checked ~ .menu__btn > span::before {
-              top: 0;
-              transform: rotate(0);
-            }
-
-            &:checked ~ .menu__btn > span::after {
-              top: 0;
-              transform: rotate(90deg);
-            }
-
-            // Slide in the mobile nav
-            &:checked ~ #site-navigation ul {
-              visibility: visible;
-              right: 0;
-              z-index: $menu-z-index;
-            }
+          &.is-open {
+            visibility: visible;
+            opacity: 1;
+            transform: scaleY(1);
           }
 
-          // Hamburger button
-          .menu__btn {
-            display: flex;
-            align-items: center;
-            // position: fixed;
-            // top: 20px;
-            // left: auto;
-            width: $hamburger-width;
-            height: $hamburger-height;
-            cursor: pointer;
-            z-index: $hamburger-z-index;
-
-            > span,
-            > span::before,
-            > span::after {
-              display: block;
-              position: absolute;
-              width: $hamburger-width;
-              height: 2px;
-              background-color: $hamburger-bar-color;
-              transition-duration: 0.25s;
-            }
-
-            > span::before {
-              content: '';
-              top: -$hamburger-spacing;
-            }
-
-            > span::after {
-              content: '';
-              top: $hamburger-spacing;
-            }
-          }
-
-          // Slide-out menu panel
-          #site-navigation {
-            ul {
-              display: block;
-              position: fixed;
-              visibility: hidden;
-              top: 0;
-              right: -100%;
-              width: $menu-slide-width;
-              height: 100%;
-              margin: 0;
-              padding: 80px 0;
-              background-color: $header-mobile-menu-bg;
-              box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
-              transition-duration: 0.25s;
-
-              .menu-item {
-                display: block;
-                padding: 12px 24px;
-                color: $header-mobile-menu-link-color;
-                font-size: 20px;
-                font-weight: 600;
-                text-decoration: none;
-
-                &:hover {
-                  background-color: $header-mobile-menu-hover-bg;
-                }
-
-                a {
-                  color: inherit;
-                  text-decoration: none;
-                }
-              }
-            }
+          li {
+            width: 100%;
+            padding: .5rem;
           }
         }
       }
     }
   }
+
+  // ==========================================
+  // Desktop Navigation
+  // ==========================================
+
+  .header-menu-col {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+
+      nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 40px;
+      }
+
+      .sub-menu {
+        position: absolute;
+        margin-top: 20px;
+        background: white;
+        color: black;
+        border: 1px solid lightgray;
+        white-space: nowrap;
+        z-index: 9999;
+
+        li {
+          text-align: center;
+          border-bottom: 1px solid lightgray;
+        }
+      }
+    }
+  }
+
+  // ==========================================
+  // Mobile Navigation
+  // ==========================================
+
+  .site-header-mobile-button-col {
+    display: none;
+
+    @include media-breakpoint-down(lg) {
+      display: block;
+    }
+
+    .mobile-menu-wrapper {
+
+      // ----------------------------
+      // Hamburger Toggle
+      // ----------------------------
+
+      #menu__toggle {
+        opacity: 0;
+
+        &:checked {
+
+          ~ .menu__btn > span {
+            transform: rotate(45deg);
+            background-color: $base-text-color; 
+          }
+
+          ~ .menu__btn > span::before {
+            top: 0;
+            transform: rotate(0);
+            background-color: $base-text-color; 
+          }
+
+          ~ .menu__btn > span::after {
+            top: 0;
+            transform: rotate(90deg);
+            background-color: $base-text-color; 
+          }
+
+          ~ #site-navigation ul.menu {
+            visibility: visible;
+            right: 0;
+            z-index: $menu-z-index;
+          }
+        }
+      }
+
+      // ----------------------------
+      // Hamburger Icon
+      // ----------------------------
+
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        width: $hamburger-width;
+        height: $hamburger-height;
+        cursor: pointer;
+        z-index: $hamburger-z-index;
+
+        > span,
+        > span::before,
+        > span::after {
+          position: absolute;
+          display: block;
+          width: $hamburger-width;
+          height: 2px;
+          background: $hamburger-bar-color;
+          transition: .25s;
+        }
+
+        > span::before {
+          content: "";
+          top: -$hamburger-spacing;
+        }
+
+        > span::after {
+          content: "";
+          top: $hamburger-spacing;
+        }
+      }
+
+      // ----------------------------
+      // Slide-out Navigation
+      // ----------------------------
+
+      #site-navigation {
+        ul.menu {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 80px 0;
+          margin: 0;
+
+          visibility: hidden;
+
+          background: $header-mobile-menu-bg;
+          box-shadow: 1px 0 6px rgba(0,0,0,.2);
+
+          transition: .25s;
+
+          .menu-item {
+            display: block;
+            padding: 12px 24px;
+            font-size: 20px;
+            font-weight: 600;
+            color: $header-mobile-menu-link-color;
+
+            a {
+              color: inherit;
+            }
+          }
+        }
+      }
+
+      // ----------------------------
+      // Mobile Submenu
+      // ----------------------------
+
+      .sub-menu {
+        height: 0;
+        margin-top: 0;
+        color: black;
+        white-space: nowrap;
+
+        &.is-open {
+          height: auto;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+// ==========================================
+// Global Overrides
+// ==========================================
+
+.site-header .mobile-menu-wrapper .submenu-toggle {
+  color: black !important;
 }
