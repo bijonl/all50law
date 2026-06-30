@@ -238,3 +238,33 @@ function pw_add_menu_toggle_button( $item_output, $item, $depth, $args ) {
 }
 
 add_filter( 'walker_nav_menu_start_el', 'pw_add_menu_toggle_button', 10, 4 );
+
+add_filter('mce_buttons_2', function ($buttons) {
+    array_unshift($buttons, 'styleselect');
+    return $buttons;
+});
+
+add_filter('tiny_mce_before_init', function ($init) {
+
+    $style_formats = [
+        [
+            'title' => 'Buttons',
+            'items' => [
+                [
+                    'title'    => 'Primary Button',
+                    'selector' => 'a',
+                    'classes'  => 'pw-solid-button',
+                ],
+                [
+                    'title'    => 'Text Button',
+                    'selector' => 'a',
+                    'classes'  => 'pw-text-button',
+                ],
+            ],
+        ],
+    ];
+
+    $init['style_formats'] = wp_json_encode($style_formats);
+
+    return $init;
+});

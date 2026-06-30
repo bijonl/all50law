@@ -8536,6 +8536,10 @@ h6, .h6 {
   letter-spacing: 0;
 }
 
+.block-editor-block-card__title {
+  letter-spacing: 0;
+}
+
 p {
   margin: 0 0 1em;
 }
@@ -9960,7 +9964,7 @@ body.home .site-header.is-scrolling .submenu-toggle {
 }
 .page-link-list-section .link-list-container.big-title hr {
   width: 32px;
-  border: solid 4px blue;
+  border: solid 4px #0247ac;
   opacity: 1;
 }
 .page-link-list-section .link-list-container.big-title article {
@@ -10207,6 +10211,9 @@ body.home .site-header.is-scrolling .submenu-toggle {
 }
 .two-column-image-and-text-section .glide__slide img {
   border-radius: 0;
+}
+.two-column-image-and-text-section .glide__slide .video-image-wrapper img {
+  border-radius: 12px;
 }
 .featured-quote-section .featured-quote-container .featured-quote-row {
   border-radius: 12px;
@@ -10463,6 +10470,11 @@ body.home .site-header.is-scrolling .submenu-toggle {
 .single-video-wrapper .single-video-content-wrapper .video-title-content-wrapper {
   padding-top: 20px;
 }
+.single-video-wrapper .single-video-content-wrapper .video-image-wrapper button {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .single-video-modal-wrapper .modal-dialog {
   max-width: none;
 }
@@ -10542,7 +10554,7 @@ body.home .site-header.is-scrolling .submenu-toggle {
 }
 .single-link-wrapper.card-single-link, .single-link-wrapper.regular-single-link {
   display: flex;
-  gap: 15px;
+  gap: 0;
 }
 .single-link-wrapper.two-column-single-link {
   background-color: transparent;

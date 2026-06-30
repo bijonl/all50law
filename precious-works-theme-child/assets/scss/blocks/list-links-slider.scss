@@ -72,6 +72,11 @@
         img {
             border-radius: 0; 
         }
+        .video-image-wrapper {
+            img {
+                border-radius: 12px; 
+            }
+        }
     }
     .glide__bullets {
         @extend .sr-only; 

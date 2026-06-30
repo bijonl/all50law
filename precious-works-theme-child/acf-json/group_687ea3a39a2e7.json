@@ -206,6 +206,30 @@
             "layout": "horizontal"
         },
         {
+            "key": "field_6a43ce36a3955",
+            "label": "Vertical Alignment",
+            "name": "vertical_alignment",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "center": "Middle",
+                "start": "Top"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "layout": "horizontal"
+        },
+        {
             "key": "field_687ea44b28e57",
             "label": "Two Column Content End",
             "name": "",
@@ -245,5 +269,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1781116168
+    "modified": 1782828781
 }

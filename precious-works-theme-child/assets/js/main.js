@@ -288,7 +288,7 @@ document.querySelectorAll('.videos-glide').forEach(function(slider) {
         perView: perView,
         perTouch: 1,
         autoplay: autoplay,
-        gap: 0,
+        gap: 15,
         peek: peek, 
         breakpoints: {
             768: {

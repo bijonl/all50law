@@ -9,6 +9,7 @@ $content = get_field('content');
 $column_order = get_field('column_order');
 $image_slider_images = get_field('image_slider_images');
 $videos = get_field('videos'); 
+$vertical_alignment = get_field('vertical_alignment');
 
 ?>
 
@@ -28,7 +29,7 @@ $text_col_width =  $is_video_slider ? 'col-lg-5' : 'col-lg-6';
     <?php include(locate_template('blocks/partials/title-area.php')); ?>
 
     <div class="two-col-container container">
-        <div class="two-col-row row align-items-center mobile-spacing-row">
+        <div class="two-col-row row align-items-<?php echo $vertical_alignment ?> mobile-spacing-row">
             <div class="two-col-col image-col <?php echo $image_col_width ?> <?php echo $column_order ?>">
                 <?php if($is_img_slider) {
                     $images = $image_slider_images; 
