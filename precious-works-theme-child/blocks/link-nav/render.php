@@ -15,7 +15,7 @@ if (!$has_content) {
 
 <section <?php echo pw_block_section_classes($block); ?>>
 
-    <div class="mx-auto link-list-nav-container d-flex justify-content-between align-items-center">
+    <div class="mx-auto link-list-nav-container d-lg-flex justify-content-between align-items-center">
 
         <?php
         if (!empty($logo)) {

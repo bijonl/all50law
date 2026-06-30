@@ -105,7 +105,11 @@
         &.card {
              .link-list-row {
                 .link-list-col {
+                    padding: 0; 
                     .link-list-wrapper {
+                        ul {
+                          
+                        }
                         .link-col {
                             .single-link-wrapper {
                                 font-size: 18px; 
@@ -113,6 +117,9 @@
                                 padding: 25px; 
                                 text-align: center; 
                                 @extend .background-primary; 
+                                @include media-breakpoint-down(lg) {
+                                    justify-content: center;
+                                }
 
                             }
                            

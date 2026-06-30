@@ -15,7 +15,7 @@ if($wide_image_format) {
     $cards_per_row = 1; 
 }
 
-$row_classes = 'row-cols-1 row-cols-lg-' . $cards_per_row;
+$row_classes = 'row-cols-1 row-cols-lg-2 row-cols-xl-' . $cards_per_row;
 $container_class = 'container'; 
 
 include(locate_template('blocks/partials/global-block-variables.php')); ?>

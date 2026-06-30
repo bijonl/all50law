@@ -5,6 +5,11 @@
         width: 95%; 
         .logo-wrapper-nav {
             width: 150px; 
+            @include media-breakpoint-down(lg) {
+                width: 50%;
+                margin: auto;
+                padding-bottom: 30px; 
+            }
         }
         .link-nav-container {
             width: 60%; 
@@ -25,6 +30,27 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.mobile-nav-container {
+    display: flex; 
+    flex-direction: column-reverse;
+    .pw-solid-button {
+        width: 100%; 
+        text-align: center;
+    }
+
+   .form-select.page-nav-select {
+        margin-top: 25px;
+        border-radius: 6px;
+        border-color: #d0d5dd;
+        padding: 0.75rem 2.5rem 0.75rem 1rem;
+
+        &:focus {
+            border-color: $color-primary;
+            box-shadow: 0 0 0 3px rgba($color-primary, .15);
         }
     }
 }

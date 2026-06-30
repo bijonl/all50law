@@ -18,7 +18,7 @@ if(!$has_content) {
 <section <?php echo pw_block_section_classes($block) ?>>
     <?php if($text_only) { ?>
         <div class="cta-container container">
-            <div class="cta-row row">
+            <div class="cta-row row mobile-spacing-row">
                 <div class="cta-col col-sm-6 mx-auto text-center">
                     <?php if($section_title) { ?>
                         <div class="cta-title-wrapper">
@@ -36,7 +36,7 @@ if(!$has_content) {
         </div>
     <?php } elseif($text_image) { ?>
         <div class="cta-container container">
-            <div class="cta-row row gx-5 align-items-center">
+            <div class="cta-row row gx-5 align-items-center mobile-spacing-row">
                 <div class="cta-image-col col-sm-4">
                     <div class="cta-image-wrapper">
                         <?php echo wp_get_attachment_image($cta_image['ID'], 'full', false, array('class'=>'mw-100 h-auto')) ?>

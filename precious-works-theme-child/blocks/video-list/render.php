@@ -22,7 +22,7 @@ if (!$has_content) {
     <?php if ($video_list_format === 'regular') { ?>
 
         <div class="videos-container container">
-            <div class="videos-row row gx-2 gy-5">
+            <div class="videos-row row gx-4 gy-5">
 
                 <?php foreach ($videos as $video_id) { ?>
                     <?php include locate_template('components/variables/video-variables.php'); ?>

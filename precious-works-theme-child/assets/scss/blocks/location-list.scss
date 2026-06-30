@@ -2,6 +2,9 @@
     .location-list-col {
         column-count: 3;
         column-gap: 2rem;
+        @include media-breakpoint-down(sm) {
+            column-count: 2; 
+        }
         ul {
          
             li {

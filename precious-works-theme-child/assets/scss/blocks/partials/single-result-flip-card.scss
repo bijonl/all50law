@@ -170,5 +170,12 @@
 .results-row {
     @include media-breakpoint-down(xl) {
         row-gap: 30px;
+        justify-content: space-between;
+       
+    }
+    @include media-breakpoint-between(sm, xl) {
+        .results-col:has(.flip-card) {
+            width: 49%; 
+        }
     }
 }

@@ -59,15 +59,28 @@
                         height: 100%; 
                     }
                     &.wide-image {
-                        padding: 8px; 
+                        padding: 2px; 
                         border: solid 1px $color-offwhite; 
                         .wildcard-image-col {
                             @include media-breakpoint-down(lg) {
                                 padding-left: 0; 
                                 padding-right: 0; 
                             }
+                            .wildcard-image-wrapper {
+                                img {
+                                    border-radius: 12px 0 0 12px;
+                                    @include media-breakpoint-down(lg) {
+                                        border-radius: 12px 12px 0px 0px;
+                                    }
+                                }
+                            }
                         }
                         .wildcard-text-content-col  {
+                            border-radius: 0px 12px 12px 0px;
+                             @include media-breakpoint-down(lg) {
+                                border-radius: 0 0 12px 12px;
+                            }
+
                              @include media-breakpoint-down(lg) {
                                 padding-left: 0; 
                                 padding-right: 0; 
@@ -131,7 +144,7 @@
                         display: flex; 
                         padding-bottom: $wildcard-element-spacing; 
                         i {
-                            font-size: 65px; 
+                            font-size: 30px; 
                         }
                         &:has(img) {
                             max-width: 70px;

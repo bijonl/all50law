@@ -1,4 +1,4 @@
-<div class="location-hero-callout-wrapper d-flex">
+<div class="location-hero-callout-wrapper d-xl-flex">
     <div class="address-wrapper d-flex align-items-center">
         <i class="fa-solid fa-location-dot"></i>
         <?php echo $address_one ?>, <?php echo $address_two ?><br>

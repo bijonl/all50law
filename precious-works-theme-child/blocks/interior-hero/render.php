@@ -18,7 +18,7 @@ if(!$has_content) {
 
 <section <?php echo pw_block_section_classes($block) ?>>
     <div class="interior-hero-container container">
-        <div class="interior-hero-row row h-100">
+        <div class="interior-hero-row row h-100 mobile-spacing-row">
             <div class="title-wrapper col-lg-5 me-auto">
                     <?php if($section_title) { ?>
                         <div class="big-title-wrapper pb-4">

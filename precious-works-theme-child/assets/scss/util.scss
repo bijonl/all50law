@@ -118,6 +118,11 @@
 
 iframe {
     max-width: 100%; 
+
+    @include media-breakpoint-down(lg) {
+        aspect-ratio: 16 / 9;
+        height: auto;
+    }
 }
 
 .disclaimer-text {
@@ -138,3 +143,9 @@ footer {
 
 
 
+.two-column-image-and-text-section.pt-0.pb-0.background-primary {
+    @include media-breakpoint-down(sm) {
+        padding-top: $mobile-section-padding!important; 
+        padding-bottom: $mobile-section-padding!important; 
+    }
+}
