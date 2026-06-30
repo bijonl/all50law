@@ -16,6 +16,7 @@ $section_button = get_field('section_button');
 $section_button_aria_label = get_field('section_button_aria_label');
 $has_button_area = !empty($section_button); 
 $button_type = get_field('button_type'); 
+$disclaimer_text = get_field('disclaimer_text'); 
 
 
 ?>

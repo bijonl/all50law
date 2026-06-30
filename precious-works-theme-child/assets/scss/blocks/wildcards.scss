@@ -8,6 +8,7 @@
             .wildcards-row {
                 .wildcard-col-wrapper {
                     gap: 5%; 
+                    justify-content: space-between;
                     @include media-breakpoint-down(sm) {
                         gap: 1%; 
                         padding-left: 0; 
@@ -15,7 +16,7 @@
                         justify-content: space-between;
                     }
                     .wildcards-col {
-                        width: 40%;  
+                        width: 45%;  
                         @include media-breakpoint-down(sm) {
                             width: 48%; 
                         }

@@ -1,14 +1,15 @@
 .pw-solid-button {
     // @extend .u-focus-style;
     display: inline-block;
-    font-size: 24px; 
+    font-size: 18px; 
     background-color: $solid-button-background;
     border: solid 1px $solid-button-border-color; 
+    box-shadow: rgba(0, 0, 0, .1) 0px 2px 4px 0px, rgba(0, 0, 0, .07) 0px 4px 5px 0px, rgba(0, 0, 0, .06) 0px 1px 10px 0px;
     color: $solid-button-text-color; 
     line-height: 1; 
-    text-transform: uppercase;
+    letter-spacing: 1px;
     border-radius: $solid-button-border-radius;  
-    font-weight: 400;
+    font-weight: 800;
     min-width: auto; 
     transition: all 0.2s ease-in-out; 
     padding-left: $solid-button-padding-horizontal; 
@@ -18,12 +19,12 @@
     text-decoration: none; 
     &:hover,  &:focus,
     &:focus-visible {
-        font-weight: 600;
+        font-weight: 800;
         border-radius: $solid-button-border-radius;  
         background-color: $solid-button-background-hover; 
         color: $solid-button-text-color-hover; 
         border: solid 1px $solid-button-border-color-hover; 
-        text-decoration: none;
+        text-decoration: underline;
     }
     &:focus,
     &:focus-visible {

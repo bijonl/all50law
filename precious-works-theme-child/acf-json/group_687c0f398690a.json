@@ -19,7 +19,7 @@
             "choices": {
                 "none": "None",
                 "primary": "Primary Blue",
-                "dark-gray": "Dark Gray",
+                "light-blue": "Light Blue",
                 "light-grey": "Off-White"
             },
             "default_value": false,
@@ -70,5 +70,5 @@
     "display_title": "",
     "allow_ai_access": false,
     "ai_description": "",
-    "modified": 1781116373
+    "modified": 1782820428
 }

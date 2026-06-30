@@ -32,6 +32,15 @@ ul, ol {
   }
 }
 
+ul.list-unstyled, ol.list-unstyled {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: 0em;
+  }
+}
+
 // Blockquotes
 blockquote {
   font-family: $font-secondary;

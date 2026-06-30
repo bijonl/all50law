@@ -1,6 +1,7 @@
 // Core Colors
 $color-primary:    #0247ac;
 $color-secondary:  #d71d22;
+$color-light-blue: #D9E4F5; 
 $color-white:      #ffffff;
 $color-offwhite:   #efefef;
 $color-darkgray:   #161616;
@@ -36,11 +37,11 @@ $secondary-background-text-color: $color-white;
 
 // Button Variables
 $solid-button-background: $color-secondary; 
-$solid-button-border-color: $color-white; 
+$solid-button-border-color: $color-secondary; 
 $solid-button-text-color: $color-white; 
 $solid-button-padding-horizontal: 25px;
-$solid-button-padding-vertical: 8px;
-$solid-button-border-radius: 0px; 
+$solid-button-padding-vertical: 15px;
+$solid-button-border-radius: 12px; 
 $solid-button-min-width: auto; 
 
 $solid-button-background-hover: $color-secondary; 

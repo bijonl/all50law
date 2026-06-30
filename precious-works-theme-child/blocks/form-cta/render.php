@@ -1,6 +1,4 @@
-<?php 
-
-include(locate_template('blocks/partials/global-block-variables.php')); 
+<?php include(locate_template('blocks/partials/global-block-variables.php')); 
 $top_title = get_field('top_title');
 $bottom_title = get_field('bottom_title');
 $form_id = get_field('form_id'); 

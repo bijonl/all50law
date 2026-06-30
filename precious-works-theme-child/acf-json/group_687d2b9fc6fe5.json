@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_687d2ba0e54f6",
-            "label": "Homepage Hero Content",
+            "label": "Form Hero Content",
             "name": "",
             "aria-label": "",
             "type": "accordion",
@@ -19,6 +19,35 @@
             "open": 0,
             "multi_expand": 0,
             "endpoint": 0
+        },
+        {
+            "key": "field_6a439cba13c3e",
+            "label": "Hero Layout",
+            "name": "hero_layout",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "alt": "Alt Layout"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
         },
         {
             "key": "field_687d2c0f162f4",
@@ -36,8 +65,7 @@
             },
             "choices": {
                 "primary": "Primary Color",
-                "secondary": "Secondary Color",
-                "image": "Image"
+                "light-blue": "Light Blue"
             },
             "default_value": false,
             "return_format": "value",
@@ -58,15 +86,7 @@
             "type": "image",
             "instructions": "<p>Upload a large, wide image that looks good behind text.<\/p>\r\n\r\n<ul>\r\n  <li><strong>Use a clear, high-quality image<\/strong><\/li>\r\n  <li><strong>Make sure it’s wide<\/strong> (like a banner)<\/li>\r\n  <li><strong>Choose something simple<\/strong>—not too busy<\/li>\r\n<\/ul>\r\n\r\n<p><em>Good examples:<\/em> sky, landscape, texture, wall, etc.<\/p>",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_687d2c0f162f4",
-                        "operator": "==",
-                        "value": "image"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -129,6 +149,64 @@
             "append": ""
         },
         {
+            "key": "field_6a439c7213c3c",
+            "label": "Callout Title",
+            "name": "callout_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a439cba13c3e",
+                        "operator": "==",
+                        "value": "alt"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6a439c8513c3d",
+            "label": "Callout Subtitle",
+            "name": "callout_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a439cba13c3e",
+                        "operator": "==",
+                        "value": "alt"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6a172dd1ae793",
             "label": "Hero Content",
             "name": "hero_content",
@@ -157,7 +235,15 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a439cba13c3e",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -178,7 +264,15 @@
             "type": "gallery",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a439cba13c3e",
+                        "operator": "==",
+                        "value": "default"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -235,5 +329,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779904933
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1782821868
 }

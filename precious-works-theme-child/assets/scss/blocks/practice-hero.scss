@@ -82,7 +82,7 @@
                 .big-title-wrapper {
                     margin-bottom: 40px; 
                     .h2 {
-                        font-size: 4rem; 
+                        font-size: 3rem; 
                         @include media-breakpoint-down(sm) {
                             font-size: 3rem; 
                         }
@@ -91,7 +91,7 @@
                     }
                 }
                 .subtitle-wrapper {
-                    font-size: 24px; 
+                    font-size: 20px; 
                     margin-bottom: 40px; 
                 }
                 .button-area-wrapper {

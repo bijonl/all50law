@@ -150,5 +150,27 @@
                 }
             }
         }
+        &.two-column {
+            .link-list-row {
+                @include media-breakpoint-down(lg) {
+                    gap: 40px; 
+                }
+                .link-list-wrapper {
+                    .link-col { 
+                        @include media-breakpoint-down(lg) {
+                            padding-left: 0px; 
+                            padding-right: 0px; 
+
+                        }
+                        &:last-child {
+                            .single-link-wrapper {
+                                border: 0; 
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
     }
 }
