@@ -2,10 +2,10 @@
 <div class="single-result-wrapper">
     <div class="single-result-content-wrapper">   
         <div class="single-result-money-wrapper">
-            <h5 class="money-heading color-primary h6">
+            <p class="money-heading color-primary fw-bold mb-0">
                 
                 <?php echo '$' . number_format((float) $reward_money, 0); ?>
-            </h5>        
+            </p>        
         </div>   
         
         <div class="single-result-meta-wrapper pt-4">

@@ -150,16 +150,15 @@ document.querySelectorAll('.reviews-glide').forEach(function(slider) {
 // Results Slider
 document.querySelectorAll('.results-glide').forEach(function(slider) {
 
-    const perView = parseInt(slider.dataset.perView) || 2;    
+    const perView = parseInt(slider.dataset.perView) || 3;    
     const autoplay = slider.dataset.autoplay || false;
     const peek = {
-        before: 100,
-        after: 100
+        before: 0,
+        after: 0
     };
 
     new Glide(slider, {
-        type: 'carousel', 
-        focusAt: 'center', 
+        type: 'slider', 
         perView: perView,
         perTouch: 1,
         autoplay: autoplay,
@@ -212,8 +211,8 @@ document.querySelectorAll('.attorneys-glide').forEach(function(slider) {
     const perView = parseInt(slider.dataset.perView) || 3;    
     const autoplay = slider.dataset.autoplay || false;
     const peek = {
-        before: 100,
-        after: 100
+        before: 0,
+        after: 0
     };
 
     new Glide(slider, {
@@ -281,7 +280,7 @@ document.querySelectorAll('.videos-glide').forEach(function(slider) {
     const autoplay = false;
     const peek = {
         before: 0,
-        after: 100
+        after: 0
     };
 
     new Glide(slider, {

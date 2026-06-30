@@ -19,7 +19,7 @@ $video_uid = $video_id . '-' . $block['id'];
                 <div class="play-wrapper position-absolute w-100 h-100">
                     <svg class="d-flex justify-content-center h-100 m-auto align-items-center"
                         width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <circle cx="36" cy="36" r="36" fill="currentColor"/>
+                        <circle cx="36" cy="36" r="36" fill="#d71d22"/>
                         <path d="M31 24L49 36L31 48V24Z" fill="white"/>
                     </svg>
                 </div>
@@ -51,17 +51,6 @@ $video_uid = $video_id . '-' . $block['id'];
                     </p>
                 </div>
             <?php } ?>
-
-            <button
-                type="button"
-                class="pw-solid-button mt-3"
-                data-bs-toggle="modal"
-                data-bs-target="#video-<?php echo $video_uid; ?>"
-                aria-label="Play video: <?php echo esc_attr($display_title); ?>">
-
-                See Video
-
-            </button>
 
         </div>
 
