@@ -51,6 +51,24 @@
     }
 
     .cta-form-block-container { 
+        .cta-form-text-wrapper {
+            .big-title-wrapper {
+                padding-bottom: 2rem; 
+                .form-hero-title {
+                    color: $color-secondary; 
+                    font-size: 5rem; 
+                    margin-bottom: 0; 
+                }
+            }
+
+            .hero-content {
+                margin-bottom: 50px; 
+                iframe {
+                    width: 100%; 
+                }
+            }
+           
+        }
         &.alt-layout {
             .section-subtitle {
                 p {

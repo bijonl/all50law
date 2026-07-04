@@ -9,16 +9,16 @@
 }
 
 // Headings
-h1 { @include heading-style(3rem, 700, 1.2, -2px); 
+h1 { @include heading-style(5rem, 700, 1.2, -5px); 
 @include media-breakpoint-down(sm) {
-    font-size: 3rem; 
+    font-size: 4rem; 
 }
 }
-h2 { @include heading-style(2.5rem,700 ,1.2 ,-2px); }
+h2 { @include heading-style(3rem,700 ,1.2 ,-1px); }
 h3 { @include heading-style(2rem); }
 h4 { @include heading-style(1.75rem); }
-h5 { @include heading-style(1.5rem); }
-h6 { @include heading-style(1.1rem, 600); }
+h5 { @include heading-style(1.5rem); text-transform: uppercase; }
+h6 { @include heading-style(1.1rem, 600);  text-transform: uppercase;}
 
 .block-editor-block-card__title {
   letter-spacing: 0;

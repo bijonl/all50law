@@ -26,22 +26,24 @@ if(!$has_content) {
         <div class="cta-form-block-row row mobile-spacing-row">
             <div class="cta-form-text-col col-lg-6">
                 <div class="cta-form-text-wrapper position-relative h-100">
+                    <div class="big-title-wrapper">
                      <?php 
                        // Heading gets an ID so region can be linked to it
                         echo pw_seo_heading(
                             $section_title, 
                             $section_title_tag, 
-                            'h1', 
+                            'h1 form-hero-title', 
                             [ 'id' => 'section-title-' . esc_attr($block['id']), 'class' => 'u-focus-style' ]
                         ); 
                     ?>
+                    </div>
                     <?php if($section_subtitle) { ?>
                         <?php if($hero_layout === 'alt') { ?>
                             <div class="section-subtitle">
                                 <?php echo $section_subtitle ?>
                             </div>
                         <?php } elseif($hero_layout === 'default') { ?>
-                            <h5 class="section-subtitle h2 mt-4"><?php echo $section_subtitle ?></h5>
+                            <h5 class="section-subtitle h2"><?php echo $section_subtitle ?></h5>
                         <?php } ?> 
                     <?php } ?>
 
@@ -62,7 +64,7 @@ if(!$has_content) {
                             <h3 class="gallery-title mt-4"><?php echo $gallery_title ?></h3>
                         <?php } ?>
                         <?php if($logo_gallery) { ?>
-                            <div class="gallery-wrapper d-flex flex-wrap flex-sm-wrap align-items-center gap-3">
+                            <div class="gallery-wrapper d-flex flex-wrap flex-sm-wrap align-items-center justify-content-between gap-5">
                                 <?php foreach($logo_gallery as $image) {
                                     echo wp_get_attachment_image($image['id'], 'full', false, array('class' => 'rounded-0')); 
                                 } ?>
@@ -89,7 +91,7 @@ if(!$has_content) {
                     
                 </div>
             </div>
-            <div class="form-block-col col-lg-6 mx-auto">
+            <div class="form-block-col col-lg-5 ms-auto">
                 <div class="form-block-wrapper">
                     <h3><?php echo $form_title ?></h3>
                     <p><?php echo $form_subtitle ?></p>

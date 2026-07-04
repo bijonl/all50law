@@ -8502,23 +8502,23 @@ img {
 
 h1, .h1 {
   font-family: "Roboto Condensed", serif;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -2px;
+  letter-spacing: -5px;
 }
 @media (max-width: 575.98px) {
   h1, .h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
 h2, .h2 {
   font-family: "Roboto Condensed", serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 }
 
 h3, .h3 {
@@ -8543,6 +8543,7 @@ h5, .h5 {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 h6, .h6 {
@@ -8551,6 +8552,7 @@ h6, .h6 {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .block-editor-block-card__title {
@@ -8771,12 +8773,12 @@ body.home .site-header:not(.is-scrolling) {
   color: #161616;
 }
 body.home .site-header:not(.is-scrolling) .submenu-toggle {
-  color: white;
+  color: #161616;
 }
 body.home .site-header:not(.is-scrolling) .menu__btn > span,
 body.home .site-header:not(.is-scrolling) .menu__btn > span::before,
 body.home .site-header:not(.is-scrolling) .menu__btn > span::after {
-  background: white;
+  color: #161616;
 }
 body.home .site-header.is-scrolling {
   background: white;
@@ -8795,12 +8797,10 @@ body.home .site-header.is-scrolling .submenu-toggle {
   height: auto;
 }
 .site-header .header-menu-col-phone {
-  font-size: 35px;
+  font-size: 28px;
+  text-align: right;
   font-weight: 700;
   white-space: nowrap;
-}
-.site-header .header-menu-col-phone a {
-  color: #d71d22;
 }
 .site-header .header-menu-col nav,
 .site-header .site-header-mobile-button-col nav {
@@ -9188,9 +9188,6 @@ body.home .site-header.is-scrolling .submenu-toggle {
 .title-area-container.horizontal .title-area-row .title-area-col .title-area-content-wrapper {
   padding-bottom: 0;
 }
-.title-area-container.horizontal .title-area-row .title-area-col .title-area-content-wrapper .title-wrapper h1, .title-area-container.horizontal .title-area-row .title-area-col .title-area-content-wrapper .title-wrapper .h1 {
-  font-size: 50px;
-}
 .title-area-container.horizontal .pw-text-button {
   justify-content: start;
 }
@@ -9210,9 +9207,6 @@ body.home .site-header.is-scrolling .submenu-toggle {
   .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
     padding-bottom: 40px;
   }
-}
-.title-area-container .title-area-row .title-area-col .title-area-content-wrapper .title-wrapper .h1 {
-  font-size: 40px;
 }
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper .subtitle-wrapper {
   width: 60%;
@@ -9517,6 +9511,20 @@ body.home .site-header.is-scrolling .submenu-toggle {
   border-radius: 12px;
   border: solid 2px #efefef;
   padding: 20px;
+}
+.form-hero-section .cta-form-block-container .cta-form-text-wrapper .big-title-wrapper {
+  padding-bottom: 2rem;
+}
+.form-hero-section .cta-form-block-container .cta-form-text-wrapper .big-title-wrapper .form-hero-title {
+  color: #d71d22;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+.form-hero-section .cta-form-block-container .cta-form-text-wrapper .hero-content {
+  margin-bottom: 50px;
+}
+.form-hero-section .cta-form-block-container .cta-form-text-wrapper .hero-content iframe {
+  width: 100%;
 }
 .form-hero-section .cta-form-block-container.alt-layout .section-subtitle p {
   font-size: 18px;

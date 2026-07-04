@@ -24,14 +24,14 @@ body.home & {
     color: $base-text-color;
 
     .submenu-toggle {
-      color: white;
+       color: $base-text-color;
     }
 
     .menu__btn {
       > span,
       > span::before,
       > span::after {
-        background: white;
+        color: $base-text-color;
       }
     }
   }
@@ -66,12 +66,12 @@ body.home & {
   }
 
   .header-menu-col-phone {
-    font-size: 35px;
+    font-size: 28px;
+    text-align: right;
     font-weight: 700;
     white-space: nowrap;
 
     a {
-      color: $color-secondary;
     }
   }
 
