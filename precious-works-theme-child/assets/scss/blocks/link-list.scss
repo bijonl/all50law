@@ -91,6 +91,15 @@
             }
         }
         &.big-title {
+            .link-list-col {
+                padding: 0; 
+                .link-list-wrapper {
+                    padding-top: 0; 
+                }
+                li {
+
+                }
+            }
             hr {
                 width: 32px;
                 border: solid 4px $color-primary;

@@ -8518,7 +8518,7 @@ h2, .h2 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
 }
 
 h3, .h3 {
@@ -9931,7 +9931,10 @@ body.home .site-header.is-scrolling .submenu-toggle {
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.wide-image .wildcard-text-content-col .wildcard-text-content-wrapper .wildcard-number-wrapper p {
   width: 100%;
   height: 100%;
+  justify-content: center;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.minimal-wildcard {
   padding: 20px;
@@ -10044,6 +10047,12 @@ body.home .site-header.is-scrolling .submenu-toggle {
     padding-left: 0;
     padding-right: 0;
   }
+}
+.page-link-list-section .link-list-container.big-title .link-list-col {
+  padding: 0;
+}
+.page-link-list-section .link-list-container.big-title .link-list-col .link-list-wrapper {
+  padding-top: 0;
 }
 .page-link-list-section .link-list-container.big-title hr {
   width: 32px;
