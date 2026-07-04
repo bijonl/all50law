@@ -26,26 +26,26 @@ if(!$has_content) {
     <?php include(locate_template('blocks/partials/title-area.php')); ?>
 
     <div class="link-list-and-slider-container container">
-        <div class="link-list-and-slider-title-row row">
-            <div class="col-sm-8">
-               <?php if(!empty($link_list_title)) { ?>
+        <div class="link-list-and-slider-title-row row <?php echo empty($slider_title) ? 'pb-0': '' ?>">
+             <?php if(!empty($link_list_title)) { ?>
+                <div class="col-sm-8">
                     <div class="link-list-title-wrapper d-none d-lg-block">
                         <h3 class="h5"><?php echo $link_list_title ?></h3>
                     </div>
-                <?php } ?>
-            </div>
-            <div class="col-sm-4">
-                <?php if(!empty($slider_title)) { ?>
+                </div>
+            <?php } ?>
+            <?php if(!empty($slider_title)) { ?>
+                <div class="col-sm-4">
                     <div class="link-list-title-wrapper d-none d-lg-block">
                         <h3 class="h5"><?php echo $slider_title ?></h3>
                     </div>
-                <?php } ?>
-            </div>
+                </div>
+            <?php } ?>
         </div>
 
         <div class="link-list-and-slider-row row">
             <?php if(have_rows('link_list')) { ?>
-                <div class="link-list-and-slider-col link-col col-lg-8">
+                <div class="link-list-and-slider-col link-col <?php echo !have_rows('slides') ? 'col-lg-12' : 'col-lg-8' ?> ">
                     <?php if(!empty($link_list_title)) { ?>
                         <div class="link-list-title-wrapper d-block d-lg-none">
                             <h3 class="h5"><?php echo $link_list_title ?></h3>

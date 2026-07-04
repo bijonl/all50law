@@ -34,7 +34,7 @@ $professionals_per_row = 4;
 
     <section class="attorney-archive-content-section block-section pt-0" id="attorney-content-section">
         <div class="attorney-posts-container container">
-          <div class="attorney-posts-row row  g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-<?php echo $professionals_per_row ?>">
+          <div class="attorney-posts-row row  mobile-spacing-row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-<?php echo $professionals_per_row ?>">
            <?php if($professionals->have_posts()) {
                     while($professionals->have_posts()) { 
                         $professionals->the_post(); 

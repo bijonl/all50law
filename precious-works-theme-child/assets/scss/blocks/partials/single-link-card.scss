@@ -9,6 +9,8 @@
     &.card-single-link, &.regular-single-link  {
         display: flex;
         gap: 0; 
+        height: 100%;
+        align-items: center;
 
     }
     &.two-column-single-link {

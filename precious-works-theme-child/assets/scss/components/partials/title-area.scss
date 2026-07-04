@@ -14,6 +14,7 @@ $button-row-spacing: 30px;
             padding-bottom: 60px; 
             @include media-breakpoint-down(lg) {
                 padding-bottom: 40px;
+                gap: 40px; 
             }
             .title-area-col {
                 .title-area-content-wrapper {
@@ -31,6 +32,9 @@ $button-row-spacing: 30px;
         .subtitle-wrapper {
             padding-bottom: 20px; 
             font-size: 20px; 
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 0; 
+            }
         }
     }
     .title-area-row {

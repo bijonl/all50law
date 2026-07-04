@@ -1,10 +1,11 @@
 <section class="attorney-main-content">
     <div class="attorney-main-content-container container">
-        <div class="attorney-main-content-row d-flex">
+        <div class="attorney-main-content-row row">
 
-            <div class="col-sm-4 info-col locations-col">
+            <div class="col-lg-4 info-col locations-col">
 
                 <?php if ($office_crosslinks) { ?>
+                    <div class="info-wrapper h-100 background-light-grey">
                     <h2 class="h3">Office Locations</h2>
                     <ul class="info-list list-unstyled m-0">
 
@@ -23,12 +24,14 @@
                             </li>
                         <?php } ?>
                     </ul>
+                    </div>
                 <?php } ?>
             </div>
 
-            <div class="col-sm-4 info-col bar-admission-col">
+            <div class="col-lg-4 info-col bar-admission-col">
 
                 <?php if (have_rows('admissions')) { ?>
+                    <div class="info-wrapper">
                     <h2 class="h3">Bar Admissions</h2>
                     <ul class="info-list list-unstyled m-0">
 
@@ -46,11 +49,13 @@
                             }
                         } ?>
                     </ul>
+                    </div>
                 <?php } ?>
             </div>
 
-            <div class="col-sm-4 info-col courts-col">
+            <div class="col-lg-4 info-col courts-col">
                 <?php if (have_rows('courts')) { ?>
+                <div class="info-wrapper">
                     <h2 class="h3">Court Admissions</h2>
                     <ul class="info-list list-unstyled m-0">
 
@@ -68,6 +73,7 @@
                             }
                         } ?>
                     </ul>
+</div>
                 <?php } ?>
             </div>
 

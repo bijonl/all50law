@@ -19,6 +19,9 @@
         .title-area-content-wrapper {
             .title-wrapper {
                 padding-bottom: 40px; 
+                @include media-breakpoint-down(sm) {
+                    width: 95%; 
+                }
             }
             .subtitle-wrapper {
                 font-size: 24px; 

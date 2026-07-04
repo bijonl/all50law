@@ -69,10 +69,10 @@ add_action( 'enqueue_block_editor_assets', 'pw_enqueue_scripts' );
  */
 function theme_enqueue_fonts() {
 
-    // Inter from Google Fonts
+    // Inter + Roboto Condensed from Google Fonts
     wp_enqueue_style(
         'theme-fonts',
-        'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap',
+        'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Condensed:wght@100..900&display=swap',
         array(),
         null
     );

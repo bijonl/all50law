@@ -38,7 +38,7 @@ if(!$has_content) {
                 <div class="link-list-col col-12">
             <?php } ?> 
                 <?php if (!empty($link_list_title) || !empty($link_list_link)) { ?>
-                    <div class="link-list-title-wrapper <?php echo $two_column_format ? 'col-sm-6' : 'flex-column flex-sm-row d-flex align-items-center justify-content-between' ?>">
+                    <div class="link-list-title-wrapper <?php echo $two_column_format ? 'col-lg-6' : 'flex-column flex-sm-row d-flex align-items-center justify-content-between' ?>">
                         <?php if (!empty($link_list_title)) { ?>
                             <h3 class="<?php echo $two_column_format ? 'h3' : 'h5' ?> mb-0">
                                 <?php echo esc_html($link_list_title); ?>
@@ -62,7 +62,7 @@ if(!$has_content) {
 
                     </div>
                 <?php } ?>
-                <div class="link-list-wrapper <?php echo $two_column_format ? 'col-sm-6' : '' ?>">
+                <div class="link-list-wrapper <?php echo $two_column_format ? 'col-lg-6' : '' ?>">
                     <?php if (have_rows('links')) { ?>
                         <ul class="mb-0 list-unstyled <?php echo $two_column_format ? 'd-block' : 'd-flex' ?> row">
                             <?php while (have_rows('links')) { 

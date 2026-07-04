@@ -84,11 +84,13 @@
                         }
                         .button-wrapper {
                             width: fit-content; 
-                            background-color: $color-lightgray; 
+                            background-color: $color-light-blue; 
                             padding: 12px; 
                             color: $base-text-color; 
                             border-radius: 12px;
-
+                            a {
+                                color: $base-text-color; 
+                            }
                         }
                     }
                 }
@@ -101,18 +103,21 @@
         padding-bottom: 80px; 
         .attorney-main-content-container  {
             .attorney-main-content-row  {
-                gap: 30px; 
+                @include media-breakpoint-down(lg) {
+                    gap: 40px; 
+                }
                 .info-col {
-                    border-radius: 12px;
-                    background-color: $color-offwhite; 
+                   
+                    .info-wrapper {
+                        height: 100%; 
+                        padding: 20px; 
+                        border-radius: 12px;
+                        background-color: $color-offwhite; 
+                    }
                     h2 {
-                        padding-top: 20px; 
-                        padding-left: 20px; 
                     }
                     ul {
-                        font-size: 18px; 
-                        padding-bottom: 20px; 
-                        padding-left: 20px; 
+                        font-size: 18px;  
                         li {
                             margin-top: 20px; 
                             margin-bottom: 20px; 
@@ -134,9 +139,10 @@
     .results-section {
         padding-top: 80px; 
         padding-bottom: 80px; 
-        background-color: $color-offwhite; 
+        background-color: $color-light-blue; 
         .results-container {
             .table-responsive {
+                overflow-x: scroll;
                 margin-top: 50px; 
                 border: solid 1px; 
                 table {

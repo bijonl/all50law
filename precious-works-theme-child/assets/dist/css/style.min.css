@@ -8288,7 +8288,7 @@ progress {
 }
 
 .heading-font {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
 }
 
 .body-text-font {
@@ -8501,7 +8501,7 @@ img {
 }
 
 h1, .h1 {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
@@ -8514,7 +8514,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -8522,7 +8522,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
@@ -8530,7 +8530,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
@@ -8538,7 +8538,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -8546,7 +8546,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.2;
@@ -8593,7 +8593,7 @@ ul.list-unstyled li, ol.list-unstyled li {
 }
 
 blockquote {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
   font-style: italic;
   margin: 1.5em 0;
   padding-left: 1em;
@@ -8759,7 +8759,7 @@ small, .small {
 .site-header {
   background: white;
   padding: 12px 0;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #0247ac;
 }
 .site-header.is-scrolling {
   position: sticky;
@@ -8767,8 +8767,8 @@ small, .small {
   z-index: 1020;
 }
 body.home .site-header:not(.is-scrolling) {
-  background: #0247ac;
-  color: white;
+  background: #D9E4F5;
+  color: #161616;
 }
 body.home .site-header:not(.is-scrolling) .submenu-toggle {
   color: white;
@@ -9182,6 +9182,7 @@ body.home .site-header.is-scrolling .submenu-toggle {
 @media (max-width: 991.98px) {
   .title-area-container.horizontal .title-area-row {
     padding-bottom: 40px;
+    gap: 40px;
   }
 }
 .title-area-container.horizontal .title-area-row .title-area-col .title-area-content-wrapper {
@@ -9196,6 +9197,11 @@ body.home .site-header.is-scrolling .submenu-toggle {
 .title-area-container.horizontal .subtitle-wrapper {
   padding-bottom: 20px;
   font-size: 20px;
+}
+@media (max-width: 575.98px) {
+  .title-area-container.horizontal .subtitle-wrapper {
+    padding-bottom: 0;
+  }
 }
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
   padding-bottom: 60px;
@@ -9445,6 +9451,11 @@ body.home .site-header.is-scrolling .submenu-toggle {
 }
 .photo-divider-section .photo-divider-container .title-area-content-wrapper .title-wrapper {
   padding-bottom: 40px;
+}
+@media (max-width: 575.98px) {
+  .photo-divider-section .photo-divider-container .title-area-content-wrapper .title-wrapper {
+    width: 95%;
+  }
 }
 .photo-divider-section .photo-divider-container .title-area-content-wrapper .subtitle-wrapper {
   font-size: 24px;
@@ -9791,12 +9802,16 @@ body.home .site-header.is-scrolling .submenu-toggle {
 }
 
 .wildcards-section .wildcards-container.two-col-text-container {
-  width: 80%;
+  width: 100%;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 1199.98px) {
   .wildcards-section .wildcards-container.two-col-text-container {
     width: 100%;
   }
+}
+.wildcards-section .wildcards-container.two-col-text-container .wildcards-row .title-area-container {
+  padding-left: 0;
+  padding-right: 0;
 }
 .wildcards-section .wildcards-container.two-col-text-container .wildcards-row .wildcard-col-wrapper {
   gap: 5%;
@@ -9815,7 +9830,7 @@ body.home .site-header.is-scrolling .submenu-toggle {
 }
 @media (max-width: 575.98px) {
   .wildcards-section .wildcards-container.two-col-text-container .wildcards-row .wildcard-col-wrapper .wildcards-col {
-    width: 48%;
+    width: 100%;
   }
 }
 .wildcards-section .wildcards-container.two-col-text-container .wildcards-row .wildcard-col-wrapper .wildcards-col .wildcard-title {
@@ -9931,11 +9946,6 @@ body.home .site-header.is-scrolling .submenu-toggle {
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper.minimal-wildcard .wildcard-content-wrapper {
   padding-bottom: 0;
-}
-@media (max-width: 991.98px) {
-  .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper {
-    padding-bottom: 40px;
-  }
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-image-wrapper {
   display: flex;
@@ -10276,12 +10286,12 @@ body.home .site-header.is-scrolling .submenu-toggle {
   font-size: 18px;
 }
 .link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col .button-area-wrapper {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 @media (max-width: 991.98px) {
   .link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col .button-area-wrapper {
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 .link-list-and-slider-section .link-list-and-slider-container .link-list-and-slider-row .link-list-and-slider-col.slider-col .link-glide .slide-content-wrapper {
@@ -10466,7 +10476,7 @@ body.home .site-header.is-scrolling .submenu-toggle {
   }
 }
 .flip-card-front .front-card-wrapper .front-card-body-wrapper .number-wrapper {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 34px;
   color: #0247ac;
 }
@@ -10512,7 +10522,7 @@ body.home .site-header.is-scrolling .submenu-toggle {
   padding: 10px;
 }
 .flip-card-back .back-card-wrapper .back-body-wrapper .number-wrapper {
-  font-family: "Georgia", serif;
+  font-family: "Roboto Condensed", serif;
   font-size: 34px;
   color: #0247ac;
 }
@@ -10605,6 +10615,11 @@ body.home .site-header.is-scrolling .submenu-toggle {
   aspect-ratio: 16/9;
 }
 
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  .single-attorney-wrapper {
+    width: 95%;
+  }
+}
 .single-attorney-wrapper .single-attorney-content-wrapper .single-attorney-contact-wrapper {
   font-size: 24px;
   display: flex;
@@ -10666,6 +10681,8 @@ body.home .site-header.is-scrolling .submenu-toggle {
 .single-link-wrapper.card-single-link, .single-link-wrapper.regular-single-link {
   display: flex;
   gap: 0;
+  height: 100%;
+  align-items: center;
 }
 .single-link-wrapper.two-column-single-link {
   background-color: transparent;
@@ -10753,30 +10770,31 @@ body.home .site-header.is-scrolling .submenu-toggle {
 }
 .single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .practice-wrapper .button-wrapper {
   width: fit-content;
-  background-color: #bababb;
+  background-color: #D9E4F5;
   padding: 12px;
   color: #161616;
   border-radius: 12px;
+}
+.single-attorney-post-section .professionals-hero .professional-hero-container .professional-hero-row .professional-bio-col .practice-wrapper .button-wrapper a {
+  color: #161616;
 }
 .single-attorney-post-section .attorney-main-content {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row {
-  gap: 30px;
+@media (max-width: 991.98px) {
+  .single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row {
+    gap: 40px;
+  }
 }
-.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col {
+.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col .info-wrapper {
+  height: 100%;
+  padding: 20px;
   border-radius: 12px;
   background-color: #efefef;
 }
-.single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col h2, .single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col .h2 {
-  padding-top: 20px;
-  padding-left: 20px;
-}
 .single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col ul {
   font-size: 18px;
-  padding-bottom: 20px;
-  padding-left: 20px;
 }
 .single-attorney-post-section .attorney-main-content .attorney-main-content-container .attorney-main-content-row .info-col ul li {
   margin-top: 20px;
@@ -10792,9 +10810,10 @@ body.home .site-header.is-scrolling .submenu-toggle {
 .single-attorney-post-section .results-section {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #efefef;
+  background-color: #D9E4F5;
 }
 .single-attorney-post-section .results-section .results-container .table-responsive {
+  overflow-x: scroll;
   margin-top: 50px;
   border: solid 1px;
 }

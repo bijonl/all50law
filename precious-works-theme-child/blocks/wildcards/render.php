@@ -16,6 +16,9 @@ if($wide_image_format) {
 }
 
 $row_classes = 'row-cols-1 row-cols-lg-2 row-cols-xl-' . $cards_per_row;
+if($two_col_text) {
+    $row_classes = 'row-cols-1'; 
+}
 $container_class = 'container'; 
 
 include(locate_template('blocks/partials/global-block-variables.php')); ?>

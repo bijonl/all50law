@@ -1,11 +1,11 @@
 <section class="professionals-hero background-primary">
     <div class="professional-hero-container container">
-      <div class="professional-hero-row row gx-5">
-        <div class="professional-creds-col col-sm-4">
+      <div class="professional-hero-row row gx-5 mobile-spacing-row">
+        <div class="professional-creds-col col-lg-4">
             <?php include locate_template('components/professionals/professionals-creds.php'); ?>
 
         </div>
-          <div class="professional-bio-col col-sm-8">
+          <div class="professional-bio-col col-lg-8">
             <div class="name-wrapper">
                 <h1 class="h3">Meet <?php echo $full_name ?></h1>
             </div>

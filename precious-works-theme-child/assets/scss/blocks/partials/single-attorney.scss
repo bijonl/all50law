@@ -1,4 +1,7 @@
 .single-attorney-wrapper {
+    @include media-breakpoint-between(sm, xl) {
+        width: 95%; 
+    }
     .single-attorney-content-wrapper {
         .single-attorney-contact-wrapper {
             font-size: 24px;
