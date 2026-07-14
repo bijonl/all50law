@@ -1,31 +1,87 @@
 
 .recent-posts-section {
     .recent-posts-container {
+        &.listing {
+            .single-post-tile {
+                gap: 20px; 
+                padding-top: 15px; 
+                margin-top: 15px; 
+                border-top: solid 1px lightgray; 
+                &:last-child {
+                    border-bottom: solid 1px lightgray; 
+
+
+                }
+                .single-post-image-wrapper {
+                    width: 10%; 
+                    padding-bottom: 0; 
+                }
+
+                .single-post-title-wrapper {
+                    font-size: 21px; 
+                    padding-bottom: 0; 
+                }
+                .single-post-term-wrapper {
+                    font-weight: 700; 
+                    .term-wrapper {
+                        .single-term {
+                            white-space: nowrap;
+                            font-weight: 700; 
+                            border: solid 1px; 
+                            line-height: 1; 
+                            padding: 8px; 
+                            border-radius: 12px;
+
+
+                        }
+                    }
+                }
+
+            }
+           
+        }
+        
         &.featured {
             .recent-posts-row {
                 .blog-featured-wrapper {
                     display: grid;
                     grid-template-columns: 4fr 3fr;
                     gap: 24px;
+                    @include media-breakpoint-down(sm) {
+                        display: block; 
+                    }
                     .main-featured {
+                        @include media-breakpoint-down(sm) {
+                            height: auto!important; 
+                        }
+                        
                         .single-post-tile {
+                            @extend .rounded-corners; 
                             background-color: $color-offwhite; 
                             padding-top: 8px; 
                             height: 100%; 
                             padding-bottom: 8px; 
                             padding-left: 20px; 
                             padding-right: 20px; 
+                            @include media-breakpoint-down(sm) {
+                                margin-bottom: 24px; 
+                            }
                             .single-post-title-wrapper {
                                 .single-post-title {
                                  
                                     font-size: 65px; 
                                     font-family: $body-text-font;
+                                     @include media-breakpoint-down(sm) {
+                                        font-size: 18px; 
+                    
+                                    }
                                 }
                             }
                         }
                     }
                     .secondary-featured { 
                         .single-post-tile {
+                            @extend .rounded-corners; 
                             padding-top: 8px; 
                             padding-bottom: 8px; 
                             padding-left: 20px; 

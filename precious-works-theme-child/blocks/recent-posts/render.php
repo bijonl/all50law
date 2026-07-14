@@ -4,6 +4,8 @@ $post_format = get_field('post_format') ? get_field('post_format') : 'regular' ;
 $is_regular = $post_format === 'regular'; 
 $is_slider = $post_format === 'slider'; 
 $is_featured = $post_format === 'featured'; 
+$is_listing = $post_format === 'listing'; 
+$post_list_title = get_field('post_list_title'); 
 
 
 
@@ -47,6 +49,20 @@ if(empty($recent_posts)) {
                 </div>
             </div>
 
+        <?php } elseif($is_listing) { ?>
+            <div class="recent-posts-container container <?php echo $post_format ?>">
+                <div class="recent-posts-row row">
+                    <?php if($post_list_title) { ?>
+                        <div class="post-list-title">
+                            <h4><?php echo $post_list_title ?></h6>
+                        </div>
+
+                    <?php } ?>
+                     <?php foreach($recent_posts as $id) { ?>
+                    <?php include __DIR__ . '/partials/post-listing.php'; ?>
+                    <? } ?>
+                </div>
+            </div>
         <?php } ?>
 
       

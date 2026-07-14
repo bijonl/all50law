@@ -139,6 +139,7 @@
     'core/image',
     'core/separator',
     'core/spacer',
+    'core/table',
 );
 
 

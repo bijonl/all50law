@@ -9,7 +9,7 @@ include locate_template('components/variables/post-variables.php'); ?>
     <?php include locate_template('components/blog/single-post-hero.php'); ?>
     <div class="single-blog-post-container container">
       <div class="single-blog-post-row row">
-        <div class="single-blog-post-col col-sm-10 mx-auto">
+        <div class="single-blog-post-col col-sm-7 mx-auto">
             <?php include locate_template('components/blog/single-post-content.php'); ?>
             <?php include locate_template('components/blog/single-post-footer.php'); ?>
         </div>

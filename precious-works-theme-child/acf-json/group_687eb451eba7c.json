@@ -37,7 +37,8 @@
             "choices": {
                 "regular": "Regular",
                 "slider": "Slider",
-                "featured": "Featured Posts"
+                "featured": "Featured Posts",
+                "listing": "Post Listing"
             },
             "default_value": false,
             "return_format": "value",
@@ -49,6 +50,35 @@
             "placeholder": "",
             "create_options": 0,
             "save_options": 0
+        },
+        {
+            "key": "field_6a565d3d74d30",
+            "label": "Post List Title",
+            "name": "post_list_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6a1d7b294f257",
+                        "operator": "==",
+                        "value": "listing"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_687eb4838bc81",
@@ -120,5 +150,8 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1780322747
+    "display_title": "",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "modified": 1784044884
 }

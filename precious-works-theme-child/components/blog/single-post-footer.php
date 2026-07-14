@@ -1,10 +1,11 @@
+<?php if($blog_disclaimer) { ?>
+    <div class="disclaimer-wrapper">
+        <h4 class="disclaimer-text">Disclaimer Message</h4>
+        <p class="disclaimer-text mb-0"><?php echo $blog_disclaimer ?></p>
+    </div>
+<?php } ?>
 <div class="post-footer">
-    <?php if($blog_disclaimer) { ?>
-        <div class="disclaimer-wrapper mb-3">
-            <h4 class="disclaimer-text">Disclaimer Message</h4>
-            <p class="disclaimer-text"><?php echo $blog_disclaimer ?></p>
-        </div>
-    <?php } ?>
+   
   
     <h6 class="mb-0">Share this Article</h6>
     <ul class="social-share-list">
